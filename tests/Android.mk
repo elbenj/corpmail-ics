@@ -16,19 +16,19 @@ LOCAL_PATH:= $(call my-dir)
 include $(CLEAR_VARS)
 
 # We only want this apk build for tests.
-LOCAL_MODULE_TAGS := tests
+#LOCAL_MODULE_TAGS := tests
 
-LOCAL_JAVA_LIBRARIES := android.test.runner
+#LOCAL_JAVA_LIBRARIES := android.test.runner
 
 # Include all test java files.
-LOCAL_SRC_FILES := $(call all-java-files-under, src)
+# LOCAL_SRC_FILES := $(call all-java-files-under, src)
 
 # Notice that we don't have to include the src files of Email because, by
 # running the tests using an instrumentation targeting Email, we
 # automatically get all of its classes loaded into our environment.
 
-LOCAL_PACKAGE_NAME := EmailTests
+#LOCAL_PACKAGE_NAME := EmailTests
 
-LOCAL_INSTRUMENTATION_FOR := Email
+#LOCAL_INSTRUMENTATION_FOR := Email
 
-include $(BUILD_PACKAGE)
+# include $(BUILD_PACKAGE)
