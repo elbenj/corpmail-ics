@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity.setup;
+package com.elbenjics.email.activity.setup;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -31,16 +31,16 @@ import android.preference.PreferenceActivity;
 import android.util.Log;
 import android.view.MenuItem;
 
-import com.android.email.Email;
-import com.android.email.FolderProperties;
-import com.android.email.R;
-import com.android.email.RefreshManager;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent.AccountColumns;
-import com.android.emailcommon.provider.EmailContent.MailboxColumns;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.utility.EmailAsyncTask;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.FolderProperties;
+import com.elbenjics.email.R;
+import com.elbenjics.email.RefreshManager;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent.AccountColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.MailboxColumns;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.utility.EmailAsyncTask;
 import com.google.common.base.Objects;
 import com.google.common.base.Preconditions;
 

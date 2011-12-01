@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.android.email.data;
+package com.elbenjics.email.data;
 
-import com.android.email.Throttle;
-import com.android.emailcommon.Logging;
+import com.elbenjics.email.Throttle;
+import com.elbenjics.emailcommon.Logging;
 
 import android.content.Context;
 import android.content.CursorLoader;

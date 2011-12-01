@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.elbenjics.email;
 
 import android.app.Service;
 import android.content.ContentResolver;
@@ -30,31 +30,31 @@ import android.os.RemoteCallbackList;
 import android.os.RemoteException;
 import android.util.Log;
 
-import com.android.email.mail.store.Pop3Store.Pop3Message;
-import com.android.email.provider.AccountBackupRestore;
-import com.android.email.service.EmailServiceUtils;
-import com.android.email.service.MailService;
-import com.android.emailcommon.Api;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.mail.AuthenticationFailedException;
-import com.android.emailcommon.mail.Folder.MessageRetrievalListener;
-import com.android.emailcommon.mail.MessagingException;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.EmailContent.Attachment;
-import com.android.emailcommon.provider.EmailContent.Body;
-import com.android.emailcommon.provider.EmailContent.MailboxColumns;
-import com.android.emailcommon.provider.EmailContent.Message;
-import com.android.emailcommon.provider.EmailContent.MessageColumns;
-import com.android.emailcommon.provider.HostAuth;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.service.EmailServiceStatus;
-import com.android.emailcommon.service.IEmailService;
-import com.android.emailcommon.service.IEmailServiceCallback;
-import com.android.emailcommon.service.SearchParams;
-import com.android.emailcommon.utility.AttachmentUtilities;
-import com.android.emailcommon.utility.EmailAsyncTask;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.mail.store.Pop3Store.Pop3Message;
+import com.elbenjics.email.provider.AccountBackupRestore;
+import com.elbenjics.email.service.EmailServiceUtils;
+import com.elbenjics.email.service.MailService;
+import com.elbenjics.emailcommon.Api;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.mail.AuthenticationFailedException;
+import com.elbenjics.emailcommon.mail.Folder.MessageRetrievalListener;
+import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.EmailContent.Attachment;
+import com.elbenjics.emailcommon.provider.EmailContent.Body;
+import com.elbenjics.emailcommon.provider.EmailContent.MailboxColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.Message;
+import com.elbenjics.emailcommon.provider.EmailContent.MessageColumns;
+import com.elbenjics.emailcommon.provider.HostAuth;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.service.EmailServiceStatus;
+import com.elbenjics.emailcommon.service.IEmailService;
+import com.elbenjics.emailcommon.service.IEmailServiceCallback;
+import com.elbenjics.emailcommon.service.SearchParams;
+import com.elbenjics.emailcommon.utility.AttachmentUtilities;
+import com.elbenjics.emailcommon.utility.EmailAsyncTask;
+import com.elbenjics.emailcommon.utility.Utility;
 import com.google.common.annotations.VisibleForTesting;
 
 import java.io.FileNotFoundException;
@@ -1360,7 +1360,7 @@ public class Controller {
         }
 
         @Override
-        public void messageRetrieved(com.android.emailcommon.mail.Message message) {
+        public void messageRetrieved(com.elbenjics.emailcommon.mail.Message message) {
         }
     }
 

@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.android.exchange.adapter;
+package com.elbenjics.exchange.adapter;
 
 import android.content.ContentProviderClient;
 import android.content.ContentProviderOperation;
@@ -44,17 +44,17 @@ import android.provider.SyncStateContract;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.android.emailcommon.AccountManagerTypes;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.EmailContent.Message;
-import com.android.emailcommon.utility.Utility;
-import com.android.exchange.CommandStatusException;
-import com.android.exchange.Eas;
-import com.android.exchange.EasOutboxService;
-import com.android.exchange.EasSyncService;
-import com.android.exchange.ExchangeService;
-import com.android.exchange.utility.CalendarUtilities;
-import com.android.exchange.utility.Duration;
+import com.elbenjics.emailcommon.AccountManagerTypes;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.EmailContent.Message;
+import com.elbenjics.emailcommon.utility.Utility;
+import com.elbenjics.exchange.CommandStatusException;
+import com.elbenjics.exchange.Eas;
+import com.elbenjics.exchange.EasOutboxService;
+import com.elbenjics.exchange.EasSyncService;
+import com.elbenjics.exchange.ExchangeService;
+import com.elbenjics.exchange.utility.CalendarUtilities;
+import com.elbenjics.exchange.utility.Duration;
 
 import java.io.IOException;
 import java.io.InputStream;

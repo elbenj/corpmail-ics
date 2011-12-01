@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity.setup;
+package com.elbenjics.email.activity.setup;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -30,16 +30,16 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.android.email.R;
-import com.android.email.mail.Sender;
-import com.android.email.mail.Store;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.mail.MessagingException;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.HostAuth;
-import com.android.emailcommon.provider.Policy;
-import com.android.emailcommon.service.EmailServiceProxy;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.R;
+import com.elbenjics.email.mail.Sender;
+import com.elbenjics.email.mail.Store;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.HostAuth;
+import com.elbenjics.emailcommon.provider.Policy;
+import com.elbenjics.emailcommon.service.EmailServiceProxy;
+import com.elbenjics.emailcommon.utility.Utility;
 
 /**
  * Check incoming or outgoing settings, or perform autodiscovery.

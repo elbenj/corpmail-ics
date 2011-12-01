@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.elbenjics.email.activity;
 
 import android.content.Context;
 import android.content.Loader;
@@ -26,20 +26,20 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CursorAdapter;
 
-import com.android.email.Controller;
-import com.android.email.Email;
-import com.android.email.MessageListContext;
-import com.android.email.ResourceHelper;
-import com.android.email.data.ThrottlingCursorLoader;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.mail.MessagingException;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.EmailContent.Message;
-import com.android.emailcommon.provider.EmailContent.MessageColumns;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.utility.TextUtilities;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.Controller;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.MessageListContext;
+import com.elbenjics.email.ResourceHelper;
+import com.elbenjics.email.data.ThrottlingCursorLoader;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.EmailContent.Message;
+import com.elbenjics.emailcommon.provider.EmailContent.MessageColumns;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.utility.TextUtilities;
+import com.elbenjics.emailcommon.utility.Utility;
 import com.google.common.base.Preconditions;
 
 import java.util.HashSet;
@@ -51,7 +51,7 @@ import java.util.Set;
  */
 /* package */ class MessagesAdapter extends CursorAdapter {
     private static final String STATE_CHECKED_ITEMS =
-            "com.android.email.activity.MessagesAdapter.checkedItems";
+            "com.elbenjics.email.activity.MessagesAdapter.checkedItems";
 
     /* package */ static final String[] MESSAGE_PROJECTION = new String[] {
         EmailContent.RECORD_ID, MessageColumns.MAILBOX_KEY, MessageColumns.ACCOUNT_KEY,

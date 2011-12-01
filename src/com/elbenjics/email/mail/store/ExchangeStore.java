@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.store;
+package com.elbenjics.email.mail.store;
 
 import android.content.Context;
 
-import com.android.email.mail.Store;
-import com.android.email.service.EmailServiceUtils;
-import com.android.emailcommon.mail.MessagingException;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.service.IEmailService;
+import com.elbenjics.email.mail.Store;
+import com.elbenjics.email.service.EmailServiceUtils;
+import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.service.IEmailService;
 
 /**
  * Our Exchange service does not use the sender/store model.
@@ -45,7 +45,7 @@ public class ExchangeStore extends ServiceStore {
 
     @Override
     public Class<? extends android.app.Activity> getSettingActivityClass() {
-        return com.android.email.activity.setup.AccountSetupExchange.class;
+        return com.elbenjics.email.activity.setup.AccountSetupExchange.class;
     }
 
     @Override

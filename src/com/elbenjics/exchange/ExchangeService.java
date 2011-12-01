@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.android.exchange;
+package com.elbenjics.exchange;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -48,34 +48,34 @@ import android.provider.CalendarContract.Events;
 import android.provider.ContactsContract;
 import android.util.Log;
 
-import com.android.emailcommon.Api;
-import com.android.emailcommon.TempDirectory;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.EmailContent.Attachment;
-import com.android.emailcommon.provider.EmailContent.HostAuthColumns;
-import com.android.emailcommon.provider.EmailContent.MailboxColumns;
-import com.android.emailcommon.provider.EmailContent.Message;
-import com.android.emailcommon.provider.EmailContent.SyncColumns;
-import com.android.emailcommon.provider.HostAuth;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.provider.Policy;
-import com.android.emailcommon.provider.ProviderUnavailableException;
-import com.android.emailcommon.service.AccountServiceProxy;
-import com.android.emailcommon.service.EmailServiceProxy;
-import com.android.emailcommon.service.EmailServiceStatus;
-import com.android.emailcommon.service.IEmailService;
-import com.android.emailcommon.service.IEmailServiceCallback;
-import com.android.emailcommon.service.PolicyServiceProxy;
-import com.android.emailcommon.service.SearchParams;
-import com.android.emailcommon.utility.EmailAsyncTask;
-import com.android.emailcommon.utility.EmailClientConnectionManager;
-import com.android.emailcommon.utility.Utility;
-import com.android.exchange.adapter.CalendarSyncAdapter;
-import com.android.exchange.adapter.ContactsSyncAdapter;
-import com.android.exchange.adapter.Search;
-import com.android.exchange.provider.MailboxUtilities;
-import com.android.exchange.utility.FileLogger;
+import com.elbenjics.emailcommon.Api;
+import com.elbenjics.emailcommon.TempDirectory;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.EmailContent.Attachment;
+import com.elbenjics.emailcommon.provider.EmailContent.HostAuthColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.MailboxColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.Message;
+import com.elbenjics.emailcommon.provider.EmailContent.SyncColumns;
+import com.elbenjics.emailcommon.provider.HostAuth;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.provider.Policy;
+import com.elbenjics.emailcommon.provider.ProviderUnavailableException;
+import com.elbenjics.emailcommon.service.AccountServiceProxy;
+import com.elbenjics.emailcommon.service.EmailServiceProxy;
+import com.elbenjics.emailcommon.service.EmailServiceStatus;
+import com.elbenjics.emailcommon.service.IEmailService;
+import com.elbenjics.emailcommon.service.IEmailServiceCallback;
+import com.elbenjics.emailcommon.service.PolicyServiceProxy;
+import com.elbenjics.emailcommon.service.SearchParams;
+import com.elbenjics.emailcommon.utility.EmailAsyncTask;
+import com.elbenjics.emailcommon.utility.EmailClientConnectionManager;
+import com.elbenjics.emailcommon.utility.Utility;
+import com.elbenjics.exchange.adapter.CalendarSyncAdapter;
+import com.elbenjics.exchange.adapter.ContactsSyncAdapter;
+import com.elbenjics.exchange.adapter.Search;
+import com.elbenjics.exchange.provider.MailboxUtilities;
+import com.elbenjics.exchange.utility.FileLogger;
 
 import org.apache.http.conn.params.ConnManagerPNames;
 import org.apache.http.conn.params.ConnPerRoute;
@@ -1860,7 +1860,7 @@ public class ExchangeService extends Service implements Runnable {
     /**
      * Start up the ExchangeService service if it's not already running
      * This is a stopgap for cases in which ExchangeService died (due to a crash somewhere in
-     * com.android.email) and hasn't been restarted. See the comment for onCreate for details
+     * com.elbenjics.email) and hasn't been restarted. See the comment for onCreate for details
      */
     static void checkExchangeServiceServiceRunning() {
         ExchangeService exchangeService = INSTANCE;

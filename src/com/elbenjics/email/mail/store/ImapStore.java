@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.store;
+package com.elbenjics.email.mail.store;
 
 import android.content.Context;
 import android.os.Build;
@@ -24,27 +24,27 @@ import android.text.TextUtils;
 import android.util.Base64;
 import android.util.Log;
 
-import com.android.email.LegacyConversions;
-import com.android.email.Preferences;
-import com.android.email.VendorPolicyLoader;
-import com.android.email.mail.Store;
-import com.android.email.mail.Transport;
-import com.android.email.mail.store.imap.ImapConstants;
-import com.android.email.mail.store.imap.ImapResponse;
-import com.android.email.mail.store.imap.ImapString;
-import com.android.email.mail.transport.MailTransport;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.internet.MimeMessage;
-import com.android.emailcommon.mail.AuthenticationFailedException;
-import com.android.emailcommon.mail.Flag;
-import com.android.emailcommon.mail.Folder;
-import com.android.emailcommon.mail.Message;
-import com.android.emailcommon.mail.MessagingException;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.HostAuth;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.service.EmailServiceProxy;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.LegacyConversions;
+import com.elbenjics.email.Preferences;
+import com.elbenjics.email.VendorPolicyLoader;
+import com.elbenjics.email.mail.Store;
+import com.elbenjics.email.mail.Transport;
+import com.elbenjics.email.mail.store.imap.ImapConstants;
+import com.elbenjics.email.mail.store.imap.ImapResponse;
+import com.elbenjics.email.mail.store.imap.ImapString;
+import com.elbenjics.email.mail.transport.MailTransport;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.internet.MimeMessage;
+import com.elbenjics.emailcommon.mail.AuthenticationFailedException;
+import com.elbenjics.emailcommon.mail.Flag;
+import com.elbenjics.emailcommon.mail.Folder;
+import com.elbenjics.emailcommon.mail.Message;
+import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.HostAuth;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.service.EmailServiceProxy;
+import com.elbenjics.emailcommon.utility.Utility;
 import com.beetstra.jutf7.CharsetProvider;
 import com.google.common.annotations.VisibleForTesting;
 
@@ -260,7 +260,7 @@ public class ImapStore extends Store {
         vendor = p.matcher(vendor).replaceAll("");
         networkOperator = p.matcher(networkOperator).replaceAll("");
 
-        // "name" "com.android.email"
+        // "name" "com.elbenjics.email"
         StringBuffer sb = new StringBuffer("\"name\" \"");
         sb.append(packageName);
         sb.append("\"");

@@ -13,9 +13,9 @@
  * limitations under the License.
  */
 
-package com.android.exchange.adapter;
+package com.elbenjics.exchange.adapter;
 
-import com.android.exchange.EasSyncService;
+import com.elbenjics.exchange.EasSyncService;
 
 import java.io.IOException;
 import java.io.InputStream;

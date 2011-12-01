@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.exchange.service;
+package com.elbenjics.exchange.service;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

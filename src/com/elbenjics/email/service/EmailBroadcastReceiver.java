@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.service;
+package com.elbenjics.email.service;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

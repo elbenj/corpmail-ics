@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.elbenjics.email.activity;
 
 import android.content.ContentUris;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 
-import com.android.email.Clock;
-import com.android.email.Controller;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.EmailContent.MailboxColumns;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.utility.EmailAsyncTask;
+import com.elbenjics.email.Clock;
+import com.elbenjics.email.Controller;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.EmailContent.MailboxColumns;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.utility.EmailAsyncTask;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.Maps;
 

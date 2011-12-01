@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.elbenjics.email.activity;
 
 import android.content.Context;
 import android.content.Loader;
@@ -26,15 +26,15 @@ import android.view.ViewGroup;
 import android.widget.CursorAdapter;
 import android.widget.TextView;
 
-import com.android.email.Email;
-import com.android.email.FolderProperties;
-import com.android.email.data.ThrottlingCursorLoader;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent.MailboxColumns;
-import com.android.emailcommon.provider.HostAuth;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.FolderProperties;
+import com.elbenjics.email.data.ThrottlingCursorLoader;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent.MailboxColumns;
+import com.elbenjics.emailcommon.provider.HostAuth;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.utility.Utility;
 
 /**
  * Cursor adapter for the "move to mailbox" dialog.

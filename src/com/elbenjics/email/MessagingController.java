@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.elbenjics.email;
 
 import android.content.ContentResolver;
 import android.content.ContentUris;
@@ -27,37 +27,37 @@ import android.os.Process;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.android.email.mail.Sender;
-import com.android.email.mail.Store;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.TrafficFlags;
-import com.android.emailcommon.internet.MimeBodyPart;
-import com.android.emailcommon.internet.MimeHeader;
-import com.android.emailcommon.internet.MimeMultipart;
-import com.android.emailcommon.internet.MimeUtility;
-import com.android.emailcommon.mail.AuthenticationFailedException;
-import com.android.emailcommon.mail.FetchProfile;
-import com.android.emailcommon.mail.Flag;
-import com.android.emailcommon.mail.Folder;
-import com.android.emailcommon.mail.Folder.FolderType;
-import com.android.emailcommon.mail.Folder.MessageRetrievalListener;
-import com.android.emailcommon.mail.Folder.MessageUpdateCallbacks;
-import com.android.emailcommon.mail.Folder.OpenMode;
-import com.android.emailcommon.mail.Message;
-import com.android.emailcommon.mail.MessagingException;
-import com.android.emailcommon.mail.Part;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.EmailContent.Attachment;
-import com.android.emailcommon.provider.EmailContent.AttachmentColumns;
-import com.android.emailcommon.provider.EmailContent.MailboxColumns;
-import com.android.emailcommon.provider.EmailContent.MessageColumns;
-import com.android.emailcommon.provider.EmailContent.SyncColumns;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.service.SearchParams;
-import com.android.emailcommon.utility.AttachmentUtilities;
-import com.android.emailcommon.utility.ConversionUtilities;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.mail.Sender;
+import com.elbenjics.email.mail.Store;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.TrafficFlags;
+import com.elbenjics.emailcommon.internet.MimeBodyPart;
+import com.elbenjics.emailcommon.internet.MimeHeader;
+import com.elbenjics.emailcommon.internet.MimeMultipart;
+import com.elbenjics.emailcommon.internet.MimeUtility;
+import com.elbenjics.emailcommon.mail.AuthenticationFailedException;
+import com.elbenjics.emailcommon.mail.FetchProfile;
+import com.elbenjics.emailcommon.mail.Flag;
+import com.elbenjics.emailcommon.mail.Folder;
+import com.elbenjics.emailcommon.mail.Folder.FolderType;
+import com.elbenjics.emailcommon.mail.Folder.MessageRetrievalListener;
+import com.elbenjics.emailcommon.mail.Folder.MessageUpdateCallbacks;
+import com.elbenjics.emailcommon.mail.Folder.OpenMode;
+import com.elbenjics.emailcommon.mail.Message;
+import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.mail.Part;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.EmailContent.Attachment;
+import com.elbenjics.emailcommon.provider.EmailContent.AttachmentColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.MailboxColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.MessageColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.SyncColumns;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.service.SearchParams;
+import com.elbenjics.emailcommon.utility.AttachmentUtilities;
+import com.elbenjics.emailcommon.utility.ConversionUtilities;
+import com.elbenjics.emailcommon.utility.Utility;
 
 import java.io.IOException;
 import java.util.ArrayList;

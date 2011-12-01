@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.elbenjics.email;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Parcel;
 import android.os.Parcelable;
 
-import com.android.email.activity.EmailActivity;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.service.SearchParams;
+import com.elbenjics.email.activity.EmailActivity;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.service.SearchParams;
 import com.google.common.base.Objects;
 import com.google.common.base.Preconditions;
 

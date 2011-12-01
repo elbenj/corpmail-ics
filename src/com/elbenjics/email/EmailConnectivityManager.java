@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.elbenjics.email;
 
 import android.content.BroadcastReceiver;
 import android.content.ContentResolver;

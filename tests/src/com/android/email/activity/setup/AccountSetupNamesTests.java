@@ -24,10 +24,10 @@ is not properly constructed.  (empty address)
  */
 
 //
-//package com.android.email.activity.setup;
+//package com.elbenjics.email.activity.setup;
 //
-//import com.android.email.R;
-//import com.android.email.provider.EmailContent;
+//import com.elbenjics.email.R;
+//import com.elbenjics.email.provider.EmailContent;
 //
 //import android.content.ContentUris;
 //import android.content.Context;
@@ -40,7 +40,7 @@ is not properly constructed.  (empty address)
 ///**
 // * Tests of basic UI logic in the AccountSetupNamesTest screen.
 // * You can run this entire test case with:
-// *   runtest -c com.android.email.activity.setup.AccountSetupNamesTests email
+// *   runtest -c com.elbenjics.email.activity.setup.AccountSetupNamesTests email
 // */
 //@MediumTest
 //public class AccountSetupNamesTests extends ActivityInstrumentationTestCase2<AccountSetupNames> {

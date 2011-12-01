@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.service;
+package com.elbenjics.email.service;
 
 import android.accounts.AccountManager;
 import android.app.Service;
@@ -24,16 +24,16 @@ import android.database.Cursor;
 import android.os.Bundle;
 import android.os.IBinder;
 
-import com.android.email.Email;
-import com.android.email.NotificationController;
-import com.android.email.ResourceHelper;
-import com.android.email.VendorPolicyLoader;
-import com.android.email.provider.AccountReconciler;
-import com.android.emailcommon.Configuration;
-import com.android.emailcommon.Device;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.service.IAccountService;
-import com.android.emailcommon.utility.EmailAsyncTask;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.NotificationController;
+import com.elbenjics.email.ResourceHelper;
+import com.elbenjics.email.VendorPolicyLoader;
+import com.elbenjics.email.provider.AccountReconciler;
+import com.elbenjics.emailcommon.Configuration;
+import com.elbenjics.emailcommon.Device;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.service.IAccountService;
+import com.elbenjics.emailcommon.utility.EmailAsyncTask;
 
 import java.io.IOException;
 import java.util.ArrayList;

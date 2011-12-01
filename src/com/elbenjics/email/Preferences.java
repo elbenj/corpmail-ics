@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.elbenjics.email;
 
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.android.emailcommon.Logging;
+import com.elbenjics.emailcommon.Logging;
 
 import org.json.JSONArray;
 import org.json.JSONException;

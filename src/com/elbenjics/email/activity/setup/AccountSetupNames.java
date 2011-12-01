@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity.setup;
+package com.elbenjics.email.activity.setup;
 
 import android.app.Activity;
 import android.content.ContentValues;
@@ -34,16 +34,16 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.android.email.R;
-import com.android.email.activity.ActivityHelper;
-import com.android.email.activity.UiUtilities;
-import com.android.email.activity.Welcome;
-import com.android.email.provider.AccountBackupRestore;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent.AccountColumns;
-import com.android.emailcommon.provider.HostAuth;
-import com.android.emailcommon.utility.EmailAsyncTask;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.R;
+import com.elbenjics.email.activity.ActivityHelper;
+import com.elbenjics.email.activity.UiUtilities;
+import com.elbenjics.email.activity.Welcome;
+import com.elbenjics.email.provider.AccountBackupRestore;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent.AccountColumns;
+import com.elbenjics.emailcommon.provider.HostAuth;
+import com.elbenjics.emailcommon.utility.EmailAsyncTask;
+import com.elbenjics.emailcommon.utility.Utility;
 
 /**
  * Final screen of setup process.  Collect account nickname and/or username.

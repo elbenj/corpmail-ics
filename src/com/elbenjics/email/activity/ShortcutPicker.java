@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.elbenjics.email.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -24,14 +24,14 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-import com.android.email.R;
-import com.android.email.activity.ShortcutPickerFragment.AccountShortcutPickerFragment;
-import com.android.email.activity.ShortcutPickerFragment.MailboxShortcutPickerFragment;
-import com.android.email.activity.ShortcutPickerFragment.PickerCallback;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent.Message;
-import com.android.emailcommon.provider.Mailbox;
+import com.elbenjics.email.R;
+import com.elbenjics.email.activity.ShortcutPickerFragment.AccountShortcutPickerFragment;
+import com.elbenjics.email.activity.ShortcutPickerFragment.MailboxShortcutPickerFragment;
+import com.elbenjics.email.activity.ShortcutPickerFragment.PickerCallback;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent.Message;
+import com.elbenjics.emailcommon.provider.Mailbox;
 
 /**
  * This class implements a launcher shortcut for directly accessing a single account.

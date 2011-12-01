@@ -21,13 +21,13 @@
 //Contributors: Jonathan Cox, Bogdan Onoiu, Jerry Tian
 // Greatly simplified for Google, Inc. by Marc Blank
 
-package com.android.exchange.adapter;
+package com.elbenjics.exchange.adapter;
 
 import android.content.ContentValues;
 import android.util.Log;
 
-import com.android.exchange.Eas;
-import com.android.exchange.utility.FileLogger;
+import com.elbenjics.exchange.Eas;
+import com.elbenjics.exchange.utility.FileLogger;
 import com.google.common.annotations.VisibleForTesting;
 
 import java.io.ByteArrayOutputStream;

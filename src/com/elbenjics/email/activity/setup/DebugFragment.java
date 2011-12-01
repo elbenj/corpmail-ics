@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.android.email.activity.setup;
+package com.elbenjics.email.activity.setup;
 
-import com.android.email.Email;
-import com.android.email.Preferences;
-import com.android.email.R;
-import com.android.email.activity.UiUtilities;
-import com.android.email.service.EmailServiceUtils;
-import com.android.email.service.MailService;
-import com.android.emailcommon.Logging;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.Preferences;
+import com.elbenjics.email.R;
+import com.elbenjics.email.activity.UiUtilities;
+import com.elbenjics.email.service.EmailServiceUtils;
+import com.elbenjics.email.service.MailService;
+import com.elbenjics.emailcommon.Logging;
 
 import android.app.Fragment;
 import android.content.Context;

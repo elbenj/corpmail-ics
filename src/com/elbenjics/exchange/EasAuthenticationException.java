@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.exchange;
+package com.elbenjics.exchange;
 
 import java.io.IOException;
 

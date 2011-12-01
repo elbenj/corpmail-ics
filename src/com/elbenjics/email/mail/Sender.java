@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package com.android.email.mail;
+package com.elbenjics.email.mail;
 
 import android.content.Context;
 import android.content.res.XmlResourceParser;
 import android.util.Log;
 
-import com.android.email.R;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.mail.MessagingException;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.HostAuth;
+import com.elbenjics.email.R;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.HostAuth;
 
 import org.xmlpull.v1.XmlPullParserException;
 
@@ -124,7 +124,7 @@ public abstract class Sender {
      */
     public Class<? extends android.app.Activity> getSettingActivityClass() {
         // default SettingActivity class
-        return com.android.email.activity.setup.AccountSetupOutgoing.class;
+        return com.elbenjics.email.activity.setup.AccountSetupOutgoing.class;
     }
 
     public abstract void open() throws MessagingException;

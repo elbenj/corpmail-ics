@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.service;
+package com.elbenjics.email.service;
 
 import android.accounts.AbstractAccountAuthenticator;
 import android.accounts.Account;
@@ -27,7 +27,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.IBinder;
 
-import com.android.email.activity.setup.AccountSetupBasics;
+import com.elbenjics.email.activity.setup.AccountSetupBasics;
 
 /**
  * Anauthenticator service for reconciliation tests; it simply adds the account to AccountManager

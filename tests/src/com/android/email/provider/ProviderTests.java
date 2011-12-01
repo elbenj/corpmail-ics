@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.provider;
+package com.elbenjics.email.provider;
 
 import android.accounts.AccountManager;
 import android.accounts.AuthenticatorException;
@@ -36,24 +36,24 @@ import android.test.suitebuilder.annotation.LargeTest;
 import android.test.suitebuilder.annotation.MediumTest;
 import android.test.suitebuilder.annotation.SmallTest;
 
-import com.android.email.provider.EmailProvider.AttachmentService;
-import com.android.emailcommon.AccountManagerTypes;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.EmailContent.AccountColumns;
-import com.android.emailcommon.provider.EmailContent.Attachment;
-import com.android.emailcommon.provider.EmailContent.AttachmentColumns;
-import com.android.emailcommon.provider.EmailContent.Body;
-import com.android.emailcommon.provider.EmailContent.BodyColumns;
-import com.android.emailcommon.provider.EmailContent.MailboxColumns;
-import com.android.emailcommon.provider.EmailContent.Message;
-import com.android.emailcommon.provider.EmailContent.MessageColumns;
-import com.android.emailcommon.provider.EmailContent.PolicyColumns;
-import com.android.emailcommon.provider.HostAuth;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.provider.Policy;
-import com.android.emailcommon.utility.TextUtilities;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.provider.EmailProvider.AttachmentService;
+import com.elbenjics.emailcommon.AccountManagerTypes;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.EmailContent.AccountColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.Attachment;
+import com.elbenjics.emailcommon.provider.EmailContent.AttachmentColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.Body;
+import com.elbenjics.emailcommon.provider.EmailContent.BodyColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.MailboxColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.Message;
+import com.elbenjics.emailcommon.provider.EmailContent.MessageColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.PolicyColumns;
+import com.elbenjics.emailcommon.provider.HostAuth;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.provider.Policy;
+import com.elbenjics.emailcommon.utility.TextUtilities;
+import com.elbenjics.emailcommon.utility.Utility;
 
 import java.io.File;
 import java.io.IOException;
@@ -63,7 +63,7 @@ import java.util.ArrayList;
  * Tests of the Email provider.
  *
  * You can run this entire test case with:
- *   runtest -c com.android.email.provider.ProviderTests email
+ *   runtest -c com.elbenjics.email.provider.ProviderTests email
  *
  * TODO: Add tests for cursor notification mechanism.  (setNotificationUri and notifyChange)
  * We can't test the entire notification mechanism with a mock content resolver, because which URI

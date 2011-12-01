@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.elbenjics.email.activity;
 
-import com.android.email.Controller;
-import com.android.email.ControllerResultUiThreadWrapper;
-import com.android.email.Email;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.mail.MessagingException;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.utility.EmailAsyncTask;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.Controller;
+import com.elbenjics.email.ControllerResultUiThreadWrapper;
+import com.elbenjics.email.Email;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.utility.EmailAsyncTask;
+import com.elbenjics.emailcommon.utility.Utility;
 
 import android.content.Context;
 import android.os.Handler;

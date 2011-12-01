@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.transport;
+package com.elbenjics.email.mail.transport;
 
-import com.android.email.mail.Sender;
-import com.android.emailcommon.mail.MessagingException;
-import com.android.emailcommon.provider.Account;
+import com.elbenjics.email.mail.Sender;
+import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.provider.Account;
 
 import android.content.Context;
 

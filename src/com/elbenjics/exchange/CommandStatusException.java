@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.exchange;
+package com.elbenjics.exchange;
 
 /**
  * ActiveSync command error status definitions (EAS 14.0 and later); these are in addition to the

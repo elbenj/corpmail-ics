@@ -14,23 +14,23 @@
  * limitations under the License.
  */
 
-package com.android.email.mail;
+package com.elbenjics.email.mail;
 
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.android.email.Email;
-import com.android.email.mail.store.ExchangeStore;
-import com.android.email.mail.store.ImapStore;
-import com.android.email.mail.store.Pop3Store;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.mail.Folder;
-import com.android.emailcommon.mail.MessagingException;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.HostAuth;
-import com.android.emailcommon.provider.Mailbox;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.mail.store.ExchangeStore;
+import com.elbenjics.email.mail.store.ImapStore;
+import com.elbenjics.email.mail.store.Pop3Store;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.mail.Folder;
+import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.HostAuth;
+import com.elbenjics.emailcommon.provider.Mailbox;
 import com.google.common.annotations.VisibleForTesting;
 
 import java.lang.reflect.Method;
@@ -130,7 +130,7 @@ public abstract class Store {
      */
     public Class<? extends android.app.Activity> getSettingActivityClass() {
         // default SettingActivity class
-        return com.android.email.activity.setup.AccountSetupIncoming.class;
+        return com.elbenjics.email.activity.setup.AccountSetupIncoming.class;
     }
 
     /**

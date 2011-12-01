@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.android.exchange.adapter;
+package com.elbenjics.exchange.adapter;
 
 import android.content.ContentProviderOperation;
 import android.content.ContentResolver;
@@ -30,36 +30,36 @@ import android.util.Base64;
 import android.util.Log;
 import android.webkit.MimeTypeMap;
 
-import com.android.emailcommon.internet.MimeMessage;
-import com.android.emailcommon.internet.MimeUtility;
-import com.android.emailcommon.mail.Address;
-import com.android.emailcommon.mail.MeetingInfo;
-import com.android.emailcommon.mail.MessagingException;
-import com.android.emailcommon.mail.PackedString;
-import com.android.emailcommon.mail.Part;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.EmailContent.AccountColumns;
-import com.android.emailcommon.provider.EmailContent.Attachment;
-import com.android.emailcommon.provider.EmailContent.Body;
-import com.android.emailcommon.provider.EmailContent.MailboxColumns;
-import com.android.emailcommon.provider.EmailContent.Message;
-import com.android.emailcommon.provider.EmailContent.MessageColumns;
-import com.android.emailcommon.provider.EmailContent.SyncColumns;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.provider.Policy;
-import com.android.emailcommon.provider.ProviderUnavailableException;
-import com.android.emailcommon.service.SyncWindow;
-import com.android.emailcommon.utility.AttachmentUtilities;
-import com.android.emailcommon.utility.ConversionUtilities;
-import com.android.emailcommon.utility.Utility;
-import com.android.exchange.CommandStatusException;
-import com.android.exchange.Eas;
-import com.android.exchange.EasResponse;
-import com.android.exchange.EasSyncService;
-import com.android.exchange.MessageMoveRequest;
-import com.android.exchange.R;
-import com.android.exchange.utility.CalendarUtilities;
+import com.elbenjics.emailcommon.internet.MimeMessage;
+import com.elbenjics.emailcommon.internet.MimeUtility;
+import com.elbenjics.emailcommon.mail.Address;
+import com.elbenjics.emailcommon.mail.MeetingInfo;
+import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.mail.PackedString;
+import com.elbenjics.emailcommon.mail.Part;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.EmailContent.AccountColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.Attachment;
+import com.elbenjics.emailcommon.provider.EmailContent.Body;
+import com.elbenjics.emailcommon.provider.EmailContent.MailboxColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.Message;
+import com.elbenjics.emailcommon.provider.EmailContent.MessageColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.SyncColumns;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.provider.Policy;
+import com.elbenjics.emailcommon.provider.ProviderUnavailableException;
+import com.elbenjics.emailcommon.service.SyncWindow;
+import com.elbenjics.emailcommon.utility.AttachmentUtilities;
+import com.elbenjics.emailcommon.utility.ConversionUtilities;
+import com.elbenjics.emailcommon.utility.Utility;
+import com.elbenjics.exchange.CommandStatusException;
+import com.elbenjics.exchange.Eas;
+import com.elbenjics.exchange.EasResponse;
+import com.elbenjics.exchange.EasSyncService;
+import com.elbenjics.exchange.MessageMoveRequest;
+import com.elbenjics.exchange.R;
+import com.elbenjics.exchange.utility.CalendarUtilities;
 
 import com.google.common.annotations.VisibleForTesting;
 
@@ -963,7 +963,7 @@ public class EmailSyncAdapter extends AbstractSyncAdapter {
         }
 
         /* (non-Javadoc)
-         * @see com.android.exchange.adapter.EasContentParser#commandsParser()
+         * @see com.elbenjics.exchange.adapter.EasContentParser#commandsParser()
          */
         @Override
         public void commandsParser() throws IOException, CommandStatusException {

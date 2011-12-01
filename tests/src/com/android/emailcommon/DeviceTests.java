@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.android.emailcommon;
+package com.elbenjics.emailcommon;
 
 import android.content.Context;
 import android.telephony.TelephonyManager;

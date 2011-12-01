@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.elbenjics.email;
 
 import android.os.Handler;
 
-import com.android.email.Controller.Result;
-import com.android.emailcommon.mail.MessagingException;
+import com.elbenjics.email.Controller.Result;
+import com.elbenjics.emailcommon.mail.MessagingException;
 
 import java.util.ArrayList;
 

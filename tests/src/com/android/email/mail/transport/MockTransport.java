@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.transport;
+package com.elbenjics.email.mail.transport;
 
-import com.android.email.mail.Transport;
+import com.elbenjics.email.mail.Transport;
 
 import android.util.Log;
 

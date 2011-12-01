@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.elbenjics.email;
 
 import android.app.Notification;
 import android.app.Notification.Builder;
@@ -38,21 +38,21 @@ import android.text.SpannableString;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.android.email.activity.ContactStatusLoader;
-import com.android.email.activity.Welcome;
-import com.android.email.activity.setup.AccountSecurity;
-import com.android.email.activity.setup.AccountSettings;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.mail.Address;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.EmailContent.AccountColumns;
-import com.android.emailcommon.provider.EmailContent.Attachment;
-import com.android.emailcommon.provider.EmailContent.MailboxColumns;
-import com.android.emailcommon.provider.EmailContent.Message;
-import com.android.emailcommon.provider.EmailContent.MessageColumns;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.activity.ContactStatusLoader;
+import com.elbenjics.email.activity.Welcome;
+import com.elbenjics.email.activity.setup.AccountSecurity;
+import com.elbenjics.email.activity.setup.AccountSettings;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.mail.Address;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.EmailContent.AccountColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.Attachment;
+import com.elbenjics.emailcommon.provider.EmailContent.MailboxColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.Message;
+import com.elbenjics.emailcommon.provider.EmailContent.MessageColumns;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.utility.Utility;
 import com.google.common.annotations.VisibleForTesting;
 
 import java.util.HashMap;
@@ -63,7 +63,7 @@ import java.util.HashSet;
  */
 public class NotificationController {
     private static final int NOTIFICATION_ID_SECURITY_NEEDED = 1;
-    /** Reserved for {@link com.android.exchange.CalendarSyncEnabler} */
+    /** Reserved for {@link com.elbenjics.exchange.CalendarSyncEnabler} */
     @SuppressWarnings("unused")
     private static final int NOTIFICATION_ID_EXCHANGE_CALENDAR_ADDED = 2;
     private static final int NOTIFICATION_ID_ATTACHMENT_WARNING = 3;

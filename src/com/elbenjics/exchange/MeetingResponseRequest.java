@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.exchange;
+package com.elbenjics.exchange;
 
 /**
  * MeetingResponseRequest is the EAS wrapper for responding to meeting requests.

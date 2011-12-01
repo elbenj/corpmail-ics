@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.emailcommon.mail;
+package com.elbenjics.emailcommon.mail;
 
-import com.android.emailcommon.service.SearchParams;
+import com.elbenjics.emailcommon.service.SearchParams;
 
 
 public class MockFolder extends Folder {

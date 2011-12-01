@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.store;
+package com.elbenjics.email.mail.store;
 
 import android.content.Context;
 import android.os.Bundle;
 import android.os.RemoteException;
 
-import com.android.email.mail.Store;
-import com.android.emailcommon.mail.MessagingException;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.HostAuth;
-import com.android.emailcommon.service.EmailServiceProxy;
-import com.android.emailcommon.service.IEmailService;
+import com.elbenjics.email.mail.Store;
+import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.HostAuth;
+import com.elbenjics.emailcommon.service.EmailServiceProxy;
+import com.elbenjics.emailcommon.service.IEmailService;
 
 /**
  * Base class for service-based stores

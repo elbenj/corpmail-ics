@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity.setup;
+package com.elbenjics.email.activity.setup;
 
 import android.app.Activity;
 import android.content.Context;
@@ -34,14 +34,14 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
 import android.widget.Spinner;
 
-import com.android.email.Email;
-import com.android.email.R;
-import com.android.email.activity.UiUtilities;
-import com.android.email.provider.AccountBackupRestore;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.HostAuth;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.R;
+import com.elbenjics.email.activity.UiUtilities;
+import com.elbenjics.email.provider.AccountBackupRestore;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.HostAuth;
+import com.elbenjics.emailcommon.utility.Utility;
 
 /**
  * Provides UI for SMTP account settings (for IMAP/POP accounts).

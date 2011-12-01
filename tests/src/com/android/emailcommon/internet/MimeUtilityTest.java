@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package com.android.emailcommon.internet;
+package com.elbenjics.emailcommon.internet;
 
-import com.android.emailcommon.internet.MimeBodyPart;
-import com.android.emailcommon.internet.MimeHeader;
-import com.android.emailcommon.internet.MimeUtility;
-import com.android.emailcommon.internet.TextBody;
-import com.android.emailcommon.mail.BodyPart;
-import com.android.emailcommon.mail.Message;
-import com.android.emailcommon.mail.MessageTestUtils;
-import com.android.emailcommon.mail.MessagingException;
-import com.android.emailcommon.mail.Part;
-import com.android.emailcommon.mail.MessageTestUtils.MessageBuilder;
-import com.android.emailcommon.mail.MessageTestUtils.MultipartBuilder;
+import com.elbenjics.emailcommon.internet.MimeBodyPart;
+import com.elbenjics.emailcommon.internet.MimeHeader;
+import com.elbenjics.emailcommon.internet.MimeUtility;
+import com.elbenjics.emailcommon.internet.TextBody;
+import com.elbenjics.emailcommon.mail.BodyPart;
+import com.elbenjics.emailcommon.mail.Message;
+import com.elbenjics.emailcommon.mail.MessageTestUtils;
+import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.mail.Part;
+import com.elbenjics.emailcommon.mail.MessageTestUtils.MessageBuilder;
+import com.elbenjics.emailcommon.mail.MessageTestUtils.MultipartBuilder;
 
 import android.test.suitebuilder.annotation.SmallTest;
 

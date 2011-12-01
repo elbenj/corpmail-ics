@@ -14,12 +14,12 @@
  * the License.
  */
 
-package com.android.email.activity.setup;
+package com.elbenjics.email.activity.setup;
 
-import com.android.email.R;
-import com.android.emailcommon.provider.QuickResponse;
-import com.android.emailcommon.provider.EmailContent.QuickResponseColumns;
-import com.android.emailcommon.utility.EmailAsyncTask;
+import com.elbenjics.email.R;
+import com.elbenjics.emailcommon.provider.QuickResponse;
+import com.elbenjics.emailcommon.provider.EmailContent.QuickResponseColumns;
+import com.elbenjics.emailcommon.utility.EmailAsyncTask;
 
 import android.app.AlertDialog;
 import android.app.Dialog;

@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.android.email.activity.setup;
+package com.elbenjics.email.activity.setup;
 
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.Policy;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.Policy;
 
 import android.accounts.AccountAuthenticatorResponse;
 import android.os.Bundle;
@@ -26,7 +26,7 @@ import android.os.Parcelable;
 
 public class SetupData implements Parcelable {
     // The "extra" name for the Bundle saved with SetupData
-    public static final String EXTRA_SETUP_DATA = "com.android.email.setupdata";
+    public static final String EXTRA_SETUP_DATA = "com.elbenjics.email.setupdata";
 
     // NORMAL is the standard entry from the Email app; EAS and POP_IMAP are used when entering via
     // Settings -> Accounts

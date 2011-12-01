@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.service;
+package com.elbenjics.email.service;
 
 import android.accounts.AccountManager;
 import android.app.IntentService;
@@ -29,15 +29,15 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.util.Log;
 
-import com.android.email.Email;
-import com.android.email.Preferences;
-import com.android.email.SecurityPolicy;
-import com.android.email.VendorPolicyLoader;
-import com.android.email.activity.setup.AccountSettings;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent.AccountColumns;
-import com.android.emailcommon.provider.HostAuth;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.Preferences;
+import com.elbenjics.email.SecurityPolicy;
+import com.elbenjics.email.VendorPolicyLoader;
+import com.elbenjics.email.activity.setup.AccountSettings;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent.AccountColumns;
+import com.elbenjics.emailcommon.provider.HostAuth;
 
 /**
  * The service that really handles broadcast intents on a worker thread.
@@ -61,7 +61,7 @@ public class EmailBroadcastProcessorService extends IntentService {
     private static final String SECRET_CODE_HOST_DEBUG_SCREEN = "36245";
 
     // This is a helper used to process DeviceAdminReceiver messages
-    private static final String ACTION_DEVICE_POLICY_ADMIN = "com.android.email.devicepolicy";
+    private static final String ACTION_DEVICE_POLICY_ADMIN = "com.elbenjics.email.devicepolicy";
     private static final String EXTRA_DEVICE_POLICY_ADMIN = "message_code";
 
     public EmailBroadcastProcessorService() {
@@ -83,9 +83,9 @@ public class EmailBroadcastProcessorService extends IntentService {
     }
 
     /**
-     * Entry point for {@link com.android.email.SecurityPolicy.PolicyAdmin}.  These will
+     * Entry point for {@link com.elbenjics.email.SecurityPolicy.PolicyAdmin}.  These will
      * simply callback to {@link
-     * com.android.email.SecurityPolicy#onDeviceAdminReceiverMessage(Context, int)}.
+     * com.elbenjics.email.SecurityPolicy#onDeviceAdminReceiverMessage(Context, int)}.
      */
     public static void processDevicePolicyMessage(Context context, int message) {
         Intent i = new Intent(context, EmailBroadcastProcessorService.class);

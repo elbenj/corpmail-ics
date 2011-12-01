@@ -14,19 +14,19 @@
  * limitations under the License.
  */
 
-package com.android.exchange.provider;
+package com.elbenjics.exchange.provider;
 
-import com.android.emailcommon.Configuration;
-import com.android.emailcommon.mail.PackedString;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.EmailContent.AccountColumns;
-import com.android.emailcommon.service.AccountServiceProxy;
-import com.android.emailcommon.utility.Utility;
-import com.android.exchange.Eas;
-import com.android.exchange.EasSyncService;
-import com.android.exchange.R;
-import com.android.exchange.provider.GalResult.GalData;
+import com.elbenjics.emailcommon.Configuration;
+import com.elbenjics.emailcommon.mail.PackedString;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.EmailContent.AccountColumns;
+import com.elbenjics.emailcommon.service.AccountServiceProxy;
+import com.elbenjics.emailcommon.utility.Utility;
+import com.elbenjics.exchange.Eas;
+import com.elbenjics.exchange.EasSyncService;
+import com.elbenjics.exchange.R;
+import com.elbenjics.exchange.provider.GalResult.GalData;
 
 import android.accounts.AccountManager;
 import android.content.ContentProvider;
@@ -58,7 +58,7 @@ import java.util.List;
  * used solely to provide GAL (Global Address Lookup) service to email address adapters
  */
 public class ExchangeDirectoryProvider extends ContentProvider {
-    public static final String EXCHANGE_GAL_AUTHORITY = "com.android.exchange.directory.provider";
+    public static final String EXCHANGE_GAL_AUTHORITY = "com.elbenjics.exchange.directory.provider";
 
     private static final int DEFAULT_CONTACT_ID = 1;
     private static final int DEFAULT_LOOKUP_LIMIT = 20;

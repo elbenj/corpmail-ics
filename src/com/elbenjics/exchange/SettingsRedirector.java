@@ -15,13 +15,13 @@
  */
 
 
-package com.android.exchange;
+package com.elbenjics.exchange;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.android.emailcommon.utility.IntentUtilities;
+import com.elbenjics.emailcommon.utility.IntentUtilities;
 
 /**
  * An empty {@link Activity} that simply redirects to the proper settings editor for the Email

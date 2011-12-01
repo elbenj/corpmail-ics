@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.android.exchange;
+package com.elbenjics.exchange;
 
 import android.content.BroadcastReceiver;
 import android.content.ContentResolver;
@@ -24,9 +24,9 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.util.Log;
 
-import com.android.emailcommon.provider.EmailContent.Message;
-import com.android.emailcommon.provider.EmailContent.MessageColumns;
-import com.android.emailcommon.provider.ProviderUnavailableException;
+import com.elbenjics.emailcommon.provider.EmailContent.Message;
+import com.elbenjics.emailcommon.provider.EmailContent.MessageColumns;
+import com.elbenjics.emailcommon.provider.ProviderUnavailableException;
 
 import java.util.ArrayList;
 

@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package com.android.email.provider;
+package com.elbenjics.email.provider;
 
-import com.android.email.AttachmentInfo;
-import com.android.email.R;
-import com.android.emailcommon.mail.MessagingException;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.EmailContent.Attachment;
-import com.android.emailcommon.provider.EmailContent.Message;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.utility.AttachmentUtilities;
+import com.elbenjics.email.AttachmentInfo;
+import com.elbenjics.email.R;
+import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.EmailContent.Attachment;
+import com.elbenjics.emailcommon.provider.EmailContent.Message;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.utility.AttachmentUtilities;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -45,7 +45,7 @@ import java.io.IOException;
  * Tests of the Email Attachments provider.
  *
  * You can run this entire test case with:
- *   runtest -c com.android.email.provider.AttachmentProviderTests email
+ *   runtest -c com.elbenjics.email.provider.AttachmentProviderTests email
  */
 public class AttachmentProviderTests extends ProviderTestCase2<AttachmentProvider> {
 

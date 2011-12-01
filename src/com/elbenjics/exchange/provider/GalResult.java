@@ -13,9 +13,9 @@
  * limitations under the License.
  */
 
-package com.android.exchange.provider;
+package com.elbenjics.exchange.provider;
 
-import com.android.emailcommon.mail.PackedString;
+import com.elbenjics.emailcommon.mail.PackedString;
 
 import java.util.ArrayList;
 

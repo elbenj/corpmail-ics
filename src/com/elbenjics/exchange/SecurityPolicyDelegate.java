@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.android.exchange;
+package com.elbenjics.exchange;
 
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.Policy;
-import com.android.emailcommon.service.PolicyServiceProxy;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.Policy;
+import com.elbenjics.emailcommon.service.PolicyServiceProxy;
 
 import android.content.Context;
 import android.os.RemoteException;

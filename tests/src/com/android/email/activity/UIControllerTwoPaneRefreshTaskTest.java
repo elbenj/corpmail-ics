@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.elbenjics.email.activity;
 
-import com.android.email.Clock;
-import com.android.email.Controller;
-import com.android.email.MockClock;
-import com.android.email.RefreshManager;
+import com.elbenjics.email.Clock;
+import com.elbenjics.email.Controller;
+import com.elbenjics.email.MockClock;
+import com.elbenjics.email.RefreshManager;
 
 import android.content.Context;
 import android.os.Handler;

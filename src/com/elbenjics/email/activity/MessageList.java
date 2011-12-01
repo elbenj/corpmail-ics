@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.elbenjics.email.activity;
 
-import com.android.email.R;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.utility.EmailAsyncTask;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.R;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.utility.EmailAsyncTask;
+import com.elbenjics.emailcommon.utility.Utility;
 import com.google.common.annotations.VisibleForTesting;
 
 import android.app.Activity;
@@ -33,7 +33,7 @@ import android.os.Bundle;
  */
 public class MessageList extends Activity {
     @VisibleForTesting
-    static final String EXTRA_ACCOUNT_ID = "com.android.email.activity._ACCOUNT_ID";
+    static final String EXTRA_ACCOUNT_ID = "com.elbenjics.email.activity._ACCOUNT_ID";
 
     private final EmailAsyncTask.Tracker mTaskTracker = new EmailAsyncTask.Tracker();
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.elbenjics.email.activity;
 
 import android.content.AsyncTaskLoader;
 import android.content.ContentUris;
@@ -30,8 +30,8 @@ import android.provider.ContactsContract.Data;
 import android.provider.ContactsContract.StatusUpdates;
 import android.util.Log;
 
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.utility.Utility;
 import com.google.common.annotations.VisibleForTesting;
 
 /**

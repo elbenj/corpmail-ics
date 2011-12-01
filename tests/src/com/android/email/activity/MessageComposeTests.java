@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.elbenjics.email.activity;
 
 import android.content.ContentUris;
 import android.content.Context;
@@ -29,16 +29,16 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.MultiAutoCompleteTextView;
 
-import com.android.email.Email;
-import com.android.email.EmailAddressValidator;
-import com.android.email.R;
-import com.android.email.TestUtils;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.mail.Address;
-import com.android.emailcommon.mail.MessagingException;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent.Attachment;
-import com.android.emailcommon.provider.EmailContent.Message;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.EmailAddressValidator;
+import com.elbenjics.email.R;
+import com.elbenjics.email.TestUtils;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.mail.Address;
+import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent.Attachment;
+import com.elbenjics.emailcommon.provider.EmailContent.Message;
 import com.google.android.collect.Lists;
 
 import java.util.ArrayList;
@@ -50,7 +50,7 @@ import java.util.ArrayList;
  * It might be possible to convert these to ActivityUnitTest, which would be faster.
  *
  * You can run this entire test case with:
- *   runtest -c com.android.email.activity.MessageComposeTests email
+ *   runtest -c com.elbenjics.email.activity.MessageComposeTests email
  */
 @LargeTest
 public class MessageComposeTests
@@ -117,10 +117,10 @@ public class MessageComposeTests
      * be done consciously to think about existing shortcuts and clients.
      */
 
-    private static final String ACTION_REPLY = "com.android.email.intent.action.REPLY";
-    private static final String ACTION_REPLY_ALL = "com.android.email.intent.action.REPLY_ALL";
-    private static final String ACTION_FORWARD = "com.android.email.intent.action.FORWARD";
-    private static final String ACTION_EDIT_DRAFT = "com.android.email.intent.action.EDIT_DRAFT";
+    private static final String ACTION_REPLY = "com.elbenjics.email.intent.action.REPLY";
+    private static final String ACTION_REPLY_ALL = "com.elbenjics.email.intent.action.REPLY_ALL";
+    private static final String ACTION_FORWARD = "com.elbenjics.email.intent.action.FORWARD";
+    private static final String ACTION_EDIT_DRAFT = "com.elbenjics.email.intent.action.EDIT_DRAFT";
 
     public MessageComposeTests() {
         super(MessageCompose.class);

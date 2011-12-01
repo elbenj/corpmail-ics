@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.elbenjics.email.activity;
 
-import com.android.email.AttachmentInfo;
-import com.android.email.R;
+import com.elbenjics.email.AttachmentInfo;
+import com.elbenjics.email.R;
 
 import android.app.AlertDialog;
 import android.app.Dialog;

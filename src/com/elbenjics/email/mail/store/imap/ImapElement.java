@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.store.imap;
+package com.elbenjics.email.mail.store.imap;
 
 /**
  * Class representing "element"s in IMAP responses.

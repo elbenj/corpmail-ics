@@ -15,19 +15,19 @@
  * limitations under the License.
  */
 
-package com.android.exchange.adapter;
+package com.elbenjics.exchange.adapter;
 
 import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.content.Context;
 
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent.MailboxColumns;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.exchange.CommandStatusException;
-import com.android.exchange.CommandStatusException.CommandStatus;
-import com.android.exchange.EasSyncService;
-import com.android.exchange.ExchangeService;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent.MailboxColumns;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.exchange.CommandStatusException;
+import com.elbenjics.exchange.CommandStatusException.CommandStatus;
+import com.elbenjics.exchange.EasSyncService;
+import com.elbenjics.exchange.ExchangeService;
 
 import java.io.IOException;
 import java.io.InputStream;

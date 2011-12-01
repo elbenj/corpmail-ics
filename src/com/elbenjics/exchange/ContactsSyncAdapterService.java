@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.android.exchange;
+package com.elbenjics.exchange;
 
-import com.android.emailcommon.provider.EmailContent.AccountColumns;
-import com.android.emailcommon.provider.EmailContent.MailboxColumns;
-import com.android.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.provider.EmailContent.AccountColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.MailboxColumns;
+import com.elbenjics.emailcommon.provider.Mailbox;
 
 import android.accounts.Account;
 import android.accounts.OperationCanceledException;
@@ -128,7 +128,7 @@ public class ContactsSyncAdapterService extends Service {
 
         // Find the (EmailProvider) account associated with this email address
         Cursor accountCursor =
-            cr.query(com.android.emailcommon.provider.Account.CONTENT_URI, ID_PROJECTION,
+            cr.query(com.elbenjics.emailcommon.provider.Account.CONTENT_URI, ID_PROJECTION,
                 AccountColumns.EMAIL_ADDRESS + "=?", new String[] {account.name}, null);
         try {
             if (accountCursor.moveToFirst()) {

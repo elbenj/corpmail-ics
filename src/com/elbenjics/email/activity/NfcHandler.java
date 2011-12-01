@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.elbenjics.email.activity;
 
 import android.app.Activity;
 import android.nfc.NdefMessage;
@@ -23,7 +23,7 @@ import android.nfc.NfcAdapter;
 import android.nfc.NfcEvent;
 import android.text.TextUtils;
 
-import com.android.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.Account;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;

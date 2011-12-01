@@ -31,7 +31,7 @@ automatically saved by framework.-->
         <TextView style="@style/ComposeHeading"
             android:id="@+id/label"/>
 
-        <com.android.email.activity.AddressTextView
+        <com.elbenjics.email.activity.AddressTextView
             android:textAppearance="?android:attr/textAppearanceMedium"
             android:textColor="?android:attr/textColorSecondary"
             android:inputType="textEmailAddress|textMultiLine"
@@ -57,7 +57,7 @@ automatically saved by framework.-->
             <TextView style="@style/ComposeHeading"
                 android:id="@+id/label"/>
 
-            <com.android.email.activity.AddressTextView
+            <com.elbenjics.email.activity.AddressTextView
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="?android:attr/textColorSecondary"
                 android:inputType="textEmailAddress|textMultiLine"
@@ -76,7 +76,7 @@ automatically saved by framework.-->
             <TextView style="@style/ComposeHeading"
                 android:id="@+id/label"/>
 
-            <com.android.email.activity.AddressTextView
+            <com.elbenjics.email.activity.AddressTextView
                 android:textAppearance="?android:attr/textAppearanceMedium"
                 android:textColor="?android:attr/textColorSecondary"
                 android:inputType="textEmailAddress|textMultiLine"

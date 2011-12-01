@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.android.email.activity.setup;
+package com.elbenjics.email.activity.setup;
 
-import com.android.email.R;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.HostAuth;
+import com.elbenjics.email.R;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.HostAuth;
 
 import android.content.Context;
 import android.content.Intent;
@@ -32,7 +32,7 @@ import java.net.URISyntaxException;
 /**
  * Tests of the basic UI logic in the Account Setup Outgoing (SMTP) screen.
  * You can run this entire test case with:
- *   runtest -c com.android.email.activity.setup.AccountSetupOutgoingTests email
+ *   runtest -c com.elbenjics.email.activity.setup.AccountSetupOutgoingTests email
  */
 @MediumTest
 public class AccountSetupOutgoingTests extends

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.elbenjics.email.activity;
 
 import android.app.Activity;
 import android.content.res.Resources;
@@ -31,16 +31,16 @@ import android.widget.ImageView;
 import android.widget.PopupMenu;
 import android.widget.PopupMenu.OnMenuItemClickListener;
 
-import com.android.email.Email;
-import com.android.email.Preferences;
-import com.android.email.R;
-import com.android.emailcommon.mail.MeetingInfo;
-import com.android.emailcommon.mail.PackedString;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent.Message;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.service.EmailServiceConstants;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.Preferences;
+import com.elbenjics.email.R;
+import com.elbenjics.emailcommon.mail.MeetingInfo;
+import com.elbenjics.emailcommon.mail.PackedString;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent.Message;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.service.EmailServiceConstants;
+import com.elbenjics.emailcommon.utility.Utility;
 
 /**
  * A {@link MessageViewFragmentBase} subclass for regular email messages.  (regular as in "not eml

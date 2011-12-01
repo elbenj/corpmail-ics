@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.emailcommon.utility;
+package com.elbenjics.emailcommon.utility;
 
 import android.test.AndroidTestCase;
 import android.test.MoreAsserts;

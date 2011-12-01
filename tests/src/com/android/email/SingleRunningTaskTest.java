@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.elbenjics.email;
 
-import com.android.email.TestUtils.Condition;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.TestUtils.Condition;
+import com.elbenjics.emailcommon.utility.Utility;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

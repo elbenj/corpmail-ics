@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.provider;
+package com.elbenjics.email.provider;
 
 import android.accounts.AccountManager;
 import android.content.ContentProvider;
@@ -38,32 +38,32 @@ import android.provider.ContactsContract;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.android.email.Email;
-import com.android.email.Preferences;
-import com.android.email.provider.ContentCache.CacheToken;
-import com.android.email.service.AttachmentDownloadService;
-import com.android.emailcommon.AccountManagerTypes;
-import com.android.emailcommon.CalendarProviderStub;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.EmailContent.AccountColumns;
-import com.android.emailcommon.provider.EmailContent.Attachment;
-import com.android.emailcommon.provider.EmailContent.AttachmentColumns;
-import com.android.emailcommon.provider.EmailContent.Body;
-import com.android.emailcommon.provider.EmailContent.BodyColumns;
-import com.android.emailcommon.provider.EmailContent.HostAuthColumns;
-import com.android.emailcommon.provider.EmailContent.MailboxColumns;
-import com.android.emailcommon.provider.EmailContent.Message;
-import com.android.emailcommon.provider.EmailContent.MessageColumns;
-import com.android.emailcommon.provider.EmailContent.PolicyColumns;
-import com.android.emailcommon.provider.EmailContent.QuickResponseColumns;
-import com.android.emailcommon.provider.EmailContent.SyncColumns;
-import com.android.emailcommon.provider.HostAuth;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.provider.Policy;
-import com.android.emailcommon.provider.QuickResponse;
-import com.android.emailcommon.service.LegacyPolicySet;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.Preferences;
+import com.elbenjics.email.provider.ContentCache.CacheToken;
+import com.elbenjics.email.service.AttachmentDownloadService;
+import com.elbenjics.emailcommon.AccountManagerTypes;
+import com.elbenjics.emailcommon.CalendarProviderStub;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.EmailContent.AccountColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.Attachment;
+import com.elbenjics.emailcommon.provider.EmailContent.AttachmentColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.Body;
+import com.elbenjics.emailcommon.provider.EmailContent.BodyColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.HostAuthColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.MailboxColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.Message;
+import com.elbenjics.emailcommon.provider.EmailContent.MessageColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.PolicyColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.QuickResponseColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.SyncColumns;
+import com.elbenjics.emailcommon.provider.HostAuth;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.provider.Policy;
+import com.elbenjics.emailcommon.provider.QuickResponse;
+import com.elbenjics.emailcommon.service.LegacyPolicySet;
 import com.google.common.annotations.VisibleForTesting;
 
 import java.io.File;
@@ -82,9 +82,9 @@ public class EmailProvider extends ContentProvider {
     protected static final String BODY_DATABASE_NAME = "EmailProviderBody.db";
     protected static final String BACKUP_DATABASE_NAME = "EmailProviderBackup.db";
 
-    public static final String ACTION_ATTACHMENT_UPDATED = "com.android.email.ATTACHMENT_UPDATED";
+    public static final String ACTION_ATTACHMENT_UPDATED = "com.elbenjics.email.ATTACHMENT_UPDATED";
     public static final String ATTACHMENT_UPDATED_EXTRA_FLAGS =
-        "com.android.email.ATTACHMENT_UPDATED_FLAGS";
+        "com.elbenjics.email.ATTACHMENT_UPDATED_FLAGS";
 
     public static final String EMAIL_MESSAGE_MIME_TYPE =
         "vnd.android.cursor.item/email-message";

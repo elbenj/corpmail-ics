@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.service;
+package com.elbenjics.email.service;
 
 import android.accounts.AccountManager;
 import android.accounts.AccountManagerCallback;
@@ -34,18 +34,18 @@ import android.os.SystemClock;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.android.email.Controller;
-import com.android.email.Email;
-import com.android.email.Preferences;
-import com.android.email.SingleRunningTask;
-import com.android.email.provider.AccountReconciler;
-import com.android.emailcommon.AccountManagerTypes;
-import com.android.emailcommon.mail.MessagingException;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.HostAuth;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.utility.EmailAsyncTask;
+import com.elbenjics.email.Controller;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.Preferences;
+import com.elbenjics.email.SingleRunningTask;
+import com.elbenjics.email.provider.AccountReconciler;
+import com.elbenjics.emailcommon.AccountManagerTypes;
+import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.HostAuth;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.utility.EmailAsyncTask;
 import com.google.common.annotations.VisibleForTesting;
 
 import java.util.ArrayList;
@@ -62,19 +62,19 @@ public class MailService extends Service {
     private static final String LOG_TAG = "Email-MailService";
 
     private static final String ACTION_CHECK_MAIL =
-        "com.android.email.intent.action.MAIL_SERVICE_WAKEUP";
+        "com.elbenjics.email.intent.action.MAIL_SERVICE_WAKEUP";
     private static final String ACTION_RESCHEDULE =
-        "com.android.email.intent.action.MAIL_SERVICE_RESCHEDULE";
+        "com.elbenjics.email.intent.action.MAIL_SERVICE_RESCHEDULE";
     private static final String ACTION_CANCEL =
-        "com.android.email.intent.action.MAIL_SERVICE_CANCEL";
+        "com.elbenjics.email.intent.action.MAIL_SERVICE_CANCEL";
     private static final String ACTION_SEND_PENDING_MAIL =
-        "com.android.email.intent.action.MAIL_SERVICE_SEND_PENDING";
+        "com.elbenjics.email.intent.action.MAIL_SERVICE_SEND_PENDING";
     private static final String ACTION_DELETE_EXCHANGE_ACCOUNTS =
-        "com.android.email.intent.action.MAIL_SERVICE_DELETE_EXCHANGE_ACCOUNTS";
+        "com.elbenjics.email.intent.action.MAIL_SERVICE_DELETE_EXCHANGE_ACCOUNTS";
 
-    private static final String EXTRA_ACCOUNT = "com.android.email.intent.extra.ACCOUNT";
-    private static final String EXTRA_ACCOUNT_INFO = "com.android.email.intent.extra.ACCOUNT_INFO";
-    private static final String EXTRA_DEBUG_WATCHDOG = "com.android.email.intent.extra.WATCHDOG";
+    private static final String EXTRA_ACCOUNT = "com.elbenjics.email.intent.extra.ACCOUNT";
+    private static final String EXTRA_ACCOUNT_INFO = "com.elbenjics.email.intent.extra.ACCOUNT_INFO";
+    private static final String EXTRA_DEBUG_WATCHDOG = "com.elbenjics.email.intent.extra.WATCHDOG";
 
     /** Time between watchdog checks; in milliseconds */
     private static final long WATCHDOG_DELAY = 10 * 60 * 1000;   // 10 minutes

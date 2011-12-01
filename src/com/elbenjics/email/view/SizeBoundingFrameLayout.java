@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.email.view;
+package com.elbenjics.email.view;
 
-import com.android.email.R;
+import com.elbenjics.email.R;
 
 import android.content.Context;
 import android.content.res.TypedArray;

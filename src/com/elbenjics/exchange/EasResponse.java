@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package com.android.exchange;
+package com.elbenjics.exchange;
 
-import com.android.emailcommon.utility.EmailClientConnectionManager;
+import com.elbenjics.emailcommon.utility.EmailClientConnectionManager;
 
 import org.apache.http.Header;
 import org.apache.http.HttpEntity;

@@ -15,7 +15,7 @@
  */
 
 
-package com.android.email.activity;
+package com.elbenjics.email.activity;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -29,7 +29,7 @@ import android.view.ViewGroup;
 import android.view.ViewParent;
 import android.widget.TextView;
 
-import com.android.email.R;
+import com.elbenjics.email.R;
 
 /**
  * Represents the coordinates of elements inside a CanvasConversationHeaderView

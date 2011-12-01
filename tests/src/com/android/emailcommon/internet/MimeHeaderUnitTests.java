@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.emailcommon.internet;
+package com.elbenjics.emailcommon.internet;
 
-import com.android.emailcommon.internet.MimeHeader;
+import com.elbenjics.emailcommon.internet.MimeHeader;
 
 import android.test.suitebuilder.annotation.SmallTest;
 

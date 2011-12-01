@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.store.imap;
+package com.elbenjics.email.mail.store.imap;
 
-import com.android.emailcommon.Logging;
+import com.elbenjics.emailcommon.Logging;
 
 import android.util.Log;
 

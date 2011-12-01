@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.transport;
+package com.elbenjics.email.mail.transport;
 
-import com.android.email.Email;
-import com.android.email.mail.Transport;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.mail.CertificateValidationException;
-import com.android.emailcommon.mail.MessagingException;
-import com.android.emailcommon.utility.SSLUtils;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.mail.Transport;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.mail.CertificateValidationException;
+import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.utility.SSLUtils;
 
 import android.util.Log;
 

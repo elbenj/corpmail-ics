@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.elbenjics.email;
 
 import android.os.Parcel;
 import android.test.AndroidTestCase;
 
-import com.android.emailcommon.service.SearchParams;
+import com.elbenjics.emailcommon.service.SearchParams;
 
 public class MessageListContextTests extends AndroidTestCase {
 

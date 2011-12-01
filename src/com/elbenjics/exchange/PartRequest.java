@@ -15,9 +15,9 @@
  * limitations under the License.
  */
 
-package com.android.exchange;
+package com.elbenjics.exchange;
 
-import com.android.emailcommon.provider.EmailContent.Attachment;
+import com.elbenjics.emailcommon.provider.EmailContent.Attachment;
 
 /**
  * PartRequest is the EAS wrapper for attachment loading requests.  In addition to information about

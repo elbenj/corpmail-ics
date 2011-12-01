@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.store.imap;
+package com.elbenjics.email.mail.store.imap;
 
-import com.android.email.mail.Store;
+import com.elbenjics.email.mail.Store;
 
 public final class ImapConstants {
     private ImapConstants() {}

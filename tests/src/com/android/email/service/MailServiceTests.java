@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.service;
+package com.elbenjics.email.service;
 
 import android.accounts.AccountManager;
 import android.content.ComponentName;
@@ -24,15 +24,15 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.content.pm.PackageManager;
 
-import com.android.email.AccountTestCase;
-import com.android.email.Controller;
-import com.android.email.provider.AccountReconciler;
-import com.android.email.provider.EmailProvider;
-import com.android.email.provider.ProviderTestUtils;
-import com.android.email.service.MailService.AccountSyncReport;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.HostAuth;
+import com.elbenjics.email.AccountTestCase;
+import com.elbenjics.email.Controller;
+import com.elbenjics.email.provider.AccountReconciler;
+import com.elbenjics.email.provider.EmailProvider;
+import com.elbenjics.email.provider.ProviderTestUtils;
+import com.elbenjics.email.service.MailService.AccountSyncReport;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.HostAuth;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -42,7 +42,7 @@ import java.util.List;
  * Tests of the Email provider.
  *
  * You can run this entire test case with:
- *   runtest -c com.android.email.service.MailServiceTests email
+ *   runtest -c com.elbenjics.email.service.MailServiceTests email
  */
 public class MailServiceTests extends AccountTestCase {
 

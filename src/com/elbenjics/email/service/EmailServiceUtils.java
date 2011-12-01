@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.service;
+package com.elbenjics.email.service;
 
 import android.app.Service;
 import android.content.Context;
@@ -23,12 +23,12 @@ import android.os.Bundle;
 import android.os.IBinder;
 import android.os.RemoteException;
 
-import com.android.emailcommon.Api;
-import com.android.emailcommon.provider.HostAuth;
-import com.android.emailcommon.service.EmailServiceProxy;
-import com.android.emailcommon.service.IEmailService;
-import com.android.emailcommon.service.IEmailServiceCallback;
-import com.android.emailcommon.service.SearchParams;
+import com.elbenjics.emailcommon.Api;
+import com.elbenjics.emailcommon.provider.HostAuth;
+import com.elbenjics.emailcommon.service.EmailServiceProxy;
+import com.elbenjics.emailcommon.service.IEmailService;
+import com.elbenjics.emailcommon.service.IEmailServiceCallback;
+import com.elbenjics.emailcommon.service.SearchParams;
 
 /**
  * Utility functions for EmailService support.
@@ -75,7 +75,7 @@ public class EmailServiceUtils {
 
     /**
      * An empty {@link IEmailService} implementation which is used instead of
-     * {@link com.android.exchange.ExchangeService} on the build with no exchange support.
+     * {@link com.elbenjics.exchange.ExchangeService} on the build with no exchange support.
      *
      * <p>In theory, the service in question isn't used on the no-exchange-support build,
      * because we won't have any exchange accounts in that case, so we wouldn't have to have this

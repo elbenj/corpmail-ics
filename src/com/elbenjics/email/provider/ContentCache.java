@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.provider;
+package com.elbenjics.email.provider;
 
 import android.content.ContentValues;
 import android.database.CrossProcessCursor;
@@ -26,7 +26,7 @@ import android.net.Uri;
 import android.util.Log;
 import android.util.LruCache;
 
-import com.android.email.Email;
+import com.elbenjics.email.Email;
 import com.google.common.annotations.VisibleForTesting;
 
 import java.util.ArrayList;

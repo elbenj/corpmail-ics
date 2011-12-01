@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity.setup;
+package com.elbenjics.email.activity.setup;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -23,12 +23,12 @@ import android.text.Editable;
 import android.util.Log;
 import android.widget.EditText;
 
-import com.android.email.R;
-import com.android.email.VendorPolicyLoader;
-import com.android.email.provider.AccountBackupRestore;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent.AccountColumns;
+import com.elbenjics.email.R;
+import com.elbenjics.email.VendorPolicyLoader;
+import com.elbenjics.email.provider.AccountBackupRestore;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent.AccountColumns;
 import com.google.common.annotations.VisibleForTesting;
 
 import java.io.Serializable;

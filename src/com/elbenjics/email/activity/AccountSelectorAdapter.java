@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.elbenjics.email.activity;
 
 import android.content.ContentResolver;
 import android.content.ContentUris;
@@ -29,17 +29,17 @@ import android.widget.AdapterView;
 import android.widget.CursorAdapter;
 import android.widget.TextView;
 
-import com.android.email.FolderProperties;
-import com.android.email.R;
-import com.android.email.ResourceHelper;
-import com.android.email.data.ClosingMatrixCursor;
-import com.android.email.data.ThrottlingCursorLoader;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.EmailContent.AccountColumns;
-import com.android.emailcommon.provider.EmailContent.MailboxColumns;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.FolderProperties;
+import com.elbenjics.email.R;
+import com.elbenjics.email.ResourceHelper;
+import com.elbenjics.email.data.ClosingMatrixCursor;
+import com.elbenjics.email.data.ThrottlingCursorLoader;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.EmailContent.AccountColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.MailboxColumns;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.utility.Utility;
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.base.Preconditions;
 

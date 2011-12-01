@@ -15,7 +15,7 @@
  */
 
 
-package com.android.email.view;
+package com.elbenjics.email.view;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -29,8 +29,8 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.android.email.R;
-import com.android.email.activity.UiUtilities;
+import com.elbenjics.email.R;
+import com.elbenjics.email.activity.UiUtilities;
 
 /**
  * A simple view that can be used to select a certificate from the system {@link KeyChain}.

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.elbenjics.email.activity;
 
 import android.app.Activity;
 import android.net.Uri;
@@ -24,11 +24,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.android.email.Email;
-import com.android.email.R;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.provider.EmailContent.Message;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.R;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.provider.EmailContent.Message;
+import com.elbenjics.emailcommon.utility.Utility;
 
 /**
  * A {@link MessageViewFragmentBase} subclass for file based messages. (aka EML files)

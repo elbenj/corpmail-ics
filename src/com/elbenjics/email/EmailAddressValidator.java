@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.elbenjics.email;
 
-import com.android.emailcommon.mail.Address;
+import com.elbenjics.emailcommon.mail.Address;
 
 import android.widget.AutoCompleteTextView.Validator;
 

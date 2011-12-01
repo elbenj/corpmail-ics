@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.exchange.utility;
+package com.elbenjics.exchange.utility;
 
 import android.content.ContentResolver;
 import android.content.ContentUris;
@@ -35,21 +35,21 @@ import android.text.format.Time;
 import android.util.Base64;
 import android.util.Log;
 
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.mail.Address;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.EmailContent.Attachment;
-import com.android.emailcommon.provider.EmailContent.Message;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.service.AccountServiceProxy;
-import com.android.emailcommon.utility.Utility;
-import com.android.exchange.Eas;
-import com.android.exchange.EasSyncService;
-import com.android.exchange.ExchangeService;
-import com.android.exchange.R;
-import com.android.exchange.adapter.Serializer;
-import com.android.exchange.adapter.Tags;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.mail.Address;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.EmailContent.Attachment;
+import com.elbenjics.emailcommon.provider.EmailContent.Message;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.service.AccountServiceProxy;
+import com.elbenjics.emailcommon.utility.Utility;
+import com.elbenjics.exchange.Eas;
+import com.elbenjics.exchange.EasSyncService;
+import com.elbenjics.exchange.ExchangeService;
+import com.elbenjics.exchange.R;
+import com.elbenjics.exchange.adapter.Serializer;
+import com.elbenjics.exchange.adapter.Tags;
 import com.android.internal.util.ArrayUtils;
 import com.google.common.annotations.VisibleForTesting;
 

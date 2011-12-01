@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.elbenjics.email;
 
-import com.android.emailcommon.internet.MimeUtility;
-import com.android.emailcommon.provider.EmailContent.Attachment;
-import com.android.emailcommon.utility.AttachmentUtilities;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.emailcommon.internet.MimeUtility;
+import com.elbenjics.emailcommon.provider.EmailContent.Attachment;
+import com.elbenjics.emailcommon.utility.AttachmentUtilities;
+import com.elbenjics.emailcommon.utility.Utility;
 
 import android.content.Context;
 import android.content.Intent;

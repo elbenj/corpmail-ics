@@ -15,12 +15,12 @@
  * limitations under the License.
  */
 
-package com.android.exchange;
+package com.elbenjics.exchange;
 
 import android.util.Log;
 
-import com.android.emailcommon.service.EmailServiceProxy;
-import com.android.emailcommon.service.SyncWindow;
+import com.elbenjics.emailcommon.service.EmailServiceProxy;
+import com.elbenjics.emailcommon.service.SyncWindow;
 
 /**
  * Constants used throughout the EAS implementation are stored here.
@@ -52,7 +52,7 @@ public class Eas {
     public static final double SUPPORTED_PROTOCOL_EX2010_SP1_DOUBLE = 14.1;
     public static final String DEFAULT_PROTOCOL_VERSION = SUPPORTED_PROTOCOL_EX2003;
 
-    public static final String EXCHANGE_ACCOUNT_MANAGER_TYPE = "com.android.exchange";
+    public static final String EXCHANGE_ACCOUNT_MANAGER_TYPE = "com.elbenjics.exchange";
 
     // From EAS spec
     //                Mail Cal

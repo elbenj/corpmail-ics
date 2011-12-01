@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.elbenjics.email;
 
 import android.app.admin.DeviceAdminInfo;
 import android.app.admin.DeviceAdminReceiver;
@@ -27,14 +27,14 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.util.Log;
 
-import com.android.email.service.EmailBroadcastProcessorService;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.EmailContent.AccountColumns;
-import com.android.emailcommon.provider.EmailContent.PolicyColumns;
-import com.android.emailcommon.provider.Policy;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.service.EmailBroadcastProcessorService;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.EmailContent.AccountColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.PolicyColumns;
+import com.elbenjics.emailcommon.provider.Policy;
+import com.elbenjics.emailcommon.utility.Utility;
 import com.google.common.annotations.VisibleForTesting;
 
 /**

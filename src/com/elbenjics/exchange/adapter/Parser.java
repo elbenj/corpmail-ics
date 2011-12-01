@@ -15,14 +15,14 @@
  * limitations under the License.
  */
 
-package com.android.exchange.adapter;
+package com.elbenjics.exchange.adapter;
 
 import android.content.Context;
 import android.util.Log;
 
-import com.android.exchange.Eas;
-import com.android.exchange.EasException;
-import com.android.exchange.utility.FileLogger;
+import com.elbenjics.exchange.Eas;
+import com.elbenjics.exchange.EasException;
+import com.elbenjics.exchange.utility.FileLogger;
 import com.google.common.annotations.VisibleForTesting;
 
 import java.io.ByteArrayOutputStream;

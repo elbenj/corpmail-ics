@@ -14,33 +14,33 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.store;
+package com.elbenjics.email.mail.store;
 
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.android.email.Controller;
-import com.android.email.Email;
-import com.android.email.mail.Store;
-import com.android.email.mail.Transport;
-import com.android.email.mail.transport.MailTransport;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.internet.MimeMessage;
-import com.android.emailcommon.mail.AuthenticationFailedException;
-import com.android.emailcommon.mail.FetchProfile;
-import com.android.emailcommon.mail.Flag;
-import com.android.emailcommon.mail.Folder;
-import com.android.emailcommon.mail.Folder.OpenMode;
-import com.android.emailcommon.mail.Message;
-import com.android.emailcommon.mail.MessagingException;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.HostAuth;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.service.EmailServiceProxy;
-import com.android.emailcommon.service.SearchParams;
-import com.android.emailcommon.utility.LoggingInputStream;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.Controller;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.mail.Store;
+import com.elbenjics.email.mail.Transport;
+import com.elbenjics.email.mail.transport.MailTransport;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.internet.MimeMessage;
+import com.elbenjics.emailcommon.mail.AuthenticationFailedException;
+import com.elbenjics.emailcommon.mail.FetchProfile;
+import com.elbenjics.emailcommon.mail.Flag;
+import com.elbenjics.emailcommon.mail.Folder;
+import com.elbenjics.emailcommon.mail.Folder.OpenMode;
+import com.elbenjics.emailcommon.mail.Message;
+import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.HostAuth;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.service.EmailServiceProxy;
+import com.elbenjics.emailcommon.service.SearchParams;
+import com.elbenjics.emailcommon.utility.LoggingInputStream;
+import com.elbenjics.emailcommon.utility.Utility;
 import com.google.common.annotations.VisibleForTesting;
 
 import java.io.IOException;

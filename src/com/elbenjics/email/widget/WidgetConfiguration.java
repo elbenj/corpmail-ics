@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.widget;
+package com.elbenjics.email.widget;
 
 import android.app.Activity;
 import android.appwidget.AppWidgetManager;
@@ -24,15 +24,15 @@ import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 
-import com.android.email.Email;
-import com.android.email.R;
-import com.android.email.activity.ShortcutPickerFragment.AccountShortcutPickerFragment;
-import com.android.email.activity.ShortcutPickerFragment.MailboxShortcutPickerFragment;
-import com.android.email.activity.ShortcutPickerFragment.PickerCallback;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.HostAuth;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.R;
+import com.elbenjics.email.activity.ShortcutPickerFragment.AccountShortcutPickerFragment;
+import com.elbenjics.email.activity.ShortcutPickerFragment.MailboxShortcutPickerFragment;
+import com.elbenjics.email.activity.ShortcutPickerFragment.PickerCallback;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.HostAuth;
+import com.elbenjics.emailcommon.utility.Utility;
 
 /**
  * Activity to configure the Email widget.

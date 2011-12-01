@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity.setup;
+package com.elbenjics.email.activity.setup;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -31,11 +31,11 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 
-import com.android.email.R;
-import com.android.email.activity.UiUtilities;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.HostAuth;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.R;
+import com.elbenjics.email.activity.UiUtilities;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.HostAuth;
+import com.elbenjics.emailcommon.utility.Utility;
 
 import java.net.URI;
 import java.net.URISyntaxException;

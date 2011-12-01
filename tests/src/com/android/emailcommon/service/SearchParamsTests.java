@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.emailcommon.service;
+package com.elbenjics.emailcommon.service;
 
 import android.os.Parcel;
 import android.test.AndroidTestCase;

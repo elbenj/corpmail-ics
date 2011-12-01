@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.android.email.provider;
+package com.elbenjics.email.provider;
 
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.HostAuth;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.HostAuth;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -30,7 +30,7 @@ import android.test.suitebuilder.annotation.MediumTest;
  * This is a series of unit tests for backup/restore of the Account class.
  *
  * You can run this entire test case with:
- *   runtest -c com.android.email.provider.AccountBackupRestoreTests email
+ *   runtest -c com.elbenjics.email.provider.AccountBackupRestoreTests email
  */
 @MediumTest
 public class AccountBackupRestoreTests extends ProviderTestCase2<EmailProvider> {

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.elbenjics.email;
 
-import com.android.email.activity.setup.AccountSettingsUtils.Provider;
+import com.elbenjics.email.activity.setup.AccountSettingsUtils.Provider;
 
 import android.content.Context;
 import android.os.Bundle;

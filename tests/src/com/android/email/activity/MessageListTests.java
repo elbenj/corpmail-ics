@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.elbenjics.email.activity;
 
-import com.android.email.DBTestHelper;
-import com.android.email.provider.ProviderTestUtils;
-import com.android.emailcommon.provider.Account;
+import com.elbenjics.email.DBTestHelper;
+import com.elbenjics.email.provider.ProviderTestUtils;
+import com.elbenjics.emailcommon.provider.Account;
 
 import android.content.Context;
 import android.content.Intent;

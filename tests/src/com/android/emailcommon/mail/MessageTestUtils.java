@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.android.emailcommon.mail;
+package com.elbenjics.emailcommon.mail;
 
-import com.android.emailcommon.internet.MimeBodyPart;
-import com.android.emailcommon.internet.MimeHeader;
-import com.android.emailcommon.internet.MimeMessage;
-import com.android.emailcommon.internet.MimeMultipart;
-import com.android.emailcommon.internet.TextBody;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.utility.AttachmentUtilities;
+import com.elbenjics.emailcommon.internet.MimeBodyPart;
+import com.elbenjics.emailcommon.internet.MimeHeader;
+import com.elbenjics.emailcommon.internet.MimeMessage;
+import com.elbenjics.emailcommon.internet.MimeMultipart;
+import com.elbenjics.emailcommon.internet.TextBody;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.utility.AttachmentUtilities;
 
 import android.net.Uri;
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.elbenjics.email;
 
 import android.content.ContentUris;
 import android.content.ContentValues;
@@ -23,24 +23,24 @@ import android.database.Cursor;
 import android.net.Uri;
 import android.util.Log;
 
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.internet.MimeBodyPart;
-import com.android.emailcommon.internet.MimeHeader;
-import com.android.emailcommon.internet.MimeMessage;
-import com.android.emailcommon.internet.MimeMultipart;
-import com.android.emailcommon.internet.MimeUtility;
-import com.android.emailcommon.internet.TextBody;
-import com.android.emailcommon.mail.Address;
-import com.android.emailcommon.mail.Flag;
-import com.android.emailcommon.mail.Message;
-import com.android.emailcommon.mail.Message.RecipientType;
-import com.android.emailcommon.mail.MessagingException;
-import com.android.emailcommon.mail.Part;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.EmailContent.Attachment;
-import com.android.emailcommon.provider.EmailContent.AttachmentColumns;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.utility.AttachmentUtilities;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.internet.MimeBodyPart;
+import com.elbenjics.emailcommon.internet.MimeHeader;
+import com.elbenjics.emailcommon.internet.MimeMessage;
+import com.elbenjics.emailcommon.internet.MimeMultipart;
+import com.elbenjics.emailcommon.internet.MimeUtility;
+import com.elbenjics.emailcommon.internet.TextBody;
+import com.elbenjics.emailcommon.mail.Address;
+import com.elbenjics.emailcommon.mail.Flag;
+import com.elbenjics.emailcommon.mail.Message;
+import com.elbenjics.emailcommon.mail.Message.RecipientType;
+import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.mail.Part;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.EmailContent.Attachment;
+import com.elbenjics.emailcommon.provider.EmailContent.AttachmentColumns;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.utility.AttachmentUtilities;
 
 import org.apache.commons.io.IOUtils;
 

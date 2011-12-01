@@ -13,9 +13,9 @@
  ** limitations under the License.
  */
 
-package com.android.exchange.utility;
+package com.elbenjics.exchange.utility;
 
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.emailcommon.utility.Utility;
 
 import android.text.TextUtils;
 

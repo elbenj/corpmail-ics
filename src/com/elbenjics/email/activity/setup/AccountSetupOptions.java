@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity.setup;
+package com.elbenjics.email.activity.setup;
 
 import android.accounts.AccountAuthenticatorResponse;
 import android.accounts.AccountManager;
@@ -35,17 +35,17 @@ import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
 import android.widget.Spinner;
 
-import com.android.email.Email;
-import com.android.email.R;
-import com.android.email.activity.ActivityHelper;
-import com.android.email.activity.UiUtilities;
-import com.android.email.service.EmailServiceUtils;
-import com.android.email.service.MailService;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.HostAuth;
-import com.android.emailcommon.service.SyncWindow;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.R;
+import com.elbenjics.email.activity.ActivityHelper;
+import com.elbenjics.email.activity.UiUtilities;
+import com.elbenjics.email.service.EmailServiceUtils;
+import com.elbenjics.email.service.MailService;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.HostAuth;
+import com.elbenjics.emailcommon.service.SyncWindow;
+import com.elbenjics.emailcommon.utility.Utility;
 
 import java.io.IOException;
 

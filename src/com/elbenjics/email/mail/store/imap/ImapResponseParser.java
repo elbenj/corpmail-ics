@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.store.imap;
+package com.elbenjics.email.mail.store.imap;
 
-import com.android.email.Email;
-import com.android.email.FixedLengthInputStream;
-import com.android.email.PeekableInputStream;
-import com.android.email.mail.transport.DiscourseLogger;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.mail.MessagingException;
-import com.android.emailcommon.utility.LoggingInputStream;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.FixedLengthInputStream;
+import com.elbenjics.email.PeekableInputStream;
+import com.elbenjics.email.mail.transport.DiscourseLogger;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.utility.LoggingInputStream;
 
 import android.text.TextUtils;
 import android.util.Log;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.exchange;
+package com.elbenjics.exchange;
 
 /**
  * MessageMoveRequest is the EAS wrapper for requesting a "move to folder"

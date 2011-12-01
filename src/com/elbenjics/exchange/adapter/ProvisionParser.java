@@ -13,16 +13,16 @@
  * limitations under the License.
  */
 
-package com.android.exchange.adapter;
+package com.elbenjics.exchange.adapter;
 
 import android.content.Context;
 import android.content.res.Resources;
 
-import com.android.emailcommon.provider.Policy;
-import com.android.exchange.EasSyncService;
-import com.android.exchange.ExchangeService;
-import com.android.exchange.R;
-import com.android.exchange.SecurityPolicyDelegate;
+import com.elbenjics.emailcommon.provider.Policy;
+import com.elbenjics.exchange.EasSyncService;
+import com.elbenjics.exchange.ExchangeService;
+import com.elbenjics.exchange.R;
+import com.elbenjics.exchange.SecurityPolicyDelegate;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;

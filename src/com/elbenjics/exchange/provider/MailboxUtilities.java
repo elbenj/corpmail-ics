@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.exchange.provider;
+package com.elbenjics.exchange.provider;
 
 import android.content.ContentResolver;
 import android.content.ContentUris;
@@ -23,10 +23,10 @@ import android.content.Context;
 import android.database.Cursor;
 import android.util.Log;
 
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent.MailboxColumns;
-import com.android.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent.MailboxColumns;
+import com.elbenjics.emailcommon.provider.Mailbox;
 
 public class MailboxUtilities {
     public static final String WHERE_PARENT_KEY_UNINITIALIZED =

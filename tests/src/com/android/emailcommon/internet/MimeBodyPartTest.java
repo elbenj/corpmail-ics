@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.android.emailcommon.internet;
+package com.elbenjics.emailcommon.internet;
 
-import com.android.emailcommon.internet.MimeBodyPart;
-import com.android.emailcommon.internet.MimeHeader;
-import com.android.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.internet.MimeBodyPart;
+import com.elbenjics.emailcommon.internet.MimeHeader;
+import com.elbenjics.emailcommon.mail.MessagingException;
 
 import junit.framework.TestCase;
 

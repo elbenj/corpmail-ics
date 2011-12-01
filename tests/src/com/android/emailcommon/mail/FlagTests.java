@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.emailcommon.mail;
+package com.elbenjics.emailcommon.mail;
 
-import com.android.emailcommon.mail.Flag;
+import com.elbenjics.emailcommon.mail.Flag;
 
 import android.test.suitebuilder.annotation.SmallTest;
 

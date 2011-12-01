@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.elbenjics.email.activity;
 
 import android.animation.Animator;
 import android.animation.ObjectAnimator;
@@ -31,8 +31,8 @@ import android.view.ViewGroup;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.LinearLayout;
 
-import com.android.email.R;
-import com.android.emailcommon.Logging;
+import com.elbenjics.email.R;
+import com.elbenjics.emailcommon.Logging;
 
 /**
  * The "three pane" layout used on tablet.

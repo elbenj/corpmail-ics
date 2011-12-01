@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-package com.android.exchange.adapter;
+package com.elbenjics.exchange.adapter;
 
 import android.content.ContentResolver;
 import android.content.ContentValues;
@@ -21,17 +21,17 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.RemoteException;
 
-import com.android.emailcommon.provider.EmailContent.Attachment;
-import com.android.emailcommon.provider.EmailContent.AttachmentColumns;
-import com.android.emailcommon.provider.EmailContent.Message;
-import com.android.emailcommon.service.EmailServiceStatus;
-import com.android.emailcommon.utility.AttachmentUtilities;
-import com.android.exchange.Eas;
-import com.android.exchange.EasResponse;
-import com.android.exchange.EasSyncService;
-import com.android.exchange.ExchangeService;
-import com.android.exchange.PartRequest;
-import com.android.exchange.utility.UriCodec;
+import com.elbenjics.emailcommon.provider.EmailContent.Attachment;
+import com.elbenjics.emailcommon.provider.EmailContent.AttachmentColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.Message;
+import com.elbenjics.emailcommon.service.EmailServiceStatus;
+import com.elbenjics.emailcommon.utility.AttachmentUtilities;
+import com.elbenjics.exchange.Eas;
+import com.elbenjics.exchange.EasResponse;
+import com.elbenjics.exchange.EasSyncService;
+import com.elbenjics.exchange.ExchangeService;
+import com.elbenjics.exchange.PartRequest;
+import com.elbenjics.exchange.utility.UriCodec;
 import com.google.common.annotations.VisibleForTesting;
 
 import org.apache.http.HttpStatus;

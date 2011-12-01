@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.elbenjics.email.activity;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -28,19 +28,19 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import com.android.email.Controller;
-import com.android.email.ControllerResultUiThreadWrapper;
-import com.android.email.Email;
-import com.android.email.MessageListContext;
-import com.android.email.MessagingExceptionStrings;
-import com.android.email.R;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.mail.MessagingException;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent.Message;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.utility.EmailAsyncTask;
-import com.android.emailcommon.utility.IntentUtilities;
+import com.elbenjics.email.Controller;
+import com.elbenjics.email.ControllerResultUiThreadWrapper;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.MessageListContext;
+import com.elbenjics.email.MessagingExceptionStrings;
+import com.elbenjics.email.R;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent.Message;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.utility.EmailAsyncTask;
+import com.elbenjics.emailcommon.utility.IntentUtilities;
 import com.google.common.base.Preconditions;
 
 import java.util.ArrayList;

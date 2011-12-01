@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.android.exchange;
+package com.elbenjics.exchange;
 
 import android.content.ContentUris;
 import android.content.ContentValues;
@@ -26,24 +26,24 @@ import android.net.Uri;
 import android.os.RemoteException;
 import android.text.TextUtils;
 
-import com.android.emailcommon.TrafficFlags;
-import com.android.emailcommon.internet.Rfc822Output;
-import com.android.emailcommon.mail.MessagingException;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent.Body;
-import com.android.emailcommon.provider.EmailContent.BodyColumns;
-import com.android.emailcommon.provider.EmailContent.MailboxColumns;
-import com.android.emailcommon.provider.EmailContent.Message;
-import com.android.emailcommon.provider.EmailContent.MessageColumns;
-import com.android.emailcommon.provider.EmailContent.SyncColumns;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.service.EmailServiceStatus;
-import com.android.emailcommon.utility.Utility;
-import com.android.exchange.CommandStatusException.CommandStatus;
-import com.android.exchange.adapter.Parser;
-import com.android.exchange.adapter.Parser.EmptyStreamException;
-import com.android.exchange.adapter.Serializer;
-import com.android.exchange.adapter.Tags;
+import com.elbenjics.emailcommon.TrafficFlags;
+import com.elbenjics.emailcommon.internet.Rfc822Output;
+import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent.Body;
+import com.elbenjics.emailcommon.provider.EmailContent.BodyColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.MailboxColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.Message;
+import com.elbenjics.emailcommon.provider.EmailContent.MessageColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.SyncColumns;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.service.EmailServiceStatus;
+import com.elbenjics.emailcommon.utility.Utility;
+import com.elbenjics.exchange.CommandStatusException.CommandStatus;
+import com.elbenjics.exchange.adapter.Parser;
+import com.elbenjics.exchange.adapter.Parser.EmptyStreamException;
+import com.elbenjics.exchange.adapter.Serializer;
+import com.elbenjics.exchange.adapter.Tags;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpStatus;

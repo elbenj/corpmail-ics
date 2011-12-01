@@ -14,30 +14,30 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.store;
+package com.elbenjics.email.mail.store;
 
 import android.content.Context;
 import android.test.AndroidTestCase;
 import android.test.suitebuilder.annotation.SmallTest;
 
-import com.android.email.Controller;
-import com.android.email.DBTestHelper;
-import com.android.email.mail.Transport;
-import com.android.email.mail.transport.MockTransport;
-import com.android.email.provider.ProviderTestUtils;
-import com.android.emailcommon.TempDirectory;
-import com.android.emailcommon.internet.MimeMessage;
-import com.android.emailcommon.mail.Address;
-import com.android.emailcommon.mail.FetchProfile;
-import com.android.emailcommon.mail.Flag;
-import com.android.emailcommon.mail.Folder;
-import com.android.emailcommon.mail.Folder.FolderType;
-import com.android.emailcommon.mail.Folder.OpenMode;
-import com.android.emailcommon.mail.Message;
-import com.android.emailcommon.mail.Message.RecipientType;
-import com.android.emailcommon.mail.MessagingException;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.HostAuth;
+import com.elbenjics.email.Controller;
+import com.elbenjics.email.DBTestHelper;
+import com.elbenjics.email.mail.Transport;
+import com.elbenjics.email.mail.transport.MockTransport;
+import com.elbenjics.email.provider.ProviderTestUtils;
+import com.elbenjics.emailcommon.TempDirectory;
+import com.elbenjics.emailcommon.internet.MimeMessage;
+import com.elbenjics.emailcommon.mail.Address;
+import com.elbenjics.emailcommon.mail.FetchProfile;
+import com.elbenjics.emailcommon.mail.Flag;
+import com.elbenjics.emailcommon.mail.Folder;
+import com.elbenjics.emailcommon.mail.Folder.FolderType;
+import com.elbenjics.emailcommon.mail.Folder.OpenMode;
+import com.elbenjics.emailcommon.mail.Message;
+import com.elbenjics.emailcommon.mail.Message.RecipientType;
+import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.HostAuth;
 
 /**
  * This is a series of unit tests for the POP3 Store class.  These tests must be locally

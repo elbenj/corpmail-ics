@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.elbenjics.email;
 
 import android.app.Application;
 import android.content.ComponentName;
@@ -24,17 +24,17 @@ import android.content.pm.PackageManager;
 import android.database.Cursor;
 import android.util.Log;
 
-import com.android.email.activity.MessageCompose;
-import com.android.email.activity.ShortcutPicker;
-import com.android.email.service.AttachmentDownloadService;
-import com.android.email.service.MailService;
-import com.android.email.widget.WidgetConfiguration;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.TempDirectory;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.service.EmailServiceProxy;
-import com.android.emailcommon.utility.EmailAsyncTask;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.activity.MessageCompose;
+import com.elbenjics.email.activity.ShortcutPicker;
+import com.elbenjics.email.service.AttachmentDownloadService;
+import com.elbenjics.email.service.MailService;
+import com.elbenjics.email.widget.WidgetConfiguration;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.TempDirectory;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.service.EmailServiceProxy;
+import com.elbenjics.emailcommon.utility.EmailAsyncTask;
+import com.elbenjics.emailcommon.utility.Utility;
 
 public class Email extends Application {
     /**

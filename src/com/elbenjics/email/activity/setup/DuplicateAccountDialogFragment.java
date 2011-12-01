@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.email.activity.setup;
+package com.elbenjics.email.activity.setup;
 
-import com.android.email.R;
+import com.elbenjics.email.R;
 
 import android.app.AlertDialog;
 import android.app.Dialog;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.internet;
+package com.elbenjics.email.mail.internet;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

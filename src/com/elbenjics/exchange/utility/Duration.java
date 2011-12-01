@@ -13,7 +13,7 @@
  ** limitations under the License.
  */
 
-package com.android.exchange.utility;
+package com.elbenjics.exchange.utility;
 
 import java.text.ParseException;
 import java.util.Calendar;

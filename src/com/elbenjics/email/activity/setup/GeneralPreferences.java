@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity.setup;
+package com.elbenjics.email.activity.setup;
 
 import android.os.Bundle;
 import android.preference.ListPreference;
@@ -25,9 +25,9 @@ import android.preference.PreferenceFragment;
 import android.preference.PreferenceScreen;
 import android.widget.Toast;
 
-import com.android.email.Preferences;
-import com.android.email.R;
-import com.android.email.activity.UiUtilities;
+import com.elbenjics.email.Preferences;
+import com.elbenjics.email.R;
+import com.elbenjics.email.activity.UiUtilities;
 
 public class GeneralPreferences extends PreferenceFragment implements OnPreferenceChangeListener  {
 

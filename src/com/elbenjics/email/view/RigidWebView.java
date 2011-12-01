@@ -15,18 +15,18 @@
  */
 
 
-package com.android.email.view;
+package com.elbenjics.email.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.webkit.WebView;
 
-import com.android.email.Clock;
-import com.android.email.Email;
-import com.android.email.Throttle;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.Clock;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.Throttle;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.utility.Utility;
 
 /**
  * A custom WebView that is robust to rapid resize events in sequence.

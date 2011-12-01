@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity.setup;
+package com.elbenjics.email.activity.setup;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -29,13 +29,13 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.android.email.Email;
-import com.android.email.R;
-import com.android.email.SecurityPolicy;
-import com.android.email.activity.ActivityHelper;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.HostAuth;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.R;
+import com.elbenjics.email.SecurityPolicy;
+import com.elbenjics.email.activity.ActivityHelper;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.HostAuth;
+import com.elbenjics.emailcommon.utility.Utility;
 
 /**
  * Psuedo-activity (no UI) to bootstrap the user up to a higher desired security level.  This

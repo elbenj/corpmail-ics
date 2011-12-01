@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-package com.android.exchange.adapter;
+package com.elbenjics.exchange.adapter;
 
 import java.io.IOException;
 import java.io.InputStream;

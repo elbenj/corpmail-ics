@@ -63,25 +63,25 @@
 
     <!-- Grant permission to other apps to view attachments -->
     <permission
-        android:name="com.android.email.permission.READ_ATTACHMENT"
+        android:name="com.elbenjics.email.permission.READ_ATTACHMENT"
         android:permissionGroup="android.permission-group.MESSAGES"
         android:protectionLevel="dangerous"
         android:label="@string/permission_read_attachment_label"
         android:description="@string/permission_read_attachment_desc"/>
     <uses-permission
-        android:name="com.android.email.permission.READ_ATTACHMENT"/>
+        android:name="com.elbenjics.email.permission.READ_ATTACHMENT"/>
 
     <uses-permission
         android:name="android.permission.USE_CREDENTIALS"/>
 
     <!-- Grant permission to system apps to access provider (see provider below) -->
     <permission
-        android:name="com.android.email.permission.ACCESS_PROVIDER"
+        android:name="com.elbenjics.email.permission.ACCESS_PROVIDER"
         android:protectionLevel="signature"
         android:label="@string/permission_access_provider_label"
         android:description="@string/permission_access_provider_desc"/>
     <uses-permission
-        android:name="com.android.email.permission.ACCESS_PROVIDER"/>
+        android:name="com.elbenjics.email.permission.ACCESS_PROVIDER"/>
 
     <!-- Note:  Actually, android:hardwareAccelerated could be "true", but in order to switch it
          on/off in the debug screen, we have to set it "false" here and enable it at runtime.  -->
@@ -122,7 +122,7 @@
             >
             <intent-filter>
                 <action
-                    android:name="com.android.email.CREATE_ACCOUNT" />
+                    android:name="com.elbenjics.email.CREATE_ACCOUNT" />
                 <category
                     android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -164,7 +164,7 @@
             >
             <intent-filter>
                 <action
-                    android:name="com.android.email.activity.setup.ACCOUNT_MANAGER_ENTRY" />
+                    android:name="com.elbenjics.email.activity.setup.ACCOUNT_MANAGER_ENTRY" />
                 <category
                     android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -260,7 +260,7 @@
             </intent-filter>
             <intent-filter>
                 <action
-                    android:name="com.android.email.intent.action.REPLY" />
+                    android:name="com.elbenjics.email.intent.action.REPLY" />
             </intent-filter>
         </activity>
 
@@ -360,7 +360,7 @@
 
         <!--Required stanza to register the PopImapSyncAdapterService with SyncManager -->
         <service
-            android:name="com.android.email.service.PopImapSyncAdapterService"
+            android:name="com.elbenjics.email.service.PopImapSyncAdapterService"
             android:exported="true">
             <intent-filter>
                 <action
@@ -374,22 +374,22 @@
         <service
             android:name=".service.PolicyService"
             android:enabled="true"
-            android:permission="com.android.email.permission.ACCESS_PROVIDER"
+            android:permission="com.elbenjics.email.permission.ACCESS_PROVIDER"
             >
             <intent-filter>
                 <action
-                    android:name="com.android.email.POLICY_INTENT" />
+                    android:name="com.elbenjics.email.POLICY_INTENT" />
             </intent-filter>
         </service>
 
         <service
             android:name=".service.AccountService"
             android:enabled="true"
-            android:permission="com.android.email.permission.ACCESS_PROVIDER"
+            android:permission="com.elbenjics.email.permission.ACCESS_PROVIDER"
             >
             <intent-filter>
                 <action
-                    android:name="com.android.email.ACCOUNT_INTENT" />
+                    android:name="com.elbenjics.email.ACCOUNT_INTENT" />
             </intent-filter>
         </service>
 
@@ -447,16 +447,16 @@
             android:authorities="com.elbenjics.email.attachmentprovider"
             android:multiprocess="true"
             android:grantUriPermissions="true"
-            android:readPermission="com.android.email.permission.READ_ATTACHMENT"
+            android:readPermission="com.elbenjics.email.permission.READ_ATTACHMENT"
             />
 
         <!-- This provider MUST be protected by strict permissions, as granting access to
              it exposes user passwords and other confidential information. -->
         <provider
             android:name=".provider.EmailProvider"
-            android:authorities="com.elbenjics.email.provider;com.android.email.notifier"
+            android:authorities="com.elbenjics.email.provider;com.elbenjics.email.notifier"
             android:multiprocess="true"
-            android:permission="com.android.email.permission.ACCESS_PROVIDER"
+            android:permission="com.elbenjics.email.permission.ACCESS_PROVIDER"
             android:label="@string/app_name"
             />
 
@@ -561,7 +561,7 @@
         <service
             android:name="com.elbenjics.exchange.ExchangeService"
             android:enabled="true"
-            android:permission="com.android.email.permission.ACCESS_PROVIDER"
+            android:permission="com.elbenjics.email.permission.ACCESS_PROVIDER"
             >
             <intent-filter>
                 <action

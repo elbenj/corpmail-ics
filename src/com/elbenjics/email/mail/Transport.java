@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.android.email.mail;
+package com.elbenjics.email.mail;
 
-import com.android.emailcommon.mail.CertificateValidationException;
-import com.android.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.mail.CertificateValidationException;
+import com.elbenjics.emailcommon.mail.MessagingException;
 
 import java.io.IOException;
 import java.io.InputStream;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.service;
+package com.elbenjics.email.service;
 
 import android.accounts.AccountManager;
 import android.app.AlarmManager;
@@ -32,20 +32,20 @@ import android.os.RemoteException;
 import android.text.format.DateUtils;
 import android.util.Log;
 
-import com.android.email.AttachmentInfo;
-import com.android.email.Controller.ControllerService;
-import com.android.email.Email;
-import com.android.email.EmailConnectivityManager;
-import com.android.email.NotificationController;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.EmailContent.Attachment;
-import com.android.emailcommon.provider.EmailContent.Message;
-import com.android.emailcommon.service.EmailServiceProxy;
-import com.android.emailcommon.service.EmailServiceStatus;
-import com.android.emailcommon.service.IEmailServiceCallback;
-import com.android.emailcommon.utility.AttachmentUtilities;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.AttachmentInfo;
+import com.elbenjics.email.Controller.ControllerService;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.EmailConnectivityManager;
+import com.elbenjics.email.NotificationController;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.EmailContent.Attachment;
+import com.elbenjics.emailcommon.provider.EmailContent.Message;
+import com.elbenjics.emailcommon.service.EmailServiceProxy;
+import com.elbenjics.emailcommon.service.EmailServiceStatus;
+import com.elbenjics.emailcommon.service.IEmailServiceCallback;
+import com.elbenjics.emailcommon.utility.AttachmentUtilities;
+import com.elbenjics.emailcommon.utility.Utility;
 
 import java.io.File;
 import java.io.FileDescriptor;
@@ -90,7 +90,7 @@ public class AttachmentDownloadService extends Service implements Runnable {
     private static final int MAX_ATTACHMENTS_TO_CHECK = 25;
 
     private static final String EXTRA_ATTACHMENT =
-        "com.android.email.AttachmentDownloadService.attachment";
+        "com.elbenjics.email.AttachmentDownloadService.attachment";
 
     // sRunningService is only set in the UI thread; it's visibility elsewhere is guaranteed
     // by the use of "volatile"

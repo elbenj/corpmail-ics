@@ -14,24 +14,24 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.transport;
+package com.elbenjics.email.mail.transport;
 
 import android.content.Context;
 import android.util.Base64;
 import android.util.Log;
 
-import com.android.email.Email;
-import com.android.email.mail.Sender;
-import com.android.email.mail.Transport;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.internet.Rfc822Output;
-import com.android.emailcommon.mail.Address;
-import com.android.emailcommon.mail.AuthenticationFailedException;
-import com.android.emailcommon.mail.CertificateValidationException;
-import com.android.emailcommon.mail.MessagingException;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent.Message;
-import com.android.emailcommon.provider.HostAuth;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.mail.Sender;
+import com.elbenjics.email.mail.Transport;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.internet.Rfc822Output;
+import com.elbenjics.emailcommon.mail.Address;
+import com.elbenjics.emailcommon.mail.AuthenticationFailedException;
+import com.elbenjics.emailcommon.mail.CertificateValidationException;
+import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent.Message;
+import com.elbenjics.emailcommon.provider.HostAuth;
 
 import java.io.IOException;
 import java.net.Inet6Address;

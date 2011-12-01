@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity.setup;
+package com.elbenjics.email.activity.setup;
 
 import android.app.ActionBar;
 import android.app.Activity;
@@ -37,16 +37,16 @@ import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.android.email.Controller;
-import com.android.email.R;
-import com.android.email.activity.ActivityHelper;
-import com.android.email.mail.Sender;
-import com.android.email.mail.Store;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent.AccountColumns;
-import com.android.emailcommon.utility.IntentUtilities;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.Controller;
+import com.elbenjics.email.R;
+import com.elbenjics.email.activity.ActivityHelper;
+import com.elbenjics.email.mail.Sender;
+import com.elbenjics.email.mail.Store;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent.AccountColumns;
+import com.elbenjics.emailcommon.utility.IntentUtilities;
+import com.elbenjics.emailcommon.utility.Utility;
 
 import java.util.List;
 
@@ -80,7 +80,7 @@ public class AccountSettings extends PreferenceActivity {
     // Intent extras for launch directly from system account manager
     // NOTE: This string must match the one in res/xml/account_preferences.xml
     private static final String ACTION_ACCOUNT_MANAGER_ENTRY =
-        "com.android.email.activity.setup.ACCOUNT_MANAGER_ENTRY";
+        "com.elbenjics.email.activity.setup.ACCOUNT_MANAGER_ENTRY";
     // NOTE: This constant should eventually be defined in android.accounts.Constants
     private static final String EXTRA_ACCOUNT_MANAGER_ACCOUNT = "account";
 

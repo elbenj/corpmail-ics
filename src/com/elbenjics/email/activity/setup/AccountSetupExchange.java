@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.android.email.activity.setup;
+package com.elbenjics.email.activity.setup;
 
-import com.android.email.R;
-import com.android.email.activity.ActivityHelper;
-import com.android.email.activity.UiUtilities;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.HostAuth;
+import com.elbenjics.email.R;
+import com.elbenjics.email.activity.ActivityHelper;
+import com.elbenjics.email.activity.UiUtilities;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.HostAuth;
 
 import android.app.Activity;
 import android.app.FragmentTransaction;

@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.elbenjics.email.activity;
 
-import com.android.email.provider.EmailProvider;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.utility.DelayedOperations;
+import com.elbenjics.email.provider.EmailProvider;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.utility.DelayedOperations;
 
 import android.content.Context;
 import android.database.AbstractCursor;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.elbenjics.email.activity;
 
 import android.app.ActionBar;
 import android.app.ActionBar.OnNavigationListener;
@@ -57,30 +57,30 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.common.contacts.DataUsageStatUpdater;
-import com.android.email.Controller;
-import com.android.email.Email;
-import com.android.email.EmailAddressAdapter;
-import com.android.email.EmailAddressValidator;
-import com.android.email.R;
-import com.android.email.RecipientAdapter;
-import com.android.email.activity.setup.AccountSettings;
-import com.android.email.mail.internet.EmailHtmlUtil;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.internet.MimeUtility;
-import com.android.emailcommon.mail.Address;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.EmailContent.Attachment;
-import com.android.emailcommon.provider.EmailContent.Body;
-import com.android.emailcommon.provider.EmailContent.BodyColumns;
-import com.android.emailcommon.provider.EmailContent.Message;
-import com.android.emailcommon.provider.EmailContent.MessageColumns;
-import com.android.emailcommon.provider.EmailContent.QuickResponseColumns;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.provider.QuickResponse;
-import com.android.emailcommon.utility.AttachmentUtilities;
-import com.android.emailcommon.utility.EmailAsyncTask;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.Controller;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.EmailAddressAdapter;
+import com.elbenjics.email.EmailAddressValidator;
+import com.elbenjics.email.R;
+import com.elbenjics.email.RecipientAdapter;
+import com.elbenjics.email.activity.setup.AccountSettings;
+import com.elbenjics.email.mail.internet.EmailHtmlUtil;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.internet.MimeUtility;
+import com.elbenjics.emailcommon.mail.Address;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.EmailContent.Attachment;
+import com.elbenjics.emailcommon.provider.EmailContent.Body;
+import com.elbenjics.emailcommon.provider.EmailContent.BodyColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.Message;
+import com.elbenjics.emailcommon.provider.EmailContent.MessageColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.QuickResponseColumns;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.provider.QuickResponse;
+import com.elbenjics.emailcommon.utility.AttachmentUtilities;
+import com.elbenjics.emailcommon.utility.EmailAsyncTask;
+import com.elbenjics.emailcommon.utility.Utility;
 import com.android.ex.chips.AccountSpecifier;
 import com.android.ex.chips.ChipsUtil;
 import com.android.ex.chips.RecipientEditTextView;
@@ -109,10 +109,10 @@ import java.util.concurrent.ExecutionException;
 public class MessageCompose extends Activity implements OnClickListener, OnFocusChangeListener,
         DeleteMessageConfirmationDialog.Callback, InsertQuickResponseDialog.Callback {
 
-    private static final String ACTION_REPLY = "com.android.email.intent.action.REPLY";
-    private static final String ACTION_REPLY_ALL = "com.android.email.intent.action.REPLY_ALL";
-    private static final String ACTION_FORWARD = "com.android.email.intent.action.FORWARD";
-    private static final String ACTION_EDIT_DRAFT = "com.android.email.intent.action.EDIT_DRAFT";
+    private static final String ACTION_REPLY = "com.elbenjics.email.intent.action.REPLY";
+    private static final String ACTION_REPLY_ALL = "com.elbenjics.email.intent.action.REPLY_ALL";
+    private static final String ACTION_FORWARD = "com.elbenjics.email.intent.action.FORWARD";
+    private static final String ACTION_EDIT_DRAFT = "com.elbenjics.email.intent.action.EDIT_DRAFT";
 
     private static final String EXTRA_ACCOUNT_ID = "account_id";
     private static final String EXTRA_MESSAGE_ID = "message_id";
@@ -120,15 +120,15 @@ public class MessageCompose extends Activity implements OnClickListener, OnFocus
     private static final String EXTRA_FROM_WITHIN_APP = "from_within_app";
 
     private static final String STATE_KEY_CC_SHOWN =
-        "com.android.email.activity.MessageCompose.ccShown";
+        "com.elbenjics.email.activity.MessageCompose.ccShown";
     private static final String STATE_KEY_QUOTED_TEXT_SHOWN =
-        "com.android.email.activity.MessageCompose.quotedTextShown";
+        "com.elbenjics.email.activity.MessageCompose.quotedTextShown";
     private static final String STATE_KEY_DRAFT_ID =
-        "com.android.email.activity.MessageCompose.draftId";
+        "com.elbenjics.email.activity.MessageCompose.draftId";
     private static final String STATE_KEY_LAST_SAVE_TASK_ID =
-        "com.android.email.activity.MessageCompose.requestId";
+        "com.elbenjics.email.activity.MessageCompose.requestId";
     private static final String STATE_KEY_ACTION =
-        "com.android.email.activity.MessageCompose.action";
+        "com.elbenjics.email.activity.MessageCompose.action";
 
     private static final int ACTIVITY_REQUEST_PICK_ATTACHMENT = 1;
 

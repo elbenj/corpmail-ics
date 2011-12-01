@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.store.imap;
+package com.elbenjics.email.mail.store.imap;
 
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.emailcommon.utility.Utility;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity.setup;
+package com.elbenjics.email.activity.setup;
 
 import android.content.ContentUris;
 import android.content.Context;
@@ -24,9 +24,9 @@ import android.test.ActivityUnitTestCase;
 import android.test.suitebuilder.annotation.SmallTest;
 import android.view.View;
 
-import com.android.email.R;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.HostAuth;
+import com.elbenjics.email.R;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.HostAuth;
 
 import java.net.URISyntaxException;
 import java.util.HashSet;
@@ -34,7 +34,7 @@ import java.util.HashSet;
 /**
  * This is a series of unit tests for the AccountSetupAccountType class.
  * You can run this entire test case with:
- *   runtest -c com.android.email.activity.setup.AccountSetupAccountTypeTests email
+ *   runtest -c com.elbenjics.email.activity.setup.AccountSetupAccountTypeTests email
  */
 @SmallTest
 public class AccountSetupAccountTypeTests

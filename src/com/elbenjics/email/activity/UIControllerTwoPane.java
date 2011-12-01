@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.elbenjics.email.activity;
 
 import android.app.Activity;
 import android.app.FragmentTransaction;
@@ -22,18 +22,18 @@ import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.android.email.Clock;
-import com.android.email.Email;
-import com.android.email.MessageListContext;
-import com.android.email.Preferences;
-import com.android.email.R;
-import com.android.email.RefreshManager;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent.Message;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.utility.EmailAsyncTask;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.Clock;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.MessageListContext;
+import com.elbenjics.email.Preferences;
+import com.elbenjics.email.R;
+import com.elbenjics.email.RefreshManager;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent.Message;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.utility.EmailAsyncTask;
+import com.elbenjics.emailcommon.utility.Utility;
 import com.google.common.annotations.VisibleForTesting;
 
 import java.util.Set;

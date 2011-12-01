@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.android.email.widget;
+package com.elbenjics.email.widget;
 
-import com.android.email.Email;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.Mailbox;
+import com.elbenjics.email.Email;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.Mailbox;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -34,7 +34,7 @@ import java.util.concurrent.ConcurrentHashMap;
  * Class that maintains references to all widgets.
  */
 public class WidgetManager {
-    private static final String PREFS_NAME = "com.android.email.widget.WidgetManager";
+    private static final String PREFS_NAME = "com.elbenjics.email.widget.WidgetManager";
     private static final String ACCOUNT_ID_PREFIX = "accountId_";
     private static final String MAILBOX_ID_PREFIX = "mailboxId_";
 

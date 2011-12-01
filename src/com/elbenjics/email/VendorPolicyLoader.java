@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.elbenjics.email;
 
-import com.android.email.activity.setup.AccountSettingsUtils.Provider;
-import com.android.emailcommon.Logging;
+import com.elbenjics.email.activity.setup.AccountSettingsUtils.Provider;
+import com.elbenjics.emailcommon.Logging;
 
 import android.content.Context;
 import android.content.pm.ApplicationInfo;
@@ -30,15 +30,15 @@ import java.lang.reflect.Method;
 /**
  * A bridge class to the email vendor policy apk.
  *
- * <p>Email vendor policy is a system apk named "com.android.email.helper".  When exists, it must
- * contain a class called "com.android.email.policy.EmailPolicy" with a static public method
+ * <p>Email vendor policy is a system apk named "com.elbenjics.email.helper".  When exists, it must
+ * contain a class called "com.elbenjics.email.policy.EmailPolicy" with a static public method
  * <code>Bundle getPolicy(String, Bundle)</code>, which serves vendor specific configurations.
  *
  * <p>A vendor policy apk is optional.  The email application will operate properly when none is
  * found.
  */
 public class VendorPolicyLoader {
-    private static final String POLICY_PACKAGE = "com.android.email.policy";
+    private static final String POLICY_PACKAGE = "com.elbenjics.email.policy";
     private static final String POLICY_CLASS = POLICY_PACKAGE + ".EmailPolicy";
     private static final String GET_POLICY_METHOD = "getPolicy";
     private static final Class<?>[] ARGS = new Class<?>[] {String.class, Bundle.class};

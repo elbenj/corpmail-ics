@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.exchange;
+package com.elbenjics.exchange;
 
 import android.accounts.Account;
 import android.accounts.OperationCanceledException;
@@ -31,10 +31,10 @@ import android.os.IBinder;
 import android.provider.CalendarContract.Events;
 import android.util.Log;
 
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.EmailContent.AccountColumns;
-import com.android.emailcommon.provider.EmailContent.MailboxColumns;
-import com.android.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.EmailContent.AccountColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.MailboxColumns;
+import com.elbenjics.emailcommon.provider.Mailbox;
 
 public class CalendarSyncAdapterService extends Service {
     private static final String TAG = "EAS CalendarSyncAdapterService";
@@ -116,7 +116,7 @@ public class CalendarSyncAdapterService extends Service {
 
         // Find the (EmailProvider) account associated with this email address
         Cursor accountCursor =
-            cr.query(com.android.emailcommon.provider.Account.CONTENT_URI,
+            cr.query(com.elbenjics.emailcommon.provider.Account.CONTENT_URI,
                     EmailContent.ID_PROJECTION, AccountColumns.EMAIL_ADDRESS + "=?",
                     new String[] {account.name}, null);
         try {

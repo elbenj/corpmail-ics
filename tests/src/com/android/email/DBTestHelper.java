@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.elbenjics.email;
 
-import com.android.email.provider.AttachmentProvider;
-import com.android.email.provider.ContentCache;
-import com.android.email.provider.EmailProvider;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.utility.AttachmentUtilities;
+import com.elbenjics.email.provider.AttachmentProvider;
+import com.elbenjics.email.provider.ContentCache;
+import com.elbenjics.email.provider.EmailProvider;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.utility.AttachmentUtilities;
 
 import android.content.ContentProvider;
 import android.content.ContentResolver;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity.setup;
+package com.elbenjics.email.activity.setup;
 
 import android.app.Activity;
 import android.content.Context;
@@ -34,19 +34,19 @@ import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.android.email.Email;
-import com.android.email.R;
-import com.android.email.activity.UiUtilities;
-import com.android.email.provider.AccountBackupRestore;
-import com.android.email.service.EmailServiceUtils;
-import com.android.email.view.CertificateSelector;
-import com.android.email.view.CertificateSelector.HostCallback;
-import com.android.emailcommon.Device;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.HostAuth;
-import com.android.emailcommon.utility.CertificateRequestor;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.R;
+import com.elbenjics.email.activity.UiUtilities;
+import com.elbenjics.email.provider.AccountBackupRestore;
+import com.elbenjics.email.service.EmailServiceUtils;
+import com.elbenjics.email.view.CertificateSelector;
+import com.elbenjics.email.view.CertificateSelector.HostCallback;
+import com.elbenjics.emailcommon.Device;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.HostAuth;
+import com.elbenjics.emailcommon.utility.CertificateRequestor;
+import com.elbenjics.emailcommon.utility.Utility;
 
 import java.io.IOException;
 
@@ -437,7 +437,7 @@ public class AccountSetupExchangeFragment extends AccountServerBaseFragment
     @Override
     public void onCertificateRequested() {
         Intent intent = new Intent(CertificateRequestor.ACTION_REQUEST_CERT);
-        intent.setData(Uri.parse("eas://com.android.emailcommon/certrequest"));
+        intent.setData(Uri.parse("eas://com.elbenjics.emailcommon/certrequest"));
         startActivityForResult(intent, CERTIFICATE_REQUEST);
     }
 

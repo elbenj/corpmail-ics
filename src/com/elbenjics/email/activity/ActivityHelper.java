@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.elbenjics.email.activity;
 
 import android.app.Activity;
 import android.content.ActivityNotFoundException;
@@ -24,14 +24,14 @@ import android.net.Uri;
 import android.provider.Browser;
 import android.view.WindowManager;
 
-import com.android.email.Controller;
-import com.android.email.Email;
-import com.android.email.R;
-import com.android.email.activity.setup.AccountSecurity;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.utility.EmailAsyncTask;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.Controller;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.R;
+import com.elbenjics.email.activity.setup.AccountSecurity;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.utility.EmailAsyncTask;
+import com.elbenjics.emailcommon.utility.Utility;
 
 /**
  * Various methods that are used by both 1-pane and 2-pane activities.

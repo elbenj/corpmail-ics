@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.exchange.adapter;
+package com.elbenjics.exchange.adapter;
 
 import android.content.ContentProviderOperation;
 import android.content.Context;
@@ -22,19 +22,19 @@ import android.content.OperationApplicationException;
 import android.os.RemoteException;
 import android.util.Log;
 
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.EmailContent.Message;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.service.EmailServiceStatus;
-import com.android.emailcommon.service.SearchParams;
-import com.android.emailcommon.utility.TextUtilities;
-import com.android.exchange.Eas;
-import com.android.exchange.EasResponse;
-import com.android.exchange.EasSyncService;
-import com.android.exchange.ExchangeService;
-import com.android.exchange.adapter.EmailSyncAdapter.EasEmailSyncParser;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.EmailContent.Message;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.service.EmailServiceStatus;
+import com.elbenjics.emailcommon.service.SearchParams;
+import com.elbenjics.emailcommon.utility.TextUtilities;
+import com.elbenjics.exchange.Eas;
+import com.elbenjics.exchange.EasResponse;
+import com.elbenjics.exchange.EasSyncService;
+import com.elbenjics.exchange.ExchangeService;
+import com.elbenjics.exchange.adapter.EmailSyncAdapter.EasEmailSyncParser;
 
 import org.apache.http.HttpStatus;
 

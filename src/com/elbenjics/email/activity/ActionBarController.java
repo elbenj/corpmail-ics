@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.elbenjics.email.activity;
 
 import android.app.ActionBar;
 import android.app.LoaderManager;
@@ -35,11 +35,11 @@ import android.widget.ListView;
 import android.widget.SearchView;
 import android.widget.TextView;
 
-import com.android.email.R;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.utility.DelayedOperations;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.R;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.utility.DelayedOperations;
+import com.elbenjics.emailcommon.utility.Utility;
 
 /**
  * Manages the account name and the custom view part on the action bar.

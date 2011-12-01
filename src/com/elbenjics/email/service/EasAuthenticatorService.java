@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.android.email.service;
+package com.elbenjics.email.service;
 
-import com.android.email.activity.setup.AccountSetupBasics;
-import com.android.emailcommon.AccountManagerTypes;
-import com.android.emailcommon.CalendarProviderStub;
-import com.android.emailcommon.provider.EmailContent;
+import com.elbenjics.email.activity.setup.AccountSetupBasics;
+import com.elbenjics.emailcommon.AccountManagerTypes;
+import com.elbenjics.emailcommon.CalendarProviderStub;
+import com.elbenjics.emailcommon.provider.EmailContent;
 
 import android.accounts.AbstractAccountAuthenticator;
 import android.accounts.Account;

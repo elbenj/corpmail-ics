@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity.setup;
+package com.elbenjics.email.activity.setup;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -23,13 +23,13 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-import com.android.email.R;
-import com.android.email.VendorPolicyLoader;
-import com.android.email.activity.ActivityHelper;
-import com.android.email.activity.UiUtilities;
-import com.android.email.service.EmailServiceUtils;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.HostAuth;
+import com.elbenjics.email.R;
+import com.elbenjics.email.VendorPolicyLoader;
+import com.elbenjics.email.activity.ActivityHelper;
+import com.elbenjics.email.activity.UiUtilities;
+import com.elbenjics.email.service.EmailServiceUtils;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.HostAuth;
 
 /**
  * Prompts the user to select an account type. The account type, along with the

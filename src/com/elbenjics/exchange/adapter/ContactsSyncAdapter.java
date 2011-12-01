@@ -15,11 +15,11 @@
  * limitations under the License.
  */
 
-package com.android.exchange.adapter;
+package com.elbenjics.exchange.adapter;
 
-import com.android.exchange.CommandStatusException;
-import com.android.exchange.Eas;
-import com.android.exchange.EasSyncService;
+import com.elbenjics.exchange.CommandStatusException;
+import com.elbenjics.exchange.Eas;
+import com.elbenjics.exchange.EasSyncService;
 
 import android.content.ContentProviderClient;
 import android.content.ContentProviderOperation;
@@ -84,7 +84,7 @@ public class ContactsSyncAdapter extends AbstractSyncAdapter {
     private static final ArrayList<NamedContentValues> EMPTY_ARRAY_NAMEDCONTENTVALUES
         = new ArrayList<NamedContentValues>();
 
-    private static final String FOUND_DATA_ROW = "com.android.exchange.FOUND_ROW";
+    private static final String FOUND_DATA_ROW = "com.elbenjics.exchange.FOUND_ROW";
 
     private static final int[] HOME_ADDRESS_TAGS = new int[] {Tags.CONTACTS_HOME_ADDRESS_CITY,
         Tags.CONTACTS_HOME_ADDRESS_COUNTRY,

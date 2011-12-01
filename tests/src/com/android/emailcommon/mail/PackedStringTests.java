@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.emailcommon.mail;
+package com.elbenjics.emailcommon.mail;
 
-import com.android.emailcommon.mail.PackedString;
+import com.elbenjics.emailcommon.mail.PackedString;
 
 import junit.framework.TestCase;
 
@@ -24,7 +24,7 @@ import junit.framework.TestCase;
  * Tests of PackedString
  *
  * You can run this entire test case with:
- *   runtest -c com.android.email.mail.PackedStringTests email
+ *   runtest -c com.elbenjics.email.mail.PackedStringTests email
  */
 public class PackedStringTests extends TestCase {
     /** Note: copied from actual class */

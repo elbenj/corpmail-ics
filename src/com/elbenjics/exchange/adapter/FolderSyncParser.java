@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.android.exchange.adapter;
+package com.elbenjics.exchange.adapter;
 
 import android.content.ContentProviderOperation;
 import android.content.ContentUris;
@@ -25,20 +25,20 @@ import android.database.Cursor;
 import android.os.RemoteException;
 import android.text.TextUtils;
 
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.EmailContent.AccountColumns;
-import com.android.emailcommon.provider.EmailContent.MailboxColumns;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.service.SyncWindow;
-import com.android.emailcommon.utility.AttachmentUtilities;
-import com.android.emailcommon.utility.EmailAsyncTask;
-import com.android.emailcommon.utility.Utility;
-import com.android.exchange.CommandStatusException;
-import com.android.exchange.CommandStatusException.CommandStatus;
-import com.android.exchange.Eas;
-import com.android.exchange.ExchangeService;
-import com.android.exchange.provider.MailboxUtilities;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.EmailContent.AccountColumns;
+import com.elbenjics.emailcommon.provider.EmailContent.MailboxColumns;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.service.SyncWindow;
+import com.elbenjics.emailcommon.utility.AttachmentUtilities;
+import com.elbenjics.emailcommon.utility.EmailAsyncTask;
+import com.elbenjics.emailcommon.utility.Utility;
+import com.elbenjics.exchange.CommandStatusException;
+import com.elbenjics.exchange.CommandStatusException.CommandStatus;
+import com.elbenjics.exchange.Eas;
+import com.elbenjics.exchange.ExchangeService;
+import com.elbenjics.exchange.provider.MailboxUtilities;
 import com.google.common.annotations.VisibleForTesting;
 
 import java.io.IOException;

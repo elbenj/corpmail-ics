@@ -15,7 +15,7 @@
  *  limitations under the License.
  */
 
-package com.android.exchange.utility;
+package com.elbenjics.exchange.utility;
 
 import java.io.ByteArrayOutputStream;
 import java.net.URISyntaxException;

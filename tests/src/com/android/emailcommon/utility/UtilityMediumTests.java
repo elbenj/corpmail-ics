@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package com.android.emailcommon.utility;
+package com.elbenjics.emailcommon.utility;
 
-import com.android.email.provider.EmailProvider;
-import com.android.email.provider.ProviderTestUtils;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.EmailContent.Attachment;
-import com.android.emailcommon.provider.EmailContent.Message;
-import com.android.emailcommon.provider.EmailContent.MessageColumns;
-import com.android.emailcommon.provider.Mailbox;
+import com.elbenjics.email.provider.EmailProvider;
+import com.elbenjics.email.provider.ProviderTestUtils;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.EmailContent.Attachment;
+import com.elbenjics.emailcommon.provider.EmailContent.Message;
+import com.elbenjics.emailcommon.provider.EmailContent.MessageColumns;
+import com.elbenjics.emailcommon.provider.Mailbox;
 
 import android.content.Context;
 import android.net.Uri;
@@ -39,7 +39,7 @@ import java.io.IOException;
  * complete - no server(s) required.
  *
  * You can run this entire test case with:
- *   runtest -c com.android.email.UtilityMediumTests email
+ *   runtest -c com.elbenjics.email.UtilityMediumTests email
  */
 @MediumTest
 public class UtilityMediumTests extends ProviderTestCase2<EmailProvider> {
@@ -124,12 +124,12 @@ public class UtilityMediumTests extends ProviderTestCase2<EmailProvider> {
 
     public void testBuildLimitOneUri() {
         // EmailProvider supports "?limit="
-        assertEquals(Uri.parse("content://com.android.email.provider?limit=1"),
-                Utility.buildLimitOneUri(Uri.parse("content://com.android.email.provider")));
+        assertEquals(Uri.parse("content://com.elbenjics.email.provider?limit=1"),
+                Utility.buildLimitOneUri(Uri.parse("content://com.elbenjics.email.provider")));
 
         // Others don't -- so don't add it.
-        assertEquals(Uri.parse("content://com.android.email.attachmentprovider"),
-                Utility.buildLimitOneUri(Uri.parse("content://com.android.email.attachmentprovider"
+        assertEquals(Uri.parse("content://com.elbenjics.email.attachmentprovider"),
+                Utility.buildLimitOneUri(Uri.parse("content://com.elbenjics.email.attachmentprovider"
                         )));
         assertEquals(Uri.parse("content://gmail-ls/android@gmail.com"),
                 Utility.buildLimitOneUri(Uri.parse("content://gmail-ls/android@gmail.com"

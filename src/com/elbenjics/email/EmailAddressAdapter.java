@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.elbenjics.email;
 
 import com.android.common.contacts.BaseEmailAddressAdapter;
-import com.android.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.Account;
 import com.android.ex.chips.AccountSpecifier;
 
 import android.content.Context;

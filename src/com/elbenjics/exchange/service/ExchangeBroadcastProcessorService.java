@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.exchange.service;
+package com.elbenjics.exchange.service;
 
 import android.accounts.AccountManager;
 import android.app.IntentService;
@@ -22,9 +22,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 
-import com.android.emailcommon.Logging;
-import com.android.exchange.Eas;
-import com.android.exchange.ExchangeService;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.exchange.Eas;
+import com.elbenjics.exchange.ExchangeService;
 
 /**
  * The service that really handles broadcast intents on a worker thread.

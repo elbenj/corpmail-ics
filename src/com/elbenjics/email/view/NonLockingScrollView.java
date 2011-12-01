@@ -15,7 +15,7 @@
  */
 
 
-package com.android.email.view;
+package com.elbenjics.email.view;
 
 import android.content.Context;
 import android.util.AttributeSet;

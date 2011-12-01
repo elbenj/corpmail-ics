@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 
-package com.android.email.widget;
+package com.elbenjics.email.widget;
 
-import com.android.email.Email;
-import com.android.email.R;
-import com.android.email.ResourceHelper;
-import com.android.email.activity.MessageCompose;
-import com.android.email.activity.UiUtilities;
-import com.android.email.activity.Welcome;
-import com.android.email.provider.WidgetProvider.WidgetService;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent.Message;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.utility.EmailAsyncTask;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.R;
+import com.elbenjics.email.ResourceHelper;
+import com.elbenjics.email.activity.MessageCompose;
+import com.elbenjics.email.activity.UiUtilities;
+import com.elbenjics.email.activity.Welcome;
+import com.elbenjics.email.provider.WidgetProvider.WidgetService;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent.Message;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.utility.EmailAsyncTask;
 
 import android.app.PendingIntent;
 import android.appwidget.AppWidgetManager;
@@ -82,7 +82,7 @@ public class EmailWidget implements RemoteViewsService.RemoteViewsFactory,
      * We use the following convention for our commands:
      *     widget://command/<command>/<arg1>[/<arg2>]
      */
-    private static final String WIDGET_DATA_MIME_TYPE = "com.android.email/widget_data";
+    private static final String WIDGET_DATA_MIME_TYPE = "com.elbenjics.email/widget_data";
 
     private static final Uri COMMAND_URI = Uri.parse("widget://command");
 
@@ -223,7 +223,7 @@ public class EmailWidget implements RemoteViewsService.RemoteViewsFactory,
     }
 
     /**
-     * Called back by {@link com.android.email.provider.WidgetProvider.WidgetService} to
+     * Called back by {@link com.elbenjics.email.provider.WidgetProvider.WidgetService} to
      * handle intents created by remote views.
      */
     public static boolean processIntent(Context context, Intent intent) {

@@ -14,41 +14,41 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.store;
+package com.elbenjics.email.mail.store;
 
 import android.content.Context;
 import android.text.TextUtils;
 import android.util.Base64DataException;
 import android.util.Log;
 
-import com.android.email.Email;
-import com.android.email.mail.store.ImapStore.ImapException;
-import com.android.email.mail.store.ImapStore.ImapMessage;
-import com.android.email.mail.store.imap.ImapConstants;
-import com.android.email.mail.store.imap.ImapElement;
-import com.android.email.mail.store.imap.ImapList;
-import com.android.email.mail.store.imap.ImapResponse;
-import com.android.email.mail.store.imap.ImapString;
-import com.android.email.mail.store.imap.ImapUtility;
-import com.android.email.mail.transport.CountingOutputStream;
-import com.android.email.mail.transport.EOLConvertingOutputStream;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.internet.BinaryTempFileBody;
-import com.android.emailcommon.internet.MimeBodyPart;
-import com.android.emailcommon.internet.MimeHeader;
-import com.android.emailcommon.internet.MimeMultipart;
-import com.android.emailcommon.internet.MimeUtility;
-import com.android.emailcommon.mail.AuthenticationFailedException;
-import com.android.emailcommon.mail.Body;
-import com.android.emailcommon.mail.FetchProfile;
-import com.android.emailcommon.mail.Flag;
-import com.android.emailcommon.mail.Folder;
-import com.android.emailcommon.mail.Message;
-import com.android.emailcommon.mail.MessagingException;
-import com.android.emailcommon.mail.Part;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.service.SearchParams;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.mail.store.ImapStore.ImapException;
+import com.elbenjics.email.mail.store.ImapStore.ImapMessage;
+import com.elbenjics.email.mail.store.imap.ImapConstants;
+import com.elbenjics.email.mail.store.imap.ImapElement;
+import com.elbenjics.email.mail.store.imap.ImapList;
+import com.elbenjics.email.mail.store.imap.ImapResponse;
+import com.elbenjics.email.mail.store.imap.ImapString;
+import com.elbenjics.email.mail.store.imap.ImapUtility;
+import com.elbenjics.email.mail.transport.CountingOutputStream;
+import com.elbenjics.email.mail.transport.EOLConvertingOutputStream;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.internet.BinaryTempFileBody;
+import com.elbenjics.emailcommon.internet.MimeBodyPart;
+import com.elbenjics.emailcommon.internet.MimeHeader;
+import com.elbenjics.emailcommon.internet.MimeMultipart;
+import com.elbenjics.emailcommon.internet.MimeUtility;
+import com.elbenjics.emailcommon.mail.AuthenticationFailedException;
+import com.elbenjics.emailcommon.mail.Body;
+import com.elbenjics.emailcommon.mail.FetchProfile;
+import com.elbenjics.emailcommon.mail.Flag;
+import com.elbenjics.emailcommon.mail.Folder;
+import com.elbenjics.emailcommon.mail.Message;
+import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.mail.Part;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.service.SearchParams;
+import com.elbenjics.emailcommon.utility.Utility;
 import com.google.common.annotations.VisibleForTesting;
 
 import java.io.IOException;

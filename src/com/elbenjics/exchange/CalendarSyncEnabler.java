@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.exchange;
+package com.elbenjics.exchange;
 
-import com.android.emailcommon.Logging;
+import com.elbenjics.emailcommon.Logging;
 
 import android.accounts.Account;
 import android.accounts.AccountManager;

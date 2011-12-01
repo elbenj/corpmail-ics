@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.android.email.widget;
+package com.elbenjics.email.widget;
 
-import com.android.email.R;
-import com.android.email.data.ThrottlingCursorLoader;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.EmailContent.Message;
-import com.android.emailcommon.provider.EmailContent.MessageColumns;
-import com.android.emailcommon.provider.Mailbox;
+import com.elbenjics.email.R;
+import com.elbenjics.email.data.ThrottlingCursorLoader;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.EmailContent.Message;
+import com.elbenjics.emailcommon.provider.EmailContent.MessageColumns;
+import com.elbenjics.emailcommon.provider.Mailbox;
 
 import android.content.Context;
 import android.content.res.Resources;

@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.android.email.service;
+package com.elbenjics.email.service;
 
-import com.android.email.SecurityPolicy;
-import com.android.emailcommon.provider.Policy;
-import com.android.emailcommon.service.IPolicyService;
+import com.elbenjics.email.SecurityPolicy;
+import com.elbenjics.emailcommon.provider.Policy;
+import com.elbenjics.emailcommon.service.IPolicyService;
 
 import android.app.Service;
 import android.content.Context;

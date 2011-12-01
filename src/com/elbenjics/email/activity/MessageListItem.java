@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity;
+package com.elbenjics.email.activity;
 
 import android.content.Context;
 import android.content.res.Configuration;
@@ -40,8 +40,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.accessibility.AccessibilityEvent;
 
-import com.android.email.R;
-import com.android.emailcommon.utility.TextUtilities;
+import com.elbenjics.email.R;
+import com.elbenjics.emailcommon.utility.TextUtilities;
 import com.google.common.base.Objects;
 
 /**
@@ -62,7 +62,7 @@ public class MessageListItem extends View {
     private boolean mDownEvent;
 
     public static final String MESSAGE_LIST_ITEMS_CLIP_LABEL =
-        "com.android.email.MESSAGE_LIST_ITEMS";
+        "com.elbenjics.email.MESSAGE_LIST_ITEMS";
 
     public MessageListItem(Context context) {
         super(context);

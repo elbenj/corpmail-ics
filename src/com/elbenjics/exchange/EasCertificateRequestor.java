@@ -15,11 +15,11 @@
  */
 
 
-package com.android.exchange;
+package com.elbenjics.exchange;
 
 import android.security.KeyChain;
 
-import com.android.emailcommon.utility.CertificateRequestor;
+import com.elbenjics.emailcommon.utility.CertificateRequestor;
 
 /**
  * A subclass of the {@link CertificateRequestor} so that the Exchange process

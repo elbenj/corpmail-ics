@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.activity.setup;
+package com.elbenjics.email.activity.setup;
 
 import android.accounts.AccountAuthenticatorResponse;
 import android.accounts.AccountManager;
@@ -41,19 +41,19 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.email.EmailAddressValidator;
-import com.android.email.R;
-import com.android.email.VendorPolicyLoader;
-import com.android.email.activity.ActivityHelper;
-import com.android.email.activity.UiUtilities;
-import com.android.email.activity.Welcome;
-import com.android.email.activity.setup.AccountSettingsUtils.Provider;
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.HostAuth;
-import com.android.emailcommon.service.SyncWindow;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.EmailAddressValidator;
+import com.elbenjics.email.R;
+import com.elbenjics.email.VendorPolicyLoader;
+import com.elbenjics.email.activity.ActivityHelper;
+import com.elbenjics.email.activity.UiUtilities;
+import com.elbenjics.email.activity.Welcome;
+import com.elbenjics.email.activity.setup.AccountSettingsUtils.Provider;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.HostAuth;
+import com.elbenjics.emailcommon.service.SyncWindow;
+import com.elbenjics.emailcommon.utility.Utility;
 import com.google.common.annotations.VisibleForTesting;
 
 import java.net.URISyntaxException;
@@ -79,7 +79,7 @@ import java.util.concurrent.FutureTask;
  * checking is done, so the account may or may not actually work.  Here is a sample command, for a
  * gmail account "test_account" with a password of "test_password".
  *
- *      $ adb shell am start -a com.android.email.CREATE_ACCOUNT \
+ *      $ adb shell am start -a com.elbenjics.email.CREATE_ACCOUNT \
  *          -e EMAIL test_account@gmail.com \
  *          -e USER "Test Account Name" \
  *          -e INCOMING imap+ssl+://test_account:test_password@imap.gmail.com \
@@ -97,7 +97,7 @@ public class AccountSetupBasics extends AccountSetupActivity
      * Direct access for forcing account creation
      * For use by continuous automated test system (e.g. in conjunction with monkey tests)
      */
-    private final String ACTION_CREATE_ACCOUNT = "com.android.email.CREATE_ACCOUNT";
+    private final String ACTION_CREATE_ACCOUNT = "com.elbenjics.email.CREATE_ACCOUNT";
     private final String EXTRA_CREATE_ACCOUNT_EMAIL = "EMAIL";
     private final String EXTRA_CREATE_ACCOUNT_USER = "USER";
     private final String EXTRA_CREATE_ACCOUNT_INCOMING = "INCOMING";

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.mail.store;
+package com.elbenjics.email.mail.store;
 
 import android.content.Context;
 import android.content.ContextWrapper;
@@ -26,36 +26,36 @@ import android.test.InstrumentationTestCase;
 import android.test.MoreAsserts;
 import android.test.suitebuilder.annotation.SmallTest;
 
-import com.android.email.DBTestHelper;
-import com.android.email.MockSharedPreferences;
-import com.android.email.MockVendorPolicy;
-import com.android.email.VendorPolicyLoader;
-import com.android.email.mail.Transport;
-import com.android.email.mail.store.ImapStore.ImapMessage;
-import com.android.email.mail.store.imap.ImapResponse;
-import com.android.email.mail.store.imap.ImapTestUtils;
-import com.android.email.mail.transport.MockTransport;
-import com.android.emailcommon.TempDirectory;
-import com.android.emailcommon.internet.MimeBodyPart;
-import com.android.emailcommon.internet.MimeMultipart;
-import com.android.emailcommon.internet.MimeUtility;
-import com.android.emailcommon.internet.TextBody;
-import com.android.emailcommon.mail.Address;
-import com.android.emailcommon.mail.AuthenticationFailedException;
-import com.android.emailcommon.mail.Body;
-import com.android.emailcommon.mail.FetchProfile;
-import com.android.emailcommon.mail.Flag;
-import com.android.emailcommon.mail.Folder;
-import com.android.emailcommon.mail.Folder.FolderType;
-import com.android.emailcommon.mail.Folder.OpenMode;
-import com.android.emailcommon.mail.Message;
-import com.android.emailcommon.mail.Message.RecipientType;
-import com.android.emailcommon.mail.MessagingException;
-import com.android.emailcommon.mail.Part;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.HostAuth;
-import com.android.emailcommon.provider.Mailbox;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.email.DBTestHelper;
+import com.elbenjics.email.MockSharedPreferences;
+import com.elbenjics.email.MockVendorPolicy;
+import com.elbenjics.email.VendorPolicyLoader;
+import com.elbenjics.email.mail.Transport;
+import com.elbenjics.email.mail.store.ImapStore.ImapMessage;
+import com.elbenjics.email.mail.store.imap.ImapResponse;
+import com.elbenjics.email.mail.store.imap.ImapTestUtils;
+import com.elbenjics.email.mail.transport.MockTransport;
+import com.elbenjics.emailcommon.TempDirectory;
+import com.elbenjics.emailcommon.internet.MimeBodyPart;
+import com.elbenjics.emailcommon.internet.MimeMultipart;
+import com.elbenjics.emailcommon.internet.MimeUtility;
+import com.elbenjics.emailcommon.internet.TextBody;
+import com.elbenjics.emailcommon.mail.Address;
+import com.elbenjics.emailcommon.mail.AuthenticationFailedException;
+import com.elbenjics.emailcommon.mail.Body;
+import com.elbenjics.emailcommon.mail.FetchProfile;
+import com.elbenjics.emailcommon.mail.Flag;
+import com.elbenjics.emailcommon.mail.Folder;
+import com.elbenjics.emailcommon.mail.Folder.FolderType;
+import com.elbenjics.emailcommon.mail.Folder.OpenMode;
+import com.elbenjics.emailcommon.mail.Message;
+import com.elbenjics.emailcommon.mail.Message.RecipientType;
+import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.mail.Part;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.HostAuth;
+import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenjics.emailcommon.utility.Utility;
 
 import org.apache.commons.io.IOUtils;
 
@@ -68,7 +68,7 @@ import java.util.regex.Pattern;
  * complete - no server(s) required.
  *
  * To run these tests alone, use:
- *   $ runtest -c com.android.email.mail.store.ImapStoreUnitTests email
+ *   $ runtest -c com.elbenjics.email.mail.store.ImapStoreUnitTests email
  *
  * TODO Check if callback is really called
  * TODO test for BAD response in various places?

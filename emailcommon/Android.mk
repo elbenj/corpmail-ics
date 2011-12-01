@@ -14,21 +14,21 @@
 
 LOCAL_PATH := $(call my-dir)
 
-# Build the com.android.emailcommon static library. At the moment, this includes
+# Build the com.elbenjics.emailcommon static library. At the moment, this includes
 # the emailcommon files themselves plus everything under src/org (apache code).  All of our
 # AIDL files are also compiled into the static library
 
 include $(CLEAR_VARS)
 
-LOCAL_MODULE := com.android.emailcommon
+LOCAL_MODULE := com.elbenjics.emailcommon
 LOCAL_STATIC_JAVA_LIBRARIES := guava
-LOCAL_SRC_FILES := $(call all-java-files-under, src/com/android/emailcommon)
+LOCAL_SRC_FILES := $(call all-java-files-under, src/com.elbenjics.emailcommon)
 LOCAL_SRC_FILES += $(call all-java-files-under, src/org)
 LOCAL_SRC_FILES += \
-    src/com/android/emailcommon/service/IEmailService.aidl \
-    src/com/android/emailcommon/service/IEmailServiceCallback.aidl \
-    src/com/android/emailcommon/service/IPolicyService.aidl \
-    src/com/android/emailcommon/service/IAccountService.aidl
+    src/com/elbenjics/emailcommon/service/IEmailService.aidl \
+    src/com/elbenjics/emailcommon/service/IEmailServiceCallback.aidl \
+    src/com/elbenjics/emailcommon/service/IPolicyService.aidl \
+    src/com/elbenjics/emailcommon/service/IAccountService.aidl
 
 LOCAL_SDK_VERSION := current
 

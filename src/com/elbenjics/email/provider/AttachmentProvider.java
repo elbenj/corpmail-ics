@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.android.email.provider;
+package com.elbenjics.email.provider;
 
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.internet.MimeUtility;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.EmailContent.Attachment;
-import com.android.emailcommon.provider.EmailContent.AttachmentColumns;
-import com.android.emailcommon.utility.AttachmentUtilities;
-import com.android.emailcommon.utility.AttachmentUtilities.Columns;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.internet.MimeUtility;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.EmailContent.Attachment;
+import com.elbenjics.emailcommon.provider.EmailContent.AttachmentColumns;
+import com.elbenjics.emailcommon.utility.AttachmentUtilities;
+import com.elbenjics.emailcommon.utility.AttachmentUtilities.Columns;
 
 import android.content.ContentProvider;
 import android.content.ContentUris;
@@ -49,10 +49,10 @@ import java.util.List;
  * A simple ContentProvider that allows file access to Email's attachments.
  *
  * The URI scheme is as follows.  For raw file access:
- *   content://com.android.email.attachmentprovider/acct#/attach#/RAW
+ *   content://com.elbenjics.email.attachmentprovider/acct#/attach#/RAW
  *
  * And for access to thumbnails:
- *   content://com.android.email.attachmentprovider/acct#/attach#/THUMBNAIL/width#/height#
+ *   content://com.elbenjics.email.attachmentprovider/acct#/attach#/THUMBNAIL/width#/height#
  *
  * The on-disk (storage) schema is as follows.
  *
@@ -60,8 +60,8 @@ import java.util.List;
  * Thumbnails are stored at:   <cache-path>/thmb_account#_item#
  *
  * Using the standard application context, account #10 and attachment # 20, this would be:
- *      /data/data/com.android.email/databases/10.db_att/20
- *      /data/data/com.android.email/cache/thmb_10_20
+ *      /data/data/com.elbenjics.email/databases/10.db_att/20
+ *      /data/data/com.elbenjics.email/cache/thmb_10_20
  */
 public class AttachmentProvider extends ContentProvider {
 

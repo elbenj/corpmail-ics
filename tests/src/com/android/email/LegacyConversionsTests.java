@@ -14,28 +14,28 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.elbenjics.email;
 
-import com.android.email.provider.EmailProvider;
-import com.android.email.provider.ProviderTestUtils;
-import com.android.emailcommon.internet.MimeBodyPart;
-import com.android.emailcommon.internet.MimeHeader;
-import com.android.emailcommon.internet.MimeMessage;
-import com.android.emailcommon.internet.MimeUtility;
-import com.android.emailcommon.internet.TextBody;
-import com.android.emailcommon.mail.Address;
-import com.android.emailcommon.mail.BodyPart;
-import com.android.emailcommon.mail.Flag;
-import com.android.emailcommon.mail.Message;
-import com.android.emailcommon.mail.Message.RecipientType;
-import com.android.emailcommon.mail.MessageTestUtils;
-import com.android.emailcommon.mail.MessageTestUtils.MessageBuilder;
-import com.android.emailcommon.mail.MessageTestUtils.MultipartBuilder;
-import com.android.emailcommon.mail.MessagingException;
-import com.android.emailcommon.mail.Part;
-import com.android.emailcommon.provider.EmailContent;
-import com.android.emailcommon.provider.EmailContent.Attachment;
-import com.android.emailcommon.utility.ConversionUtilities;
+import com.elbenjics.email.provider.EmailProvider;
+import com.elbenjics.email.provider.ProviderTestUtils;
+import com.elbenjics.emailcommon.internet.MimeBodyPart;
+import com.elbenjics.emailcommon.internet.MimeHeader;
+import com.elbenjics.emailcommon.internet.MimeMessage;
+import com.elbenjics.emailcommon.internet.MimeUtility;
+import com.elbenjics.emailcommon.internet.TextBody;
+import com.elbenjics.emailcommon.mail.Address;
+import com.elbenjics.emailcommon.mail.BodyPart;
+import com.elbenjics.emailcommon.mail.Flag;
+import com.elbenjics.emailcommon.mail.Message;
+import com.elbenjics.emailcommon.mail.Message.RecipientType;
+import com.elbenjics.emailcommon.mail.MessageTestUtils;
+import com.elbenjics.emailcommon.mail.MessageTestUtils.MessageBuilder;
+import com.elbenjics.emailcommon.mail.MessageTestUtils.MultipartBuilder;
+import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.mail.Part;
+import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenjics.emailcommon.provider.EmailContent.Attachment;
+import com.elbenjics.emailcommon.utility.ConversionUtilities;
 
 import android.content.ContentUris;
 import android.content.Context;
@@ -55,7 +55,7 @@ import java.util.Date;
  * a true "unit test".
  *
  * You can run this entire test case with:
- *   runtest -c com.android.email.LegacyConversionsTests email
+ *   runtest -c com.elbenjics.email.LegacyConversionsTests email
  */
 public class LegacyConversionsTests extends ProviderTestCase2<EmailProvider> {
 

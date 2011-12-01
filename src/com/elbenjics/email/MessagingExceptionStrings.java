@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.elbenjics.email;
 
-import com.android.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.mail.MessagingException;
 
 import android.content.Context;
 

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.elbenjics.email;
 
 import android.accounts.AccountManager;
 import android.accounts.AccountManagerFuture;
@@ -23,10 +23,10 @@ import android.accounts.OperationCanceledException;
 import android.database.Cursor;
 import android.test.ProviderTestCase2;
 
-import com.android.email.provider.EmailProvider;
-import com.android.email.provider.ProviderTestUtils;
-import com.android.emailcommon.provider.Account;
-import com.android.emailcommon.provider.EmailContent;
+import com.elbenjics.email.provider.EmailProvider;
+import com.elbenjics.email.provider.ProviderTestUtils;
+import com.elbenjics.emailcommon.provider.Account;
+import com.elbenjics.emailcommon.provider.EmailContent;
 
 import java.io.IOException;
 import java.util.ArrayList;

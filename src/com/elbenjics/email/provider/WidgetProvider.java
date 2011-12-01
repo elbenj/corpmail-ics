@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.android.email.provider;
+package com.elbenjics.email.provider;
 
-import com.android.email.Email;
-import com.android.email.widget.EmailWidget;
-import com.android.email.widget.WidgetManager;
-import com.android.emailcommon.Logging;
+import com.elbenjics.email.Email;
+import com.elbenjics.email.widget.EmailWidget;
+import com.elbenjics.email.widget.WidgetManager;
+import com.elbenjics.emailcommon.Logging;
 
 import android.app.Service;
 import android.appwidget.AppWidgetManager;

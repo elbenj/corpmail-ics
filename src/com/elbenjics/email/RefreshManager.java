@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.android.email;
+package com.elbenjics.email;
 
-import com.android.emailcommon.Logging;
-import com.android.emailcommon.mail.MessagingException;
-import com.android.emailcommon.utility.Utility;
+import com.elbenjics.emailcommon.Logging;
+import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenjics.emailcommon.utility.Utility;
 
 import android.content.Context;
 import android.os.AsyncTask;
@@ -37,7 +37,7 @@ import java.util.HashMap;
  *   <li>Taking refresh requests of mailbox-lists and message-lists and the "send outgoing
  *       messages" requests from UI, and calls appropriate methods of {@link Controller}.
  *       Note at this point the timer-based refresh
- *       (by {@link com.android.email.service.MailService}) uses {@link Controller} directly.
+ *       (by {@link com.elbenjics.email.service.MailService}) uses {@link Controller} directly.
  *   <li>Keeping track of which mailbox list/message list is actually being refreshed.
  * </ul>
  * Refresh requests will be ignored if a request to the same target is already requested, or is

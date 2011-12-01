@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.email.data;
+package com.elbenjics.email.data;
 
 import android.database.Cursor;
 import android.database.MatrixCursor;
