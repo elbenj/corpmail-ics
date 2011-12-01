@@ -22,7 +22,7 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE := com.elbenjics.emailcommon
 LOCAL_STATIC_JAVA_LIBRARIES := guava
-LOCAL_SRC_FILES := $(call all-java-files-under, src/com.elbenjics.emailcommon)
+LOCAL_SRC_FILES := $(call all-java-files-under, src/com/elbenjics/emailcommon)
 LOCAL_SRC_FILES += $(call all-java-files-under, src/org)
 LOCAL_SRC_FILES += \
     src/com/elbenjics/emailcommon/service/IEmailService.aidl \

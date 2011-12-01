@@ -58,7 +58,7 @@ import com.elbenjics.exchange.Eas;
 import com.elbenjics.exchange.EasResponse;
 import com.elbenjics.exchange.EasSyncService;
 import com.elbenjics.exchange.MessageMoveRequest;
-import com.elbenjics.exchange.R;
+import com.elbenjics.email.R;
 import com.elbenjics.exchange.utility.CalendarUtilities;
 
 import com.google.common.annotations.VisibleForTesting;

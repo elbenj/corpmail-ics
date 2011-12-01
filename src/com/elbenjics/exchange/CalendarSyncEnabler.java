@@ -29,6 +29,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.provider.CalendarContract;
 import android.util.Log;
+import com.elbenjics.email.R;
 
 /**
  * Utility class to enable Exchange calendar sync for all existing Exchange accounts.

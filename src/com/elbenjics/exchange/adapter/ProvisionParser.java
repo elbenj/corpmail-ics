@@ -21,7 +21,7 @@ import android.content.res.Resources;
 import com.elbenjics.emailcommon.provider.Policy;
 import com.elbenjics.exchange.EasSyncService;
 import com.elbenjics.exchange.ExchangeService;
-import com.elbenjics.exchange.R;
+import com.elbenjics.email.R;
 import com.elbenjics.exchange.SecurityPolicyDelegate;
 
 import org.xmlpull.v1.XmlPullParser;

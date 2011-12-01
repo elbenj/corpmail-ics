@@ -25,7 +25,7 @@ import com.elbenjics.emailcommon.service.AccountServiceProxy;
 import com.elbenjics.emailcommon.utility.Utility;
 import com.elbenjics.exchange.Eas;
 import com.elbenjics.exchange.EasSyncService;
-import com.elbenjics.exchange.R;
+import com.elbenjics.email.R;
 import com.elbenjics.exchange.provider.GalResult.GalData;
 
 import android.accounts.AccountManager;

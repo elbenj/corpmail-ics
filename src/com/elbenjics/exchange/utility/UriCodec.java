@@ -20,7 +20,8 @@ package com.elbenjics.exchange.utility;
 import java.io.ByteArrayOutputStream;
 import java.net.URISyntaxException;
 import java.nio.charset.Charset;
-import java.nio.charset.Charsets;
+//import java.nio.charset.Charsets;
+//import java.nio.charset.*;
 
 // Note: This class copied verbatim from libcore.net
 
@@ -38,7 +39,7 @@ public abstract class UriCodec {
      */
     protected abstract boolean isRetained(char c);
 
-    /**
+    /**Charset.forName("UTF-8")
      * Throws if {@code s} is invalid according to this encoder.
      */
     public final String validate(String uri, int start, int end, String name)
@@ -137,11 +138,11 @@ public abstract class UriCodec {
     }
 
     public final void appendEncoded(StringBuilder builder, String s) {
-        appendEncoded(builder, s, Charsets.UTF_8, false);
+        appendEncoded(builder, s, Charset.forName("UTF-8"), false);
     }
 
     public final void appendPartiallyEncoded(StringBuilder builder, String s) {
-        appendEncoded(builder, s, Charsets.UTF_8, true);
+        appendEncoded(builder, s, Charset.forName("UTF-8"), true);
     }
 
     /**
@@ -200,7 +201,7 @@ public abstract class UriCodec {
     }
 
     public static String decode(String s) {
-        return decode(s, false, Charsets.UTF_8);
+        return decode(s, false, Charset.forName("UTF-8"));
     }
 
     private static void appendHex(StringBuilder builder, String s, Charset charset) {

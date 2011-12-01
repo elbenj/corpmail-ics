@@ -47,10 +47,11 @@ import com.elbenjics.emailcommon.utility.Utility;
 import com.elbenjics.exchange.Eas;
 import com.elbenjics.exchange.EasSyncService;
 import com.elbenjics.exchange.ExchangeService;
-import com.elbenjics.exchange.R;
+import com.elbenjics.email.R;
 import com.elbenjics.exchange.adapter.Serializer;
 import com.elbenjics.exchange.adapter.Tags;
-import com.android.internal.util.ArrayUtils;
+// import com.android.internal.util.ArrayUtils;
+import com.android.internal.util.*;
 import com.google.common.annotations.VisibleForTesting;
 
 import java.io.IOException;
