@@ -100,7 +100,7 @@ public class CalendarSyncEnabler {
                 createLaunchCalendarIntent(), 0);
 
         String tickerText = mContext.getString(R.string.notification_exchange_calendar_added);
-        Notification n = new Notification(R.drawable.stat_notify_calendar,
+        Notification n = new Notification(android.R.drawable.stat_notify_voicemail,
                 tickerText, System.currentTimeMillis());
         n.setLatestEventInfo(mContext, tickerText, emailAddresses, launchCalendarPendingIntent);
         n.flags = Notification.FLAG_AUTO_CANCEL;
