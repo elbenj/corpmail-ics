@@ -2082,8 +2082,24 @@ public class ExchangeService extends Service implements Runnable {
         // Enforce manual sync only while roaming here
         long policyKey = account.mPolicyKey;
         // Quick exit from this check
-        if ((policyKey != 0) && (networkInfo != null) &&
-                (ConnectivityManager.isNetworkTypeMobile(networkInfo.getType()))) {
+        boolean ismobile = false;
+        int nettype = networkInfo.getType();
+        switch (nettype) 
+        {
+            case 0:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 10:
+            case 11:
+            case 12:
+                ismobile = true;
+            default:
+                ismobile = false;
+        }
+
+        if ((policyKey != 0) && (networkInfo != null) && ismobile) {
             // We'll cache the Policy data here
             Policy policy = account.mPolicy;
             if (policy == null) {

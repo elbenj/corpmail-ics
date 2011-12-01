@@ -51,7 +51,6 @@ import com.elbenjics.email.R;
 import com.elbenjics.exchange.adapter.Serializer;
 import com.elbenjics.exchange.adapter.Tags;
 // import com.android.internal.util.ArrayUtils;
-import com.android.internal.util.*;
 import com.google.common.annotations.VisibleForTesting;
 
 import java.io.IOException;
@@ -776,7 +775,7 @@ public class CalendarUtilities {
                 // If the default time zone is a match
                 TimeZone defaultTimeZone = TimeZone.getDefault();
                 if (!defaultTimeZone.useDaylightTime() &&
-                        ArrayUtils.contains(zoneIds, defaultTimeZone.getID())) {
+                        arrayContains(zoneIds, defaultTimeZone.getID())) {
                     if (Eas.USER_LOG) {
                         ExchangeService.log(TAG, "TimeZone without DST found to be default: " +
                                 defaultTimeZone.getID());
@@ -851,6 +850,20 @@ public class CalendarUtilities {
         return null;
     }
 
+    public static <T> boolean arrayContains(T[] array, T value) {
+        for (T element : array) {
+            if (element == null) {
+                if (value == null) return true;
+            } else {
+                if (value != null && element.equals(value)) return true;
+            }
+        }
+        return false;
+    }
+    
+    
+    
+    
     static public String convertEmailDateTimeToCalendarDateTime(String date) {
         // Format for email date strings is 2010-02-23T16:00:00.000Z
         // Format for calendar date strings is 20100223T160000Z

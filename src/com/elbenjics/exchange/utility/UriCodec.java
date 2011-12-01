@@ -25,6 +25,8 @@ import java.nio.charset.Charset;
 
 // Note: This class copied verbatim from libcore.net
 
+
+
 /**
  * Encodes and decodes {@code application/x-www-form-urlencoded} content.
  * Subclasses define exactly which characters are legal.
@@ -34,6 +36,26 @@ import java.nio.charset.Charset;
  */
 public abstract class UriCodec {
 
+    
+    /**
+     * The digits for every supported radix.
+     */
+    private static final char[] DIGITS = {
+        '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
+        'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
+        'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
+        'u', 'v', 'w', 'x', 'y', 'z'
+    };
+
+    private static final char[] UPPER_CASE_DIGITS = {
+        '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
+        'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
+        'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T',
+        'U', 'V', 'W', 'X', 'Y', 'Z'
+    };
+
+    
+    
     /**
      * Returns true if {@code c} does not need to be escaped.
      */
@@ -212,6 +234,11 @@ public abstract class UriCodec {
 
     private static void appendHex(StringBuilder sb, byte b) {
         sb.append('%');
-        sb.append(Byte.toHexString(b, true));
+        char[] digits = UPPER_CASE_DIGITS;
+        char[] buf = new char[2]; // We always want two digits.
+        buf[0] = digits[(b >> 4) & 0xf];
+        buf[1] = digits[b & 0xf];
+        String n = new String(buf, 0, 2);
+        sb.append(n);
     }
 }
