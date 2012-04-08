@@ -31,7 +31,7 @@ LOCAL_RESOURCE_DIR := $(addprefix $(LOCAL_PATH)/, $(res_dir))
 
 LOCAL_STATIC_JAVA_LIBRARIES := android-common com.elbenjics.emailcommon guava android-common-chips
 
-LOCAL_PACKAGE_NAME := Email
+LOCAL_PACKAGE_NAME := ICSEmail
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
@@ -42,8 +42,8 @@ LOCAL_SDK_VERSION := current
 # leaving out code which is tested by other means (e.g. static libraries) that
 # would dilute the coverage results. These options do not affect regular
 # production builds.
-LOCAL_EMMA_COVERAGE_FILTER := +com.elbenjics.emailcommon.*,+com.elbenjics.email.*, \
-    +org.apache.james.mime4j.*,+com.beetstra.jutf7.*,+org.apache.commons.io.*
+#LOCAL_EMMA_COVERAGE_FILTER := +com.elbenjics.emailcommon.*,+com.elbenjics.email.*, \
+#    +org.apache.james.mime4j.*,+com.beetstra.jutf7.*,+org.apache.commons.io.*
 
 include $(BUILD_PACKAGE)
 
