@@ -208,8 +208,10 @@ public class AccountSetupOptions extends AccountSetupActivity implements OnClick
         if (account.isSaved()) {
             // Disrupting the normal flow could get us here, but if the account is already
             // saved, we've done this work
+        	Log.d("MIKE","DONE_________ IS SAVED");
             return;
         }
+        Log.d("MIKE","DONE ____ NOT SAVED???");
         account.setDisplayName(account.getEmailAddress());
         int newFlags = account.getFlags() &
             ~(Account.FLAGS_NOTIFY_NEW_MAIL | Account.FLAGS_BACKGROUND_ATTACHMENTS);
@@ -283,9 +285,9 @@ public class AccountSetupOptions extends AccountSetupActivity implements OnClick
             } catch (OperationCanceledException e) {
                 Log.d(Logging.LOG_TAG, "addAccount was canceled");
             } catch (IOException e) {
-                Log.d(Logging.LOG_TAG, "addAccount failed: " + e);
+                Log.d(Logging.LOG_TAG, "addAccount failed:blah " + e);
             } catch (AuthenticatorException e) {
-                Log.d(Logging.LOG_TAG, "addAccount failed: " + e);
+                Log.d(Logging.LOG_TAG, "addAccount failed:blahblah " + e);
             }
             showErrorDialog(R.string.account_setup_failed_dlg_auth_message,
                     R.string.system_account_create_failed);
@@ -320,9 +322,11 @@ public class AccountSetupOptions extends AccountSetupActivity implements OnClick
      */
     private void optionsComplete() {
         // If the account manager initiated the creation, report success at this point
+    	Log.d("MIKE","____options complete____");
         AccountAuthenticatorResponse authenticatorResponse =
             SetupData.getAccountAuthenticatorResponse();
         if (authenticatorResponse != null) {
+        	Log.d("MIKE","____setupdata getaccountauthenticatorresponse____");
             authenticatorResponse.onResult(null);
             SetupData.setAccountAuthenticatorResponse(null);
         }

@@ -745,6 +745,7 @@ public class MailService extends Service {
         String accountType = hostAuthRecv.mProtocol.equals("eas") ?
                 AccountManagerTypes.TYPE_EXCHANGE :
                 AccountManagerTypes.TYPE_POP_IMAP;
+        Log.d("MIKE","ABOUT TO ADD ACCOUNT_____________");
         AccountManager.get(context).addAccount(accountType, null, null, options, null, callback,
                 null);
     }

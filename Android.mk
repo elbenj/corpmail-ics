@@ -20,12 +20,13 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 # Include res dir from chips
 chips_dir := ../../../frameworks/ex/chips/res
+mail_common_dir := ../../../frameworks/opt/mailcommon/res
 res_dir := $(chips_dir) res
 
 LOCAL_MODULE_TAGS := optional
 
 LOCAL_SRC_FILES := $(call all-java-files-under, src/com/elbenjics/email)
-LOCAL_SRC_FILES := $(call all-java-files-under, src/com/elbenjics/exchange)
+LOCAL_SRC_FILES += $(call all-java-files-under, src/com/elbenjics/exchange)
 LOCAL_SRC_FILES += $(call all-java-files-under, src/com/beetstra)
 LOCAL_RESOURCE_DIR := $(addprefix $(LOCAL_PATH)/, $(res_dir))
 
@@ -42,8 +43,8 @@ LOCAL_SDK_VERSION := current
 # leaving out code which is tested by other means (e.g. static libraries) that
 # would dilute the coverage results. These options do not affect regular
 # production builds.
-#LOCAL_EMMA_COVERAGE_FILTER := +com.elbenjics.emailcommon.*,+com.elbenjics.email.*, \
-#    +org.apache.james.mime4j.*,+com.beetstra.jutf7.*,+org.apache.commons.io.*
+LOCAL_EMMA_COVERAGE_FILTER := +com.elbenjics.emailcommon.*,+com.elbenjics.email.*, \
+    +org.apache.james.mime4j.*,+com.beetstra.jutf7.*,+org.apache.commons.io.*,+com.elbenjics.exchange.*
 
 include $(BUILD_PACKAGE)
 

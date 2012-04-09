@@ -214,3 +214,21 @@
   *** toByteArray(java.io.Reader, java.lang.String);
   *** toByteArray(java.lang.String);
 }
+
+
+-keepclasseswithmembers class com.elbenjics.exchange.adapter.Parser {
+  *** resetInput(java.io.InputStream);
+}
+
+-keepclasseswithmembers class com.elbenjics.exchange.provider.GalResult {
+  *** addGalData(com.elbenjics.exchange.provider.GalResult$GalData);
+  *** addGalData(long, java.lang.String, java.lang.String);
+}
+
+-keepclasseswithmembers class com.elbenjics.exchange.CalendarSyncEnabler {
+  public <init>(android.content.Context);
+}
+
+-keepclasseswithmembers class com.elbenjics.exchange.provider.MailboxUtilities {
+  *** setFlagsAndChildrensParentKey(android.content.Context, java.lang.String, java.lang.String);
+}
