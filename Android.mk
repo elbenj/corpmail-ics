@@ -32,7 +32,7 @@ LOCAL_RESOURCE_DIR := $(addprefix $(LOCAL_PATH)/, $(res_dir))
 
 LOCAL_STATIC_JAVA_LIBRARIES := android-common com.elbenj.emailcommon guava android-common-chips
 
-LOCAL_PACKAGE_NAME := ICSEmail
+LOCAL_PACKAGE_NAME := Corpmail
 
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
