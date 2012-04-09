@@ -50,7 +50,7 @@
             />
         <ImageView
             android:id="@+id/presence"
-            android:src="@android:drawable/presence_offline"
+            android:src="@drawable/presence_offline"
             android:layout_below="@+id/from_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
