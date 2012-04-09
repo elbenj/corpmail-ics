@@ -103,11 +103,12 @@ public class AccountSetupBasics extends AccountSetupActivity
     private final String EXTRA_CREATE_ACCOUNT_INCOMING = "INCOMING";
     private final String EXTRA_CREATE_ACCOUNT_OUTGOING = "OUTGOING";
     private final Boolean DEBUG_ALLOW_NON_TEST_HARNESS_CREATION = false;
-
-    private final static String STATE_KEY_PROVIDER = "AccountSetupBasics.provider";
+    private static final String EXTRA_FLOW_MODE = "FLOW_MODE";
+    
+    private static final String STATE_KEY_PROVIDER = "AccountSetupBasics.provider";
 
     // NOTE: If you change this value, confirm that the new interval exists in arrays.xml
-    private final static int DEFAULT_ACCOUNT_CHECK_INTERVAL = 15;
+    private static final int DEFAULT_ACCOUNT_CHECK_INTERVAL = 15;
 
     // Support for UI
     private TextView mWelcomeView;
@@ -126,8 +127,9 @@ public class AccountSetupBasics extends AccountSetupActivity
     FutureTask<String> mOwnerLookupTask;
 
     public static void actionNewAccount(Activity fromActivity) {
-        SetupData.init(SetupData.FLOW_MODE_NORMAL);
-        fromActivity.startActivity(new Intent(fromActivity, AccountSetupBasics.class));
+        Intent i = new Intent(fromActivity, AccountSetupBasics.class);
+        i.putExtra(EXTRA_FLOW_MODE, SetupData.FLOW_MODE_NORMAL);
+        fromActivity.startActivity(i);
     }
 
     /**
@@ -135,8 +137,9 @@ public class AccountSetupBasics extends AccountSetupActivity
      * for exchange accounts.
      */
     public static Intent actionSetupExchangeIntent(Context context) {
-        SetupData.init(SetupData.FLOW_MODE_ACCOUNT_MANAGER_EAS);
-        return new Intent(context, AccountSetupBasics.class);
+        Intent i = new Intent(context, AccountSetupBasics.class);
+        i.putExtra(EXTRA_FLOW_MODE, SetupData.FLOW_MODE_ACCOUNT_MANAGER_EAS);
+        return i;
     }
 
     /**
@@ -144,11 +147,16 @@ public class AccountSetupBasics extends AccountSetupActivity
      * for pop/imap accounts.
      */
     public static Intent actionSetupPopImapIntent(Context context) {
-        SetupData.init(SetupData.FLOW_MODE_ACCOUNT_MANAGER_POP_IMAP);
-        return new Intent(context, AccountSetupBasics.class);
+        Intent i = new Intent(context, AccountSetupBasics.class);
+        i.putExtra(EXTRA_FLOW_MODE, SetupData.FLOW_MODE_ACCOUNT_MANAGER_POP_IMAP);
+        return i;
     }
 
     public static void actionAccountCreateFinishedAccountFlow(Activity fromActivity) {
+        // TODO: handle this case - modifying state on SetupData when instantiating an Intent
+        // is not safe, since it's not guaranteed that an Activity will run with the Intent, and
+        // information can get lost.
+
         Intent i= new Intent(fromActivity, AccountSetupBasics.class);
         // If we're in the "account flow" (from AccountManager), we want to return to the caller
         // (in the settings app)
@@ -183,7 +191,15 @@ public class AccountSetupBasics extends AccountSetupActivity
             SetupData.init(SetupData.FLOW_MODE_FORCE_CREATE);
         }
 
-        int flowMode = SetupData.getFlowMode();
+        int flowMode = getIntent().getIntExtra(EXTRA_FLOW_MODE, SetupData.FLOW_MODE_UNSPECIFIED);
+        if (flowMode != SetupData.FLOW_MODE_UNSPECIFIED) {
+            SetupData.init(flowMode);
+        } else {
+            // TODO: get rid of this case. It's not safe to rely on this global static state. It
+            // should be specified in the Intent always.
+            flowMode = SetupData.getFlowMode();
+        }
+
         if (flowMode == SetupData.FLOW_MODE_RETURN_TO_CALLER) {
             // Return to the caller who initiated account creation
             finish();
@@ -685,7 +701,7 @@ public class AccountSetupBasics extends AccountSetupActivity
      * Dialog fragment to show "setup note" dialog
      */
     public static class NoteDialogFragment extends DialogFragment {
-        private final static String TAG = "NoteDialogFragment";
+        final static String TAG = "NoteDialogFragment";
 
         // Argument bundle keys
         private final static String BUNDLE_KEY_NOTE = "NoteDialogFragment.Note";

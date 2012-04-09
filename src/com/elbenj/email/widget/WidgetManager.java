@@ -16,15 +16,14 @@
 
 package com.elbenj.email.widget;
 
+
 import com.elbenj.email.Email;
 import com.elbenj.emailcommon.Logging;
 import com.elbenj.emailcommon.provider.Account;
 import com.elbenj.emailcommon.provider.Mailbox;
-
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
-
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 import java.util.Map;
@@ -69,6 +68,18 @@ public class WidgetManager {
         }
     }
 
+    public synchronized void updateWidgets(Context context, int[] widgetIds) {
+        for (int widgetId : widgetIds) {
+            // Find the widget in the map
+            final EmailWidget widget = WidgetManager.getInstance().get(widgetId);
+            if (widget != null) {
+                widget.reset();
+            } else {
+                getOrCreateWidget(context, widgetId);
+            }
+        }
+    }
+
     public synchronized EmailWidget getOrCreateWidget(Context context, int widgetId) {
         EmailWidget widget = WidgetManager.getInstance().get(widgetId);
         if (widget == null) {
@@ -76,7 +87,7 @@ public class WidgetManager {
                 Log.d(EmailWidget.TAG, "Create email widget; ID: " + widgetId);
             }
             widget = new EmailWidget(context, widgetId);
-            WidgetManager.getInstance().put(widgetId, widget);
+            put(widgetId, widget);
             widget.start();
         }
         return widget;

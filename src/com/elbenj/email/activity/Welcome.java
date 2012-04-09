@@ -43,6 +43,8 @@ import com.elbenj.emailcommon.provider.Mailbox;
 import com.elbenj.emailcommon.utility.EmailAsyncTask;
 import com.elbenj.emailcommon.utility.IntentUtilities;
 import com.elbenj.emailcommon.utility.Utility;
+import com.elbenj.email.Preferences;
+
 import com.google.common.annotations.VisibleForTesting;
 
 /**
@@ -314,8 +316,18 @@ public class Welcome extends Activity {
             }
         } else {
             // Neither an accountID or a UUID is specified.
-            // Use the default, without showing the "account removed?" toast.
-            accountId = Account.getDefaultAccountId(context);
+            // Use the last account used, falling back to the default.
+            long lastUsedId = Preferences.getPreferences(context).getLastUsedAccountId();
+            if (lastUsedId != Account.NO_ACCOUNT) {
+                if (!Account.isValidId(context, lastUsedId)) {
+                    // The last account that was used has since been deleted.
+                    lastUsedId = Account.NO_ACCOUNT;
+                    Preferences.getPreferences(context).setLastUsedAccountId(Account.NO_ACCOUNT);
+                }
+            }
+            accountId = (lastUsedId == Account.NO_ACCOUNT)
+                    ? Account.getDefaultAccountId(context)
+                    : lastUsedId;
         }
         if (accountId != Account.NO_ACCOUNT) {
             // Okay, the given account is valid.

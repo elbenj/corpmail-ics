@@ -21,7 +21,8 @@ include $(CLEAR_VARS)
 # Include res dir from chips
 chips_dir := ../../../frameworks/ex/chips/res
 mail_common_dir := ../../../frameworks/opt/mailcommon/res
-res_dir := $(chips_dir) res
+
+res_dir := $(chips_dir) $(mail_common_dir) res
 
 LOCAL_MODULE_TAGS := optional
 
@@ -29,6 +30,7 @@ LOCAL_SRC_FILES := $(call all-java-files-under, src/com/elbenj/email)
 LOCAL_SRC_FILES += $(call all-java-files-under, src/com/elbenj/exchange)
 LOCAL_SRC_FILES += $(call all-java-files-under, src/com/beetstra)
 LOCAL_RESOURCE_DIR := $(addprefix $(LOCAL_PATH)/, $(res_dir))
+LOCAL_AAPT_FLAGS := --auto-add-overlay
 
 LOCAL_STATIC_JAVA_LIBRARIES := android-common com.elbenj.emailcommon guava android-common-chips
 

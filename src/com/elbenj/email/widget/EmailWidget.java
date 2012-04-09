@@ -52,7 +52,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.RemoteViews;
 import android.widget.RemoteViewsService;
-
 import java.util.List;
 
 /**
@@ -95,8 +94,6 @@ public class EmailWidget implements RemoteViewsService.RemoteViewsFactory,
     private static final int MAX_MESSAGE_LIST_COUNT = 25;
 
     private static String sSubjectSnippetDivider;
-    @SuppressWarnings("unused")
-    private static String sConfigureText;
     private static int sSenderFontSize;
     private static int sSubjectFontSize;
     private static int sDateFontSize;
@@ -150,7 +147,6 @@ public class EmailWidget implements RemoteViewsService.RemoteViewsFactory,
             sDefaultTextColor = res.getColor(R.color.widget_default_text_color);
             sDefaultTextColor = res.getColor(R.color.widget_default_text_color);
             sLightTextColor = res.getColor(R.color.widget_light_text_color);
-            sConfigureText =  res.getString(R.string.widget_other_views);
         }
         mResourceHelper = ResourceHelper.getInstance(mContext);
     }
@@ -169,6 +165,14 @@ public class EmailWidget implements RemoteViewsService.RemoteViewsFactory,
         }
         mAccountId = accountId;
         mLoader.load(mAccountId, mailboxId);
+    }
+
+    /**
+     * Resets the data in the widget and forces a reload.
+     */
+    public void reset() {
+        mLoader.reset();
+        start();
     }
 
     private boolean isCursorValid() {
@@ -265,18 +269,21 @@ public class EmailWidget implements RemoteViewsService.RemoteViewsFactory,
         });
     }
 
+    private void setTextViewTextAndDesc(RemoteViews views, final int id, String text) {
+        views.setTextViewText(id, text);
+        views.setContentDescription(id, text);
+    }
+
     private void setupTitleAndCount(RemoteViews views) {
         // Set up the title (view type + count of messages)
-        views.setTextViewText(R.id.widget_title, mMailboxName);
-        // TODO Temporary UX; need to make this visible and create the correct UX
-        //views.setTextViewText(R.id.widget_tap, sConfigureText);
+        setTextViewTextAndDesc(views, R.id.widget_title, mMailboxName);
         views.setViewVisibility(R.id.widget_tap, View.VISIBLE);
-        views.setTextViewText(R.id.widget_tap, mAccountName);
+        setTextViewTextAndDesc(views, R.id.widget_tap, mAccountName);
         String count = "";
         if (isCursorValid()) {
             count = UiUtilities.getMessageCountForUi(mContext, mCursor.getMessageCount(), false);
         }
-        views.setTextViewText(R.id.widget_count, count);
+        setTextViewTextAndDesc(views, R.id.widget_count, count);
     }
 
     /**
@@ -312,6 +319,7 @@ public class EmailWidget implements RemoteViewsService.RemoteViewsFactory,
             views.setViewVisibility(R.id.tap_to_configure, View.GONE);
             // Create click intent for "compose email" target
             intent = MessageCompose.getMessageComposeIntent(mContext, mAccountId);
+            intent.putExtra(MessageCompose.EXTRA_FROM_WIDGET, true);
             setActivityIntent(views, R.id.widget_compose, intent);
             // Create click intent for logo to open inbox
             intent = Welcome.createOpenAccountInboxIntent(mContext, mAccountId);
@@ -398,23 +406,24 @@ public class EmailWidget implements RemoteViewsService.RemoteViewsFactory,
         RemoteViews views =
             new RemoteViews(mContext.getPackageName(), R.layout.widget_list_item);
         boolean isUnread = mCursor.getInt(EmailWidgetLoader.WIDGET_COLUMN_FLAG_READ) != 1;
-        int drawableId = R.drawable.message_list_read_selector;
+        int drawableId = R.drawable.conversation_read_selector;
         if (isUnread) {
-            drawableId = R.drawable.message_list_unread_selector;
+            drawableId = R.drawable.conversation_unread_selector;
         }
         views.setInt(R.id.widget_message, "setBackgroundResource", drawableId);
 
         // Add style to sender
-        String cursorString =
+        String rawSender =
                 mCursor.isNull(EmailWidgetLoader.WIDGET_COLUMN_DISPLAY_NAME)
                     ? ""    // an empty string
                     : mCursor.getString(EmailWidgetLoader.WIDGET_COLUMN_DISPLAY_NAME);
-        SpannableStringBuilder from = new SpannableStringBuilder(cursorString);
+        SpannableStringBuilder from = new SpannableStringBuilder(rawSender);
         from.setSpan(
                 isUnread ? new StyleSpan(Typeface.BOLD) : new StyleSpan(Typeface.NORMAL), 0,
                 from.length(), Spannable.SPAN_EXCLUSIVE_EXCLUSIVE);
         CharSequence styledFrom = addStyle(from, sSenderFontSize, sDefaultTextColor);
         views.setTextViewText(R.id.widget_from, styledFrom);
+        views.setContentDescription(R.id.widget_from, rawSender);
 
         long timestamp = mCursor.getLong(EmailWidgetLoader.WIDGET_COLUMN_TIMESTAMP);
         // Get a nicely formatted date string (relative to today)
@@ -422,12 +431,14 @@ public class EmailWidget implements RemoteViewsService.RemoteViewsFactory,
         // Add style to date
         CharSequence styledDate = addStyle(date, sDateFontSize, sDefaultTextColor);
         views.setTextViewText(R.id.widget_date, styledDate);
+        views.setContentDescription(R.id.widget_date, date);
 
         // Add style to subject/snippet
         String subject = mCursor.getString(EmailWidgetLoader.WIDGET_COLUMN_SUBJECT);
         String snippet = mCursor.getString(EmailWidgetLoader.WIDGET_COLUMN_SNIPPET);
         CharSequence subjectAndSnippet = getStyledSubjectSnippet(subject, snippet, !isUnread);
         views.setTextViewText(R.id.widget_subject, subjectAndSnippet);
+        views.setContentDescription(R.id.widget_subject, subject);
 
         int messageFlags = mCursor.getInt(EmailWidgetLoader.WIDGET_COLUMN_FLAGS);
         boolean hasInvite = (messageFlags & Message.FLAG_INCOMING_MEETING_INVITE) != 0;
@@ -493,6 +504,10 @@ public class EmailWidget implements RemoteViewsService.RemoteViewsFactory,
 
     @Override
     public void onDataSetChanged() {
+        // Note: we are not doing anything special in onDataSetChanged().  Since this service has
+        // a reference to a loader that will keep itself updated, if the service is running, it
+        // shouldn't be necessary to for the query to be run again.  If the service hadn't been
+        // running, the act of starting the service will also start the loader.
     }
 
     public void onDeleted() {

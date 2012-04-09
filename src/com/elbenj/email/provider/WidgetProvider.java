@@ -20,15 +20,15 @@ import com.elbenj.email.Email;
 import com.elbenj.email.widget.EmailWidget;
 import com.elbenj.email.widget.WidgetManager;
 import com.elbenj.emailcommon.Logging;
-
 import android.app.Service;
 import android.appwidget.AppWidgetManager;
 import android.appwidget.AppWidgetProvider;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
 import android.widget.RemoteViewsService;
-
+import com.elbenj.email.R;
 import java.io.FileDescriptor;
 import java.io.PrintWriter;
 
@@ -56,7 +56,7 @@ public class WidgetProvider extends AppWidgetProvider {
             Log.d(EmailWidget.TAG, "onUpdate");
         }
         super.onUpdate(context, appWidgetManager, appWidgetIds);
-        WidgetManager.getInstance().createWidgets(context, appWidgetIds);
+        WidgetManager.getInstance().updateWidgets(context, appWidgetIds);
     }
 
     @Override
@@ -74,6 +74,20 @@ public class WidgetProvider extends AppWidgetProvider {
             Log.d(EmailWidget.TAG, "onReceive");
         }
         super.onReceive(context, intent);
+
+        if (EmailProvider.ACTION_NOTIFY_MESSAGE_LIST_DATASET_CHANGED.equals(intent.getAction())) {
+            // Retrieve the list of current widgets.
+            final AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(context);
+            final ComponentName component = new ComponentName(context, WidgetProvider.class);
+            final int[] widgetIds = appWidgetManager.getAppWidgetIds(component);
+
+            // Ideally, this would only call notify AppWidgetViewDataChanged for the widgets, where
+            // the account had the change, but the current intent doesn't include this information.
+
+            // Calling notifyAppWidgetViewDataChanged will cause onDataSetChanged() to be called
+            // on the RemoteViewsService.RemoteViewsFactory, starting the service if necessary.
+            appWidgetManager.notifyAppWidgetViewDataChanged(widgetIds, R.id.message_list);
+        }
     }
 
     /**
