@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email.mail.store.imap;
+package com.elbenj.email.mail.store.imap;
 
-import com.elbenjics.email.mail.store.imap.ImapUtility;
+import com.elbenj.email.mail.store.imap.ImapUtility;
 
 import android.test.AndroidTestCase;
 import android.test.MoreAsserts;

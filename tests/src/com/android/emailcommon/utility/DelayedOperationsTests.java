@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.elbenjics.emailcommon.utility;
+package com.elbenj.emailcommon.utility;
 
 import android.test.AndroidTestCase;
 

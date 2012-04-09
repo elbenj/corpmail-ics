@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.elbenjics.emailcommon.mail;
+package com.elbenj.emailcommon.mail;
 
-import com.elbenjics.emailcommon.mail.PackedString;
+import com.elbenj.emailcommon.mail.PackedString;
 
 import junit.framework.TestCase;
 
@@ -24,7 +24,7 @@ import junit.framework.TestCase;
  * Tests of PackedString
  *
  * You can run this entire test case with:
- *   runtest -c com.elbenjics.email.mail.PackedStringTests email
+ *   runtest -c com.elbenj.email.mail.PackedStringTests email
  */
 public class PackedStringTests extends TestCase {
     /** Note: copied from actual class */

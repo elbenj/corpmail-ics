@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package com.elbenjics.emailcommon.internet;
+package com.elbenj.emailcommon.internet;
 
-import com.elbenjics.email.R;
-import com.elbenjics.email.provider.EmailProvider;
-import com.elbenjics.emailcommon.internet.Rfc822Output;
-import com.elbenjics.emailcommon.mail.MessagingException;
-import com.elbenjics.emailcommon.provider.EmailContent;
-import com.elbenjics.emailcommon.provider.EmailContent.Attachment;
-import com.elbenjics.emailcommon.provider.EmailContent.Body;
-import com.elbenjics.emailcommon.provider.EmailContent.Message;
+import com.elbenj.email.R;
+import com.elbenj.email.provider.EmailProvider;
+import com.elbenj.emailcommon.internet.Rfc822Output;
+import com.elbenj.emailcommon.mail.MessagingException;
+import com.elbenj.emailcommon.provider.EmailContent;
+import com.elbenj.emailcommon.provider.EmailContent.Attachment;
+import com.elbenj.emailcommon.provider.EmailContent.Body;
+import com.elbenj.emailcommon.provider.EmailContent.Message;
 
 import org.apache.james.mime4j.field.Field;
 import org.apache.james.mime4j.message.BodyPart;
@@ -45,7 +45,7 @@ import java.util.List;
  * Tests of the Rfc822Output (used for sending mail)
  *
  * You can run this entire test case with:
- *   runtest -c com.elbenjics.email.mail.transport.Rfc822OutputTests email
+ *   runtest -c com.elbenj.email.mail.transport.Rfc822OutputTests email
  */
 public class Rfc822OutputTests extends ProviderTestCase2<EmailProvider> {
     private static final String SENDER = "sender@android.com";

@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email.activity;
+package com.elbenj.email.activity;
 
-import com.elbenjics.emailcommon.utility.IntentUtilities;
+import com.elbenj.emailcommon.utility.IntentUtilities;
 
 import android.content.Intent;
 import android.net.Uri;

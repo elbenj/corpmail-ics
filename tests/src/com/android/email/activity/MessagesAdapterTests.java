@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email.activity;
+package com.elbenj.email.activity;
 
 import android.content.Context;
 import android.test.LoaderTestCase;
 
-import com.elbenjics.email.DBTestHelper;
-import com.elbenjics.email.MessageListContext;
-import com.elbenjics.email.provider.ProviderTestUtils;
-import com.elbenjics.emailcommon.provider.Account;
-import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenj.email.DBTestHelper;
+import com.elbenj.email.MessageListContext;
+import com.elbenj.email.provider.ProviderTestUtils;
+import com.elbenj.emailcommon.provider.Account;
+import com.elbenj.emailcommon.provider.Mailbox;
 
 public class MessagesAdapterTests extends LoaderTestCase {
     // Account ID that's probably not in the database.

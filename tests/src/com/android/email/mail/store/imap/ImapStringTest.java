@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email.mail.store.imap;
+package com.elbenj.email.mail.store.imap;
 
-import static com.elbenjics.email.mail.store.imap.ImapTestUtils.createFixedLengthInputStream;
+import static com.elbenj.email.mail.store.imap.ImapTestUtils.createFixedLengthInputStream;
 
-import com.elbenjics.emailcommon.TempDirectory;
-import com.elbenjics.emailcommon.utility.Utility;
+import com.elbenj.emailcommon.TempDirectory;
+import com.elbenj.emailcommon.utility.Utility;
 
 import org.apache.commons.io.IOUtils;
 

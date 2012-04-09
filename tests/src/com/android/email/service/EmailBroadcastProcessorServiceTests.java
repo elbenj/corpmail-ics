@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email.service;
+package com.elbenj.email.service;
 
-import com.elbenjics.email.AccountTestCase;
-import com.elbenjics.email.provider.ProviderTestUtils;
-import com.elbenjics.emailcommon.provider.Account;
-import com.elbenjics.emailcommon.provider.EmailContent.AccountColumns;
-import com.elbenjics.emailcommon.provider.HostAuth;
-import com.elbenjics.emailcommon.utility.Utility;
+import com.elbenj.email.AccountTestCase;
+import com.elbenj.email.provider.ProviderTestUtils;
+import com.elbenj.emailcommon.provider.Account;
+import com.elbenj.emailcommon.provider.EmailContent.AccountColumns;
+import com.elbenj.emailcommon.provider.HostAuth;
+import com.elbenj.emailcommon.utility.Utility;
 
 import android.content.ContentUris;
 import android.content.Context;
@@ -33,7 +33,7 @@ import java.util.NoSuchElementException;
  * Tests of the Email provider.
  *
  * You can run this entire test case with:
- *   runtest -c com.elbenjics.email.service.EmailBroadcastProcessorServiceTests email
+ *   runtest -c com.elbenj.email.service.EmailBroadcastProcessorServiceTests email
  */
 public class EmailBroadcastProcessorServiceTests extends AccountTestCase {
 

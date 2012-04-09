@@ -16,13 +16,13 @@
 
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.elbenjics.email"
-    android:versionCode="100000"
+    package="com.elbenj.email"
+    android:versionCode="200000"
     android:versionName="1.0.0"
     >
     <uses-sdk android:minSdkVersion="14" />
     <original-package
-        android:name="com.elbenjics.email" />
+        android:name="com.elbenj.email" />
 
     <uses-permission
         android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
@@ -69,25 +69,25 @@
 
     <!-- Grant permission to other apps to view attachments -->
     <permission
-        android:name="com.elbenjics.email.permission.READ_ATTACHMENT"
+        android:name="com.elbenj.email.permission.READ_ATTACHMENT"
         android:permissionGroup="android.permission-group.MESSAGES"
         android:protectionLevel="dangerous"
         android:label="@string/permission_read_attachment_label"
         android:description="@string/permission_read_attachment_desc"/>
     <uses-permission
-        android:name="com.elbenjics.email.permission.READ_ATTACHMENT"/>
+        android:name="com.elbenj.email.permission.READ_ATTACHMENT"/>
 
     <uses-permission
         android:name="android.permission.USE_CREDENTIALS"/>
 
     <!-- Grant permission to system apps to access provider (see provider below) -->
     <permission
-        android:name="com.elbenjics.email.permission.ACCESS_PROVIDER"
+        android:name="com.elbenj.email.permission.ACCESS_PROVIDER"
         android:protectionLevel="signatureOrSystem"
         android:label="@string/permission_access_provider_label"
         android:description="@string/permission_access_provider_desc"/>
     <uses-permission
-        android:name="com.elbenjics.email.permission.ACCESS_PROVIDER"/>
+        android:name="com.elbenj.email.permission.ACCESS_PROVIDER"/>
 
     <!-- Note:  Actually, android:hardwareAccelerated could be "true", but in order to switch it
          on/off in the debug screen, we have to set it "false" here and enable it at runtime.  -->
@@ -128,7 +128,7 @@
             >
             <intent-filter>
                 <action
-                    android:name="com.elbenjics.email.CREATE_ACCOUNT" />
+                    android:name="com.elbenj.email.CREATE_ACCOUNT" />
                 <category
                     android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -170,7 +170,7 @@
             >
             <intent-filter>
                 <action
-                    android:name="com.elbenjics.email.activity.setup.ACCOUNT_MANAGER_ENTRY" />
+                    android:name="com.elbenj.email.activity.setup.ACCOUNT_MANAGER_ENTRY" />
                 <category
                     android:name="android.intent.category.DEFAULT" />
             </intent-filter>
@@ -266,7 +266,7 @@
             </intent-filter>
             <intent-filter>
                 <action
-                    android:name="com.elbenjics.email.intent.action.REPLY" />
+                    android:name="com.elbenj.email.intent.action.REPLY" />
             </intent-filter>
         </activity>
 
@@ -366,7 +366,7 @@
 
         <!--Required stanza to register the PopImapSyncAdapterService with SyncManager -->
         <service
-            android:name="com.elbenjics.email.service.PopImapSyncAdapterService"
+            android:name="com.elbenj.email.service.PopImapSyncAdapterService"
             android:exported="true">
             <intent-filter>
                 <action
@@ -380,22 +380,22 @@
         <service
             android:name=".service.PolicyService"
             android:enabled="true"
-            android:permission="com.elbenjics.email.permission.ACCESS_PROVIDER"
+            android:permission="com.elbenj.email.permission.ACCESS_PROVIDER"
             >
             <intent-filter>
                 <action
-                    android:name="com.elbenjics.email.POLICY_INTENT" />
+                    android:name="com.elbenj.email.POLICY_INTENT" />
             </intent-filter>
         </service>
 
         <service
             android:name=".service.AccountService"
             android:enabled="true"
-            android:permission="com.elbenjics.email.permission.ACCESS_PROVIDER"
+            android:permission="com.elbenj.email.permission.ACCESS_PROVIDER"
             >
             <intent-filter>
                 <action
-                    android:name="com.elbenjics.email.ACCOUNT_INTENT" />
+                    android:name="com.elbenj.email.ACCOUNT_INTENT" />
             </intent-filter>
         </service>
 
@@ -450,19 +450,19 @@
 
         <provider
             android:name=".provider.AttachmentProvider"
-            android:authorities="com.elbenjics.email.attachmentprovider"
+            android:authorities="com.elbenj.email.attachmentprovider"
             android:multiprocess="true"
             android:grantUriPermissions="true"
-            android:readPermission="com.elbenjics.email.permission.READ_ATTACHMENT"
+            android:readPermission="com.elbenj.email.permission.READ_ATTACHMENT"
             />
 
         <!-- This provider MUST be protected by strict permissions, as granting access to
              it exposes user passwords and other confidential information. -->
         <provider
             android:name=".provider.EmailProvider"
-            android:authorities="com.elbenjics.email.provider;com.elbenjics.email.notifier"
+            android:authorities="com.elbenj.email.provider;com.elbenj.email.notifier"
             android:multiprocess="true"
-            android:permission="com.elbenjics.email.permission.ACCESS_PROVIDER"
+            android:permission="com.elbenj.email.permission.ACCESS_PROVIDER"
             android:label="@string/app_name"
             />
 
@@ -505,12 +505,12 @@
             
             
         <receiver
-            android:name="com.elbenjics.exchange.EmailSyncAlarmReceiver"/>
+            android:name="com.elbenj.exchange.EmailSyncAlarmReceiver"/>
         <receiver
-            android:name="com.elbenjics.exchange.MailboxAlarmReceiver"/>
+            android:name="com.elbenj.exchange.MailboxAlarmReceiver"/>
 
         <receiver
-            android:name="com.elbenjics.exchange.service.ExchangeBroadcastReceiver"
+            android:name="com.elbenj.exchange.service.ExchangeBroadcastReceiver"
             android:enabled="true">
             <intent-filter>
                 <action
@@ -525,11 +525,11 @@
         </receiver>
 
         <service
-            android:name="com.elbenjics.exchange.service.ExchangeBroadcastProcessorService" />
+            android:name="com.elbenj.exchange.service.ExchangeBroadcastProcessorService" />
 
         <!--Required stanza to register the EAS EmailSyncAdapterService with SyncManager -->
         <service
-            android:name="com.elbenjics.exchange.EmailSyncAdapterService"
+            android:name="com.elbenj.exchange.EmailSyncAdapterService"
             android:exported="true">
             <intent-filter>
                 <action
@@ -541,7 +541,7 @@
 
         <!--Required stanza to register the EAS ContactsSyncAdapterService with SyncManager -->
         <service
-            android:name="com.elbenjics.exchange.ContactsSyncAdapterService"
+            android:name="com.elbenj.exchange.ContactsSyncAdapterService"
             android:exported="true">
             <intent-filter>
                 <action
@@ -553,7 +553,7 @@
 
         <!--Required stanza to register the EAS CalendarSyncAdapterService with SyncManager -->
         <service
-            android:name="com.elbenjics.exchange.CalendarSyncAdapterService"
+            android:name="com.elbenj.exchange.CalendarSyncAdapterService"
             android:exported="true">
             <intent-filter>
                 <action
@@ -565,19 +565,19 @@
 
         <!-- Add android:process=":remote" below to enable ExchangeService as a separate process -->
         <service
-            android:name="com.elbenjics.exchange.ExchangeService"
+            android:name="com.elbenj.exchange.ExchangeService"
             android:enabled="true"
-            android:permission="com.elbenjics.email.permission.ACCESS_PROVIDER"
+            android:permission="com.elbenj.email.permission.ACCESS_PROVIDER"
             >
             <intent-filter>
                 <action
-                    android:name="com.elbenjics.email.EXCHANGE_INTENT" />
+                    android:name="com.elbenj.email.EXCHANGE_INTENT" />
             </intent-filter>
         </service>
 
         <provider
-            android:name="com.elbenjics.exchange.provider.ExchangeDirectoryProvider"
-            android:authorities="com.elbenjics.exchange.directory.provider"
+            android:name="com.elbenj.exchange.provider.ExchangeDirectoryProvider"
+            android:authorities="com.elbenj.exchange.directory.provider"
             android:readPermission="android.permission.READ_CONTACTS"
             android:multiprocess="false"
             >
@@ -586,14 +586,14 @@
               android:value="true"/>
         </provider>
 
-        <activity android:name="com.elbenjics.exchange.EasCertificateRequestor">
+        <activity android:name="com.elbenj.exchange.EasCertificateRequestor">
             <intent-filter>
-                <action android:name="com.elbenjics.emailcommon.REQUEST_CERT" />
+                <action android:name="com.elbenj.emailcommon.REQUEST_CERT" />
                 <data android:scheme="eas" android:path="/certrequest" />
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.elbenjics.exchange.SettingsRedirector">
+        <activity android:name="com.elbenj.exchange.SettingsRedirector">
             <intent-filter>
                 <action android:name="android.intent.action.MANAGE_NETWORK_USAGE" />
                 <category android:name="android.intent.category.DEFAULT" />

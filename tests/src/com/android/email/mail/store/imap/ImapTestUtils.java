@@ -14,16 +14,16 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email.mail.store.imap;
+package com.elbenj.email.mail.store.imap;
 
-import com.elbenjics.email.FixedLengthInputStream;
-import com.elbenjics.email.mail.store.imap.ImapElement;
-import com.elbenjics.email.mail.store.imap.ImapList;
-import com.elbenjics.email.mail.store.imap.ImapResponse;
-import com.elbenjics.email.mail.store.imap.ImapSimpleString;
-import com.elbenjics.email.mail.store.imap.ImapString;
-import com.elbenjics.email.mail.transport.DiscourseLogger;
-import com.elbenjics.emailcommon.utility.Utility;
+import com.elbenj.email.FixedLengthInputStream;
+import com.elbenj.email.mail.store.imap.ImapElement;
+import com.elbenj.email.mail.store.imap.ImapList;
+import com.elbenj.email.mail.store.imap.ImapResponse;
+import com.elbenj.email.mail.store.imap.ImapSimpleString;
+import com.elbenj.email.mail.store.imap.ImapString;
+import com.elbenj.email.mail.transport.DiscourseLogger;
+import com.elbenj.emailcommon.utility.Utility;
 
 import java.io.ByteArrayInputStream;
 

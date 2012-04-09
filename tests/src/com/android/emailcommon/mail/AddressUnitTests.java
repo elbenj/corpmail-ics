@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.elbenjics.emailcommon.mail;
+package com.elbenj.emailcommon.mail;
 
 import android.test.AndroidTestCase;
 import android.test.suitebuilder.annotation.SmallTest;

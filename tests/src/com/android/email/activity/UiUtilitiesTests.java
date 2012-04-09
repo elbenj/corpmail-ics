@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email.activity;
+package com.elbenj.email.activity;
 
-import com.elbenjics.email.R;
+import com.elbenj.email.R;
 
 import android.app.Activity;
 import android.content.Context;

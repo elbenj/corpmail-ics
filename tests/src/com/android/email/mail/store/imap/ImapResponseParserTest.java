@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email.mail.store.imap;
+package com.elbenj.email.mail.store.imap;
 
-import static com.elbenjics.email.mail.store.imap.ImapTestUtils.assertElement;
-import static com.elbenjics.email.mail.store.imap.ImapTestUtils.buildList;
-import static com.elbenjics.email.mail.store.imap.ImapTestUtils.buildResponse;
-import static com.elbenjics.email.mail.store.imap.ImapTestUtils.createFixedLengthInputStream;
+import static com.elbenj.email.mail.store.imap.ImapTestUtils.assertElement;
+import static com.elbenj.email.mail.store.imap.ImapTestUtils.buildList;
+import static com.elbenj.email.mail.store.imap.ImapTestUtils.buildResponse;
+import static com.elbenj.email.mail.store.imap.ImapTestUtils.createFixedLengthInputStream;
 
-import com.elbenjics.email.mail.store.imap.ImapResponseParser.ByeException;
-import com.elbenjics.email.mail.transport.DiscourseLogger;
-import com.elbenjics.emailcommon.TempDirectory;
-import com.elbenjics.emailcommon.mail.MessagingException;
-import com.elbenjics.emailcommon.utility.Utility;
+import com.elbenj.email.mail.store.imap.ImapResponseParser.ByeException;
+import com.elbenj.email.mail.transport.DiscourseLogger;
+import com.elbenj.emailcommon.TempDirectory;
+import com.elbenj.emailcommon.mail.MessagingException;
+import com.elbenj.emailcommon.utility.Utility;
 
 import android.test.AndroidTestCase;
 import android.test.suitebuilder.annotation.SmallTest;

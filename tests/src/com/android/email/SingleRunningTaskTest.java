@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email;
+package com.elbenj.email;
 
-import com.elbenjics.email.TestUtils.Condition;
-import com.elbenjics.emailcommon.utility.Utility;
+import com.elbenj.email.TestUtils.Condition;
+import com.elbenj.emailcommon.utility.Utility;
 
 import java.util.concurrent.atomic.AtomicInteger;
 

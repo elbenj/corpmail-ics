@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.elbenjics.emailcommon.provider;
+package com.elbenj.emailcommon.provider;
 
 import android.content.Context;
 import android.os.Parcel;
 import android.test.ProviderTestCase2;
 import android.test.suitebuilder.annotation.SmallTest;
 
-import com.elbenjics.email.provider.ContentCache;
-import com.elbenjics.email.provider.EmailProvider;
+import com.elbenj.email.provider.ContentCache;
+import com.elbenj.email.provider.EmailProvider;
 
 /**
  * Unit tests for the QuickResponse class

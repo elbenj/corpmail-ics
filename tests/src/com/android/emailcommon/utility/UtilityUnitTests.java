@@ -14,18 +14,18 @@
  * limitations under the License.
  */
 
-package com.elbenjics.emailcommon.utility;
+package com.elbenj.emailcommon.utility;
 
-import com.elbenjics.email.DBTestHelper;
-import com.elbenjics.email.R;
-import com.elbenjics.email.TestUtils;
-import com.elbenjics.email.provider.ProviderTestUtils;
-import com.elbenjics.emailcommon.provider.Account;
-import com.elbenjics.emailcommon.provider.EmailContent.Attachment;
-import com.elbenjics.emailcommon.provider.EmailContent.MailboxColumns;
-import com.elbenjics.emailcommon.provider.EmailContent.Message;
-import com.elbenjics.emailcommon.provider.Mailbox;
-import com.elbenjics.emailcommon.utility.Utility.NewFileCreator;
+import com.elbenj.email.DBTestHelper;
+import com.elbenj.email.R;
+import com.elbenj.email.TestUtils;
+import com.elbenj.email.provider.ProviderTestUtils;
+import com.elbenj.emailcommon.provider.Account;
+import com.elbenj.emailcommon.provider.EmailContent.Attachment;
+import com.elbenj.emailcommon.provider.EmailContent.MailboxColumns;
+import com.elbenj.emailcommon.provider.EmailContent.Message;
+import com.elbenj.emailcommon.provider.Mailbox;
+import com.elbenj.emailcommon.utility.Utility.NewFileCreator;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -56,7 +56,7 @@ import java.util.Set;
  * complete - no server(s) required.
  *
  * You can run this entire test case with:
- *   runtest -c com.elbenjics.email.UtilityUnitTests email
+ *   runtest -c com.elbenj.email.UtilityUnitTests email
  */
 @SmallTest
 public class UtilityUnitTests extends AndroidTestCase {

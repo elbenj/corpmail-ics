@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email.activity;
+package com.elbenj.email.activity;
 
-import com.elbenjics.email.provider.EmailProvider;
-import com.elbenjics.email.provider.ProviderTestUtils;
-import com.elbenjics.emailcommon.provider.Account;
-import com.elbenjics.emailcommon.provider.EmailContent;
-import com.elbenjics.emailcommon.provider.EmailContent.Message;
-import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenj.email.provider.EmailProvider;
+import com.elbenj.email.provider.ProviderTestUtils;
+import com.elbenj.emailcommon.provider.Account;
+import com.elbenj.emailcommon.provider.EmailContent;
+import com.elbenj.emailcommon.provider.EmailContent.Message;
+import com.elbenj.emailcommon.provider.Mailbox;
 
 import android.content.Context;
 import android.database.Cursor;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email.activity.setup;
+package com.elbenj.email.activity.setup;
 
 import android.content.Context;
 import android.content.Intent;
@@ -25,16 +25,16 @@ import android.widget.CheckBox;
 import android.widget.Spinner;
 import android.widget.SpinnerAdapter;
 
-import com.elbenjics.email.R;
-import com.elbenjics.emailcommon.provider.Account;
-import com.elbenjics.emailcommon.provider.HostAuth;
+import com.elbenj.email.R;
+import com.elbenj.emailcommon.provider.Account;
+import com.elbenj.emailcommon.provider.HostAuth;
 
 import java.net.URISyntaxException;
 
 /**
  * Tests of basic UI logic in the AccountSetupOptions screen.
  * You can run this entire test case with:
- *   runtest -c com.elbenjics.email.activity.setup.AccountSetupOptionsTests email
+ *   runtest -c com.elbenj.email.activity.setup.AccountSetupOptionsTests email
  */
 @MediumTest
 public class AccountSetupOptionsTests

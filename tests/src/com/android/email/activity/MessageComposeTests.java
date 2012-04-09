@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email.activity;
+package com.elbenj.email.activity;
 
 import android.content.ContentUris;
 import android.content.Context;
@@ -29,16 +29,16 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.MultiAutoCompleteTextView;
 
-import com.elbenjics.email.Email;
-import com.elbenjics.email.EmailAddressValidator;
-import com.elbenjics.email.R;
-import com.elbenjics.email.TestUtils;
-import com.elbenjics.emailcommon.Logging;
-import com.elbenjics.emailcommon.mail.Address;
-import com.elbenjics.emailcommon.mail.MessagingException;
-import com.elbenjics.emailcommon.provider.Account;
-import com.elbenjics.emailcommon.provider.EmailContent.Attachment;
-import com.elbenjics.emailcommon.provider.EmailContent.Message;
+import com.elbenj.email.Email;
+import com.elbenj.email.EmailAddressValidator;
+import com.elbenj.email.R;
+import com.elbenj.email.TestUtils;
+import com.elbenj.emailcommon.Logging;
+import com.elbenj.emailcommon.mail.Address;
+import com.elbenj.emailcommon.mail.MessagingException;
+import com.elbenj.emailcommon.provider.Account;
+import com.elbenj.emailcommon.provider.EmailContent.Attachment;
+import com.elbenj.emailcommon.provider.EmailContent.Message;
 import com.google.android.collect.Lists;
 
 import java.util.ArrayList;
@@ -50,7 +50,7 @@ import java.util.ArrayList;
  * It might be possible to convert these to ActivityUnitTest, which would be faster.
  *
  * You can run this entire test case with:
- *   runtest -c com.elbenjics.email.activity.MessageComposeTests email
+ *   runtest -c com.elbenj.email.activity.MessageComposeTests email
  */
 @LargeTest
 public class MessageComposeTests
@@ -117,10 +117,10 @@ public class MessageComposeTests
      * be done consciously to think about existing shortcuts and clients.
      */
 
-    private static final String ACTION_REPLY = "com.elbenjics.email.intent.action.REPLY";
-    private static final String ACTION_REPLY_ALL = "com.elbenjics.email.intent.action.REPLY_ALL";
-    private static final String ACTION_FORWARD = "com.elbenjics.email.intent.action.FORWARD";
-    private static final String ACTION_EDIT_DRAFT = "com.elbenjics.email.intent.action.EDIT_DRAFT";
+    private static final String ACTION_REPLY = "com.elbenj.email.intent.action.REPLY";
+    private static final String ACTION_REPLY_ALL = "com.elbenj.email.intent.action.REPLY_ALL";
+    private static final String ACTION_FORWARD = "com.elbenj.email.intent.action.FORWARD";
+    private static final String ACTION_EDIT_DRAFT = "com.elbenj.email.intent.action.EDIT_DRAFT";
 
     public MessageComposeTests() {
         super(MessageCompose.class);

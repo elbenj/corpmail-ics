@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email;
+package com.elbenj.email;
 
 import android.app.admin.DevicePolicyManager;
 import android.content.Context;
@@ -23,21 +23,21 @@ import android.test.ProviderTestCase2;
 import android.test.suitebuilder.annotation.MediumTest;
 import android.test.suitebuilder.annotation.SmallTest;
 
-import com.elbenjics.email.provider.ContentCache;
-import com.elbenjics.email.provider.EmailProvider;
-import com.elbenjics.email.provider.ProviderTestUtils;
-import com.elbenjics.emailcommon.provider.Account;
-import com.elbenjics.emailcommon.provider.EmailContent;
-import com.elbenjics.emailcommon.provider.EmailContent.Message;
-import com.elbenjics.emailcommon.provider.Mailbox;
-import com.elbenjics.emailcommon.provider.Policy;
-import com.elbenjics.emailcommon.service.LegacyPolicySet;
+import com.elbenj.email.provider.ContentCache;
+import com.elbenj.email.provider.EmailProvider;
+import com.elbenj.email.provider.ProviderTestUtils;
+import com.elbenj.emailcommon.provider.Account;
+import com.elbenj.emailcommon.provider.EmailContent;
+import com.elbenj.emailcommon.provider.EmailContent.Message;
+import com.elbenj.emailcommon.provider.Mailbox;
+import com.elbenj.emailcommon.provider.Policy;
+import com.elbenj.emailcommon.service.LegacyPolicySet;
 
 /**
  * This is a series of unit tests for backup/restore of the SecurityPolicy class.
  *
  * You can run this entire test case with:
- *   runtest -c com.elbenjics.email.SecurityPolicyTests email
+ *   runtest -c com.elbenj.email.SecurityPolicyTests email
  */
 
 @MediumTest

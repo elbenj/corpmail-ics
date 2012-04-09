@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.elbenjics.emailcommon.utility;
+package com.elbenj.emailcommon.utility;
 
-import com.elbenjics.emailcommon.utility.EmailAsyncTask.Tracker;
+import com.elbenj.emailcommon.utility.EmailAsyncTask.Tracker;
 
 import android.test.AndroidTestCase;
 import android.test.MoreAsserts;

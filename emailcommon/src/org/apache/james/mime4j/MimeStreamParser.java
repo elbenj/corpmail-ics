@@ -19,7 +19,7 @@
 
 package org.apache.james.mime4j;
 
-import com.elbenjics.emailcommon.utility.LoggingInputStream;
+import com.elbenj.emailcommon.utility.LoggingInputStream;
 
 import org.apache.james.mime4j.decoder.Base64InputStream;
 import org.apache.james.mime4j.decoder.QuotedPrintableInputStream;

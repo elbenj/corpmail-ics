@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email;
+package com.elbenj.email;
 
 import android.app.Notification;
 import android.content.Context;
@@ -22,10 +22,10 @@ import android.media.AudioManager;
 import android.net.Uri;
 import android.test.AndroidTestCase;
 
-import com.elbenjics.email.provider.ProviderTestUtils;
-import com.elbenjics.emailcommon.provider.Account;
-import com.elbenjics.emailcommon.provider.EmailContent.Message;
-import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenj.email.provider.ProviderTestUtils;
+import com.elbenj.emailcommon.provider.Account;
+import com.elbenj.emailcommon.provider.EmailContent.Message;
+import com.elbenj.emailcommon.provider.Mailbox;
 
 /**
  * Test for {@link NotificationController}.

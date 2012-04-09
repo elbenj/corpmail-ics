@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email.provider;
+package com.elbenj.email.provider;
 
-import com.elbenjics.emailcommon.provider.Account;
-import com.elbenjics.emailcommon.provider.EmailContent;
-import com.elbenjics.emailcommon.provider.EmailContent.Attachment;
-import com.elbenjics.emailcommon.provider.EmailContent.AttachmentColumns;
-import com.elbenjics.emailcommon.provider.EmailContent.Message;
-import com.elbenjics.emailcommon.provider.Mailbox;
-import com.elbenjics.emailcommon.provider.Policy;
+import com.elbenj.emailcommon.provider.Account;
+import com.elbenj.emailcommon.provider.EmailContent;
+import com.elbenj.emailcommon.provider.EmailContent.Attachment;
+import com.elbenj.emailcommon.provider.EmailContent.AttachmentColumns;
+import com.elbenj.emailcommon.provider.EmailContent.Message;
+import com.elbenj.emailcommon.provider.Mailbox;
+import com.elbenj.emailcommon.provider.Policy;
 
 import android.content.Context;
 import android.os.Parcel;
@@ -35,7 +35,7 @@ import java.util.ArrayList;
  * This is a series of unit tests for the Policy class
  *
  * You can run this entire test case with:
- *   runtest -c com.elbenjics.email.provider.PolicyTests email
+ *   runtest -c com.elbenj.email.provider.PolicyTests email
  */
 
 @MediumTest

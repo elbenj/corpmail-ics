@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.elbenjics.emailcommon.utility;
+package com.elbenj.emailcommon.utility;
 
-import com.elbenjics.emailcommon.provider.EmailContent;
+import com.elbenj.emailcommon.provider.EmailContent;
 
 import android.net.Uri;
 import android.test.AndroidTestCase;

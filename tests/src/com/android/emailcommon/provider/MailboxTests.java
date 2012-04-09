@@ -14,15 +14,15 @@
  * limitations under the License.
  */
 
-package com.elbenjics.emailcommon.provider;
+package com.elbenj.emailcommon.provider;
 
-import com.elbenjics.email.provider.ContentCache;
-import com.elbenjics.email.provider.EmailProvider;
-import com.elbenjics.email.provider.ProviderTestUtils;
-import com.elbenjics.emailcommon.provider.EmailContent.MailboxColumns;
-import com.elbenjics.emailcommon.provider.EmailContent.Message;
-import com.elbenjics.emailcommon.provider.EmailContent.MessageColumns;
-import com.elbenjics.emailcommon.utility.Utility;
+import com.elbenj.email.provider.ContentCache;
+import com.elbenj.email.provider.EmailProvider;
+import com.elbenj.email.provider.ProviderTestUtils;
+import com.elbenj.emailcommon.provider.EmailContent.MailboxColumns;
+import com.elbenj.emailcommon.provider.EmailContent.Message;
+import com.elbenj.emailcommon.provider.EmailContent.MessageColumns;
+import com.elbenj.emailcommon.utility.Utility;
 
 import android.content.ContentUris;
 import android.content.ContentValues;

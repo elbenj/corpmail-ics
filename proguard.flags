@@ -1,27 +1,27 @@
 # keep names that are used by reflection.
--keep class com.elbenjics.emailcommon.provider.Account
+-keep class com.elbenj.emailcommon.provider.Account
 
 -keepclasseswithmembers class * {
-  public static void actionEditIncomingSettings(android.app.Activity, int, com.elbenjics.emailcommon.provider.Account);
+  public static void actionEditIncomingSettings(android.app.Activity, int, com.elbenj.emailcommon.provider.Account);
 }
 
 -keepclasseswithmembers class * {
-  public static void actionEditOutgoingSettings(android.app.Activity, int, com.elbenjics.emailcommon.provider.Account);
+  public static void actionEditOutgoingSettings(android.app.Activity, int, com.elbenj.emailcommon.provider.Account);
 }
 
 -keepclasseswithmembers class * {
-  public *** newInstance(com.elbenjics.emailcommon.provider.Account, android.content.Context);
+  public *** newInstance(com.elbenj.emailcommon.provider.Account, android.content.Context);
 }
 
 -keepclasseswithmembers class * {
-  public *** newInstance(com.elbenjics.emailcommon.provider.Account, android.content.Context);
+  public *** newInstance(com.elbenj.emailcommon.provider.Account, android.content.Context);
 }
 
 -keepclasseswithmembers class android.content.SharedPreferences$Editor {
   *** apply();
 }
 
--keepclasseswithmembers class com.elbenjics.emailcommon.utility.Utility$CloseTraceCursorWrapper {
+-keepclasseswithmembers class com.elbenj.emailcommon.utility.Utility$CloseTraceCursorWrapper {
   *** getTraceIfAvailable(android.database.Cursor);
   *** log(android.database.Cursor);
 }
@@ -34,85 +34,85 @@
   *** *Anim(...);
 }
 
--keepclasseswithmembers class com.elbenjics.email.activity.RecentMailboxManager {
+-keepclasseswithmembers class com.elbenj.email.activity.RecentMailboxManager {
   *** touch(long);
   *** getInstance(android.content.Context);
   *** getMostRecent(long, boolean);
 }
 
--keepclasseswithmembers class com.elbenjics.email.activity.setup.AccountSetupAccountType {
-  *** checkAccountInstanceLimit(com.elbenjics.email.mail.Store$StoreInfo);
+-keepclasseswithmembers class com.elbenj.email.activity.setup.AccountSetupAccountType {
+  *** checkAccountInstanceLimit(com.elbenj.email.mail.Store$StoreInfo);
 }
 
--keepclasseswithmembers class com.elbenjics.email.GroupMessagingListener {
-  *** removeListener(com.elbenjics.email.MessagingListener);
+-keepclasseswithmembers class com.elbenj.email.GroupMessagingListener {
+  *** removeListener(com.elbenj.email.MessagingListener);
 }
 
--keepclasseswithmembers class com.elbenjics.email.Controller {
+-keepclasseswithmembers class com.elbenj.email.Controller {
   *** setProviderContext(android.content.Context);
 }
 
--keepclasseswithmembers class com.elbenjics.emailcommon.internet.Rfc822Output {
+-keepclasseswithmembers class com.elbenj.emailcommon.internet.Rfc822Output {
   *** getHtmlBody(java.lang.String);
-  *** buildBodyText(android.content.Context, com.elbenjics.emailcommon.provider.EmailContent$Message, boolean);
+  *** buildBodyText(android.content.Context, com.elbenj.emailcommon.provider.EmailContent$Message, boolean);
 }
 
--keepclasseswithmembers class com.elbenjics.emailcommon.mail.Address {
+-keepclasseswithmembers class com.elbenj.emailcommon.mail.Address {
   <init>(java.lang.String);
   <init>(java.lang.String,java.lang.String);
   *** parseAndPack(java.lang.String);
 }
 
--keepclasseswithmembers class com.elbenjics.email.SecurityPolicy {
+-keepclasseswithmembers class com.elbenj.email.SecurityPolicy {
   *** setContext(android.content.Context);
 }
 
--keepclasseswithmembers class com.elbenjics.email.MessagingController {
-  *** injectMockController(com.elbenjics.email.MessagingController);
+-keepclasseswithmembers class com.elbenj.email.MessagingController {
+  *** injectMockController(com.elbenj.email.MessagingController);
 }
 
--keepclasseswithmembers class com.elbenjics.emailcommon.utility.Utility {
+-keepclasseswithmembers class com.elbenj.emailcommon.utility.Utility {
   *** dumpCursor(android.database.Cursor);
   *** fromUtf8(byte[]);
   *** isFirstUtf8Byte(byte);
   *** replaceBareLfWithCrlf(java.lang.String);
 }
--keepclasseswithmembers class com.elbenjics.emailcommon.utility.Utility$CloseTraceCursorWrapper {
+-keepclasseswithmembers class com.elbenj.emailcommon.utility.Utility$CloseTraceCursorWrapper {
   *** getTraceIfAvailable(android.database.Cursor);
   *** log(android.database.Cursor);
 }
 
--keepclasseswithmembers class com.elbenjics.email.provider.EmailProvider {
+-keepclasseswithmembers class com.elbenj.email.provider.EmailProvider {
   *** getReadableDatabase(android.content.Context);
 }
 
--keepclasseswithmembers class com.elbenjics.emailcommon.provider.EmailContent$Attachment {
+-keepclasseswithmembers class com.elbenj.emailcommon.provider.EmailContent$Attachment {
   *** createUniqueFile(java.lang.String);
 }
 
--keepclasseswithmembers class com.elbenjics.email.service.AttachmentDownloadService {
+-keepclasseswithmembers class com.elbenj.email.service.AttachmentDownloadService {
   *** addServiceClass(long, java.lang.Class);
 }
 
--keepclasseswithmembers class com.elbenjics.email.service.AttachmentDownloadService$AccountManagerStub {
+-keepclasseswithmembers class com.elbenj.email.service.AttachmentDownloadService$AccountManagerStub {
   *** setNumberOfAccounts(int);
 }
 
--keepclasseswithmembers class com.elbenjics.email.Preferences {
+-keepclasseswithmembers class com.elbenj.email.Preferences {
   *** getAccountByContentUri(android.net.Uri);
 }
 
--keep class com.elbenjics.emailcommon.mail.Message$RecipientType
+-keep class com.elbenj.emailcommon.mail.Message$RecipientType
 
--keepclasseswithmembers class com.elbenjics.emailcommon.mail.Message {
-  *** setRecipient(com.elbenjics.emailcommon.mail.Message$RecipientType, com.elbenjics.emailcommon.mail.Address);
+-keepclasseswithmembers class com.elbenj.emailcommon.mail.Message {
+  *** setRecipient(com.elbenj.emailcommon.mail.Message$RecipientType, com.elbenj.emailcommon.mail.Address);
 }
 
--keepclasseswithmembers class com.elbenjics.emailcommon.internet.MimeHeader {
+-keepclasseswithmembers class com.elbenj.emailcommon.internet.MimeHeader {
   *** writeToString();
 }
 
--keepclasseswithmembers class com.elbenjics.emailcommon.internet.MimeMessage {
+-keepclasseswithmembers class com.elbenj.emailcommon.internet.MimeMessage {
   <init>();
   <init>(java.io.InputStream);
   *** getExtendedHeader(java.lang.String);
@@ -121,83 +121,83 @@
   *** setExtendedHeaders(java.lang.String);
 }
 
--keepclasseswithmembers class com.elbenjics.emailcommon.internet.MimeUtility {
+-keepclasseswithmembers class com.elbenj.emailcommon.internet.MimeUtility {
   *** foldAndEncode(java.lang.String);
-  *** findPartByContentId(com.elbenjics.emailcommon.mail.Part, java.lang.String);
-  *** findFirstPartByMimeType(com.elbenjics.emailcommon.mail.Part, java.lang.String);
+  *** findPartByContentId(com.elbenj.emailcommon.mail.Part, java.lang.String);
+  *** findFirstPartByMimeType(com.elbenj.emailcommon.mail.Part, java.lang.String);
 }
 
--keepclasseswithmembers class com.elbenjics.email.mail.transport.SmtpSender {
-  *** setTransport(com.elbenjics.email.mail.Transport);
+-keepclasseswithmembers class com.elbenj.email.mail.transport.SmtpSender {
+  *** setTransport(com.elbenj.email.mail.Transport);
 }
 
--keepclasseswithmembers class com.elbenjics.email.mail.Store {
+-keepclasseswithmembers class com.elbenj.email.mail.Store {
   *** requireStructurePrefetch();
 }
 
--keepclasseswithmembers class com.elbenjics.email.mail.store.ImapStore {
-  *** setTransport(com.elbenjics.email.mail.Transport);
+-keepclasseswithmembers class com.elbenj.email.mail.store.ImapStore {
+  *** setTransport(com.elbenj.email.mail.Transport);
 }
 
--keepclasseswithmembers class com.elbenjics.email.mail.store.ImapFolder {
-  *** getMessages(int, int, com.elbenjics.emailcommon.mail.Folder$MessageRetrievalListener);
-  *** getMessages(com.elbenjics.emailcommon.mail.Folder$MessageRetrievalListener);
-  *** getMessages(java.lang.String[], com.elbenjics.emailcommon.mail.Folder$MessageRetrievalListener);
+-keepclasseswithmembers class com.elbenj.email.mail.store.ImapFolder {
+  *** getMessages(int, int, com.elbenj.emailcommon.mail.Folder$MessageRetrievalListener);
+  *** getMessages(com.elbenj.emailcommon.mail.Folder$MessageRetrievalListener);
+  *** getMessages(java.lang.String[], com.elbenj.emailcommon.mail.Folder$MessageRetrievalListener);
   *** getUnreadMessageCount();
 }
 
--keepclasseswithmembers class com.elbenjics.email.mail.store.Pop3Store {
-  *** setTransport(com.elbenjics.email.mail.Transport);
+-keepclasseswithmembers class com.elbenj.email.mail.store.Pop3Store {
+  *** setTransport(com.elbenj.email.mail.Transport);
 }
 
--keepclasseswithmembers class com.elbenjics.email.mail.store.Pop3Store$Pop3Folder {
-  *** getMessages(int, int, com.elbenjics.emailcommon.mail.Folder$MessageRetrievalListener);
-  *** getMessages(com.elbenjics.emailcommon.mail.Folder$MessageRetrievalListener);
-  *** getMessages(java.lang.String[], com.elbenjics.emailcommon.mail.Folder$MessageRetrievalListener);
+-keepclasseswithmembers class com.elbenj.email.mail.store.Pop3Store$Pop3Folder {
+  *** getMessages(int, int, com.elbenj.emailcommon.mail.Folder$MessageRetrievalListener);
+  *** getMessages(com.elbenj.emailcommon.mail.Folder$MessageRetrievalListener);
+  *** getMessages(java.lang.String[], com.elbenj.emailcommon.mail.Folder$MessageRetrievalListener);
   *** getUnreadMessageCount();
   *** isOpen();
 }
 
--keep class com.elbenjics.emailcommon.mail.Flag
+-keep class com.elbenj.emailcommon.mail.Flag
 
--keepclasseswithmembers class com.elbenjics.emailcommon.mail.Folder {
+-keepclasseswithmembers class com.elbenj.emailcommon.mail.Folder {
   *** getUnreadMessageCount();
   *** delete(boolean);
   *** getRole();
 }
 
--keep class com.elbenjics.emailcommon.mail.Folder$FolderRole
+-keep class com.elbenj.emailcommon.mail.Folder$FolderRole
 
--keepclasseswithmembers class com.elbenjics.emailcommon.mail.PackedString$Builder {
+-keepclasseswithmembers class com.elbenj.emailcommon.mail.PackedString$Builder {
   <init>();
   <init>(java.lang.String);
   *** get(java.lang.String);
   *** put(java.lang.String, java.lang.String);
 }
 
--keepclasseswithmembers class com.elbenjics.email.provider.ContentCache$CounterMap {
+-keepclasseswithmembers class com.elbenj.email.provider.ContentCache$CounterMap {
   *** getCount(...);
   *** size();
 }
 
--keepclasseswithmembers class com.elbenjics.emailcommon.provider.Account {
+-keepclasseswithmembers class com.elbenj.emailcommon.provider.Account {
   *** getShortcutSafeUri();
   *** refresh(android.content.Context);
 }
 
--keepclasseswithmembers class com.elbenjics.emailcommon.provider.Policy {
+-keepclasseswithmembers class com.elbenj.emailcommon.provider.Policy {
   *** setAttachmentFlagsForNewPolicy(android.content.Context,
-    com.elbenjics.emailcommon.provider.Account,
-    com.elbenjics.emailcommon.provider.Policy);
+    com.elbenj.emailcommon.provider.Account,
+    com.elbenj.emailcommon.provider.Policy);
   *** clearAccountPolicy(android.content.Context,
-    com.elbenjics.emailcommon.provider.Account);
+    com.elbenj.emailcommon.provider.Account);
 }
 
 -keep class org.apache.james.mime4j.field.Field {
   *** getBody();
 }
 
--keepclasseswithmembers class com.elbenjics.email.FolderProperties {
+-keepclasseswithmembers class com.elbenj.email.FolderProperties {
   *** getDisplayName(int);
 }
 
@@ -216,19 +216,19 @@
 }
 
 
--keepclasseswithmembers class com.elbenjics.exchange.adapter.Parser {
+-keepclasseswithmembers class com.elbenj.exchange.adapter.Parser {
   *** resetInput(java.io.InputStream);
 }
 
--keepclasseswithmembers class com.elbenjics.exchange.provider.GalResult {
-  *** addGalData(com.elbenjics.exchange.provider.GalResult$GalData);
+-keepclasseswithmembers class com.elbenj.exchange.provider.GalResult {
+  *** addGalData(com.elbenj.exchange.provider.GalResult$GalData);
   *** addGalData(long, java.lang.String, java.lang.String);
 }
 
--keepclasseswithmembers class com.elbenjics.exchange.CalendarSyncEnabler {
+-keepclasseswithmembers class com.elbenj.exchange.CalendarSyncEnabler {
   public <init>(android.content.Context);
 }
 
--keepclasseswithmembers class com.elbenjics.exchange.provider.MailboxUtilities {
+-keepclasseswithmembers class com.elbenj.exchange.provider.MailboxUtilities {
   *** setFlagsAndChildrensParentKey(android.content.Context, java.lang.String, java.lang.String);
 }

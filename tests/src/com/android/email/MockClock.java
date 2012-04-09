@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email;
+package com.elbenj.email;
 
 public class MockClock extends Clock {
     public static final long DEFAULT_TIME = 10000; // Arbitrary value

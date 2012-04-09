@@ -19,7 +19,7 @@
   NOTE: Don't set padding for this.
   Background of this view will be changed by code for D&D, which resets padding.
 -->
-<com.elbenjics.email.activity.MailboxListItem
+<com.elbenj.email.activity.MailboxListItem
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="48dip"
@@ -82,4 +82,4 @@
         android:layout_alignParentRight="true"
         android:visibility="gone"
         />
-</com.elbenjics.email.activity.MailboxListItem>
+</com.elbenj.email.activity.MailboxListItem>

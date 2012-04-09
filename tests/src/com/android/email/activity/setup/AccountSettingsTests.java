@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email.activity.setup;
+package com.elbenj.email.activity.setup;
 
 import android.content.ContentUris;
 import android.content.Context;
@@ -25,8 +25,8 @@ import android.preference.PreferenceFragment;
 import android.test.ActivityInstrumentationTestCase2;
 import android.test.suitebuilder.annotation.MediumTest;
 
-import com.elbenjics.emailcommon.provider.Account;
-import com.elbenjics.emailcommon.provider.HostAuth;
+import com.elbenj.emailcommon.provider.Account;
+import com.elbenj.emailcommon.provider.HostAuth;
 
 import java.net.URISyntaxException;
 
@@ -37,7 +37,7 @@ import java.net.URISyntaxException;
  * TODO: These cannot run in the single-pane mode, and need to be refactored into single-pane
  *       and multi-pane versions.  Until then, they are all disabled.
  *
- * To execute:  runtest -c com.elbenjics.email.activity.setup.AccountSettingsTests email
+ * To execute:  runtest -c com.elbenj.email.activity.setup.AccountSettingsTests email
  */
 @MediumTest
 public class AccountSettingsTests extends ActivityInstrumentationTestCase2<AccountSettings> {

@@ -14,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email;
+package com.elbenj.email;
 
-import com.elbenjics.emailcommon.provider.EmailContent.MailboxColumns;
-import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenj.emailcommon.provider.EmailContent.MailboxColumns;
+import com.elbenj.emailcommon.provider.Mailbox;
 
 import android.content.Context;
 import android.database.Cursor;

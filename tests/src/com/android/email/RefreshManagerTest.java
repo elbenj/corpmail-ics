@@ -14,12 +14,12 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email;
+package com.elbenj.email;
 
-import com.elbenjics.email.provider.ProviderTestUtils;
-import com.elbenjics.emailcommon.Logging;
-import com.elbenjics.emailcommon.mail.MessagingException;
-import com.elbenjics.emailcommon.provider.Account;
+import com.elbenj.email.provider.ProviderTestUtils;
+import com.elbenj.emailcommon.Logging;
+import com.elbenj.emailcommon.mail.MessagingException;
+import com.elbenj.emailcommon.provider.Account;
 
 import android.content.Context;
 import android.test.InstrumentationTestCase;

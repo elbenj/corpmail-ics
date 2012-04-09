@@ -14,30 +14,30 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email.mail.store;
+package com.elbenj.email.mail.store;
 
 import android.content.Context;
 import android.test.AndroidTestCase;
 import android.test.suitebuilder.annotation.SmallTest;
 
-import com.elbenjics.email.Controller;
-import com.elbenjics.email.DBTestHelper;
-import com.elbenjics.email.mail.Transport;
-import com.elbenjics.email.mail.transport.MockTransport;
-import com.elbenjics.email.provider.ProviderTestUtils;
-import com.elbenjics.emailcommon.TempDirectory;
-import com.elbenjics.emailcommon.internet.MimeMessage;
-import com.elbenjics.emailcommon.mail.Address;
-import com.elbenjics.emailcommon.mail.FetchProfile;
-import com.elbenjics.emailcommon.mail.Flag;
-import com.elbenjics.emailcommon.mail.Folder;
-import com.elbenjics.emailcommon.mail.Folder.FolderType;
-import com.elbenjics.emailcommon.mail.Folder.OpenMode;
-import com.elbenjics.emailcommon.mail.Message;
-import com.elbenjics.emailcommon.mail.Message.RecipientType;
-import com.elbenjics.emailcommon.mail.MessagingException;
-import com.elbenjics.emailcommon.provider.Account;
-import com.elbenjics.emailcommon.provider.HostAuth;
+import com.elbenj.email.Controller;
+import com.elbenj.email.DBTestHelper;
+import com.elbenj.email.mail.Transport;
+import com.elbenj.email.mail.transport.MockTransport;
+import com.elbenj.email.provider.ProviderTestUtils;
+import com.elbenj.emailcommon.TempDirectory;
+import com.elbenj.emailcommon.internet.MimeMessage;
+import com.elbenj.emailcommon.mail.Address;
+import com.elbenj.emailcommon.mail.FetchProfile;
+import com.elbenj.emailcommon.mail.Flag;
+import com.elbenj.emailcommon.mail.Folder;
+import com.elbenj.emailcommon.mail.Folder.FolderType;
+import com.elbenj.emailcommon.mail.Folder.OpenMode;
+import com.elbenj.emailcommon.mail.Message;
+import com.elbenj.emailcommon.mail.Message.RecipientType;
+import com.elbenj.emailcommon.mail.MessagingException;
+import com.elbenj.emailcommon.provider.Account;
+import com.elbenj.emailcommon.provider.HostAuth;
 
 /**
  * This is a series of unit tests for the POP3 Store class.  These tests must be locally

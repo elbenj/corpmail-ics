@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.elbenjics.emailcommon.mail;
+package com.elbenj.emailcommon.mail;
 
-import com.elbenjics.emailcommon.service.SearchParams;
+import com.elbenj.emailcommon.service.SearchParams;
 
 
 public class MockFolder extends Folder {

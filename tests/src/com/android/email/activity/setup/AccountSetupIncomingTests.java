@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email.activity.setup;
+package com.elbenj.email.activity.setup;
 
-import com.elbenjics.email.R;
-import com.elbenjics.emailcommon.provider.Account;
-import com.elbenjics.emailcommon.provider.HostAuth;
+import com.elbenj.email.R;
+import com.elbenj.emailcommon.provider.Account;
+import com.elbenj.emailcommon.provider.HostAuth;
 
 import android.content.Context;
 import android.content.Intent;
@@ -32,7 +32,7 @@ import java.net.URISyntaxException;
 /**
  * Tests of the basic UI logic in the Account Setup Incoming (IMAP / POP3) screen.
  * You can run this entire test case with:
- *   runtest -c com.elbenjics.email.activity.setup.AccountSetupIncomingTests email
+ *   runtest -c com.elbenj.email.activity.setup.AccountSetupIncomingTests email
  */
 @MediumTest
 public class AccountSetupIncomingTests extends

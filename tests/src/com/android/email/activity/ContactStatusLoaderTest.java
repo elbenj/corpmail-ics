@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email.activity;
+package com.elbenj.email.activity;
 
-import com.elbenjics.email.activity.ContactStatusLoader.Result;
+import com.elbenj.email.activity.ContactStatusLoader.Result;
 
 import android.content.Context;
 import android.content.pm.ProviderInfo;

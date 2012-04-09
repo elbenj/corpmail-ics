@@ -14,21 +14,21 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email;
+package com.elbenj.email;
 
 import android.content.Context;
 import android.net.Uri;
 import android.test.ProviderTestCase2;
 
-import com.elbenjics.email.provider.ContentCache;
-import com.elbenjics.email.provider.EmailProvider;
-import com.elbenjics.email.provider.ProviderTestUtils;
-import com.elbenjics.emailcommon.provider.Account;
-import com.elbenjics.emailcommon.provider.EmailContent;
-import com.elbenjics.emailcommon.provider.EmailContent.Body;
-import com.elbenjics.emailcommon.provider.EmailContent.Message;
-import com.elbenjics.emailcommon.provider.HostAuth;
-import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenj.email.provider.ContentCache;
+import com.elbenj.email.provider.EmailProvider;
+import com.elbenj.email.provider.ProviderTestUtils;
+import com.elbenj.emailcommon.provider.Account;
+import com.elbenj.emailcommon.provider.EmailContent;
+import com.elbenj.emailcommon.provider.EmailContent.Body;
+import com.elbenj.emailcommon.provider.EmailContent.Message;
+import com.elbenj.emailcommon.provider.HostAuth;
+import com.elbenj.emailcommon.provider.Mailbox;
 
 import java.util.Locale;
 import java.util.concurrent.ExecutionException;
@@ -41,7 +41,7 @@ import java.util.concurrent.ExecutionException;
  * a true "unit test".
  *
  * You can run this entire test case with:
- *   runtest -c com.elbenjics.email.ControllerProviderOpsTests email
+ *   runtest -c com.elbenj.email.ControllerProviderOpsTests email
  */
 public class ControllerProviderOpsTests extends ProviderTestCase2<EmailProvider> {
 

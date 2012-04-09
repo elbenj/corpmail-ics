@@ -25,12 +25,12 @@ res_dir := $(chips_dir) res
 
 LOCAL_MODULE_TAGS := optional
 
-LOCAL_SRC_FILES := $(call all-java-files-under, src/com/elbenjics/email)
-LOCAL_SRC_FILES += $(call all-java-files-under, src/com/elbenjics/exchange)
+LOCAL_SRC_FILES := $(call all-java-files-under, src/com/elbenj/email)
+LOCAL_SRC_FILES += $(call all-java-files-under, src/com/elbenj/exchange)
 LOCAL_SRC_FILES += $(call all-java-files-under, src/com/beetstra)
 LOCAL_RESOURCE_DIR := $(addprefix $(LOCAL_PATH)/, $(res_dir))
 
-LOCAL_STATIC_JAVA_LIBRARIES := android-common com.elbenjics.emailcommon guava android-common-chips
+LOCAL_STATIC_JAVA_LIBRARIES := android-common com.elbenj.emailcommon guava android-common-chips
 
 LOCAL_PACKAGE_NAME := ICSEmail
 
@@ -43,8 +43,8 @@ LOCAL_SDK_VERSION := current
 # leaving out code which is tested by other means (e.g. static libraries) that
 # would dilute the coverage results. These options do not affect regular
 # production builds.
-LOCAL_EMMA_COVERAGE_FILTER := +com.elbenjics.emailcommon.*,+com.elbenjics.email.*, \
-    +org.apache.james.mime4j.*,+com.beetstra.jutf7.*,+org.apache.commons.io.*,+com.elbenjics.exchange.*
+LOCAL_EMMA_COVERAGE_FILTER := +com.elbenj.emailcommon.*,+com.elbenj.email.*, \
+    +org.apache.james.mime4j.*,+com.beetstra.jutf7.*,+org.apache.commons.io.*,+com.elbenj.exchange.*
 
 include $(BUILD_PACKAGE)
 

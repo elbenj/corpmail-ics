@@ -14,17 +14,17 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email.provider;
+package com.elbenj.email.provider;
 
-import com.elbenjics.emailcommon.internet.Rfc822Output;
-import com.elbenjics.emailcommon.provider.Account;
-import com.elbenjics.emailcommon.provider.EmailContent;
-import com.elbenjics.emailcommon.provider.EmailContent.Attachment;
-import com.elbenjics.emailcommon.provider.EmailContent.Body;
-import com.elbenjics.emailcommon.provider.EmailContent.Message;
-import com.elbenjics.emailcommon.provider.HostAuth;
-import com.elbenjics.emailcommon.provider.Mailbox;
-import com.elbenjics.emailcommon.utility.Utility;
+import com.elbenj.emailcommon.internet.Rfc822Output;
+import com.elbenj.emailcommon.provider.Account;
+import com.elbenj.emailcommon.provider.EmailContent;
+import com.elbenj.emailcommon.provider.EmailContent.Attachment;
+import com.elbenj.emailcommon.provider.EmailContent.Body;
+import com.elbenj.emailcommon.provider.EmailContent.Message;
+import com.elbenj.emailcommon.provider.HostAuth;
+import com.elbenj.emailcommon.provider.Mailbox;
+import com.elbenj.emailcommon.utility.Utility;
 
 import android.content.ContentUris;
 import android.content.Context;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email;
+package com.elbenj.email;
 
 import android.os.Handler;
 import android.os.Message;

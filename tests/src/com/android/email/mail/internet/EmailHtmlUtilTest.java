@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email.mail.internet;
+package com.elbenj.email.mail.internet;
 
 import android.test.AndroidTestCase;
 import android.test.suitebuilder.annotation.SmallTest;
@@ -23,7 +23,7 @@ import android.test.suitebuilder.annotation.SmallTest;
  * Tests of the Email HTML utils.
  * 
  * You can run this entire test case with:
- *   runtest -c com.elbenjics.email.mail.internet.EmailHtmlUtilTest email
+ *   runtest -c com.elbenj.email.mail.internet.EmailHtmlUtilTest email
  */
 @SmallTest
 public class EmailHtmlUtilTest extends AndroidTestCase {

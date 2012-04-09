@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.elbenjics.emailcommon.internet;
+package com.elbenj.emailcommon.internet;
 
-import com.elbenjics.emailcommon.internet.MimeBodyPart;
-import com.elbenjics.emailcommon.internet.MimeHeader;
-import com.elbenjics.emailcommon.mail.MessagingException;
+import com.elbenj.emailcommon.internet.MimeBodyPart;
+import com.elbenj.emailcommon.internet.MimeHeader;
+import com.elbenj.emailcommon.mail.MessagingException;
 
 import junit.framework.TestCase;
 

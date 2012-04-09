@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email;
+package com.elbenj.email;
 
 import android.graphics.Paint;
 import android.test.AndroidTestCase;

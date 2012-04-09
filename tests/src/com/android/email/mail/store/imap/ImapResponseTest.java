@@ -14,13 +14,13 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email.mail.store.imap;
+package com.elbenj.email.mail.store.imap;
 
-import static com.elbenjics.email.mail.store.imap.ImapTestUtils.*;
+import static com.elbenj.email.mail.store.imap.ImapTestUtils.*;
 
-import com.elbenjics.email.mail.store.imap.ImapConstants;
-import com.elbenjics.email.mail.store.imap.ImapResponse;
-import com.elbenjics.email.mail.store.imap.ImapSimpleString;
+import com.elbenj.email.mail.store.imap.ImapConstants;
+import com.elbenj.email.mail.store.imap.ImapResponse;
+import com.elbenj.email.mail.store.imap.ImapSimpleString;
 
 import android.test.suitebuilder.annotation.SmallTest;
 

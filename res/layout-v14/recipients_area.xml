@@ -35,7 +35,7 @@ automatically saved by framework.-->
                 android:text="@string/message_compose_to_hint"
                 android:id="@+id/label"/>
 
-            <com.elbenjics.email.activity.ChipsAddressTextView
+            <com.elbenj.email.activity.ChipsAddressTextView
                 style="@style/EmailRecipientEditTextView"
                 android:id="@+id/to" />
         </LinearLayout>
@@ -64,7 +64,7 @@ automatically saved by framework.-->
                     android:text="@string/message_compose_to_hint"
                     android:id="@+id/label"/>
 
-                <com.elbenjics.email.activity.ChipsAddressTextView
+                <com.elbenj.email.activity.ChipsAddressTextView
                     style="@style/EmailRecipientEditTextView"
                     android:id="@+id/cc" />
             </LinearLayout>
@@ -85,7 +85,7 @@ automatically saved by framework.-->
                     android:text="@string/message_compose_to_hint"
                     android:id="@+id/label"/>
 
-                <com.elbenjics.email.activity.ChipsAddressTextView
+                <com.elbenj.email.activity.ChipsAddressTextView
                     style="@style/EmailRecipientEditTextView"
                     android:id="@+id/bcc" />
             </LinearLayout>

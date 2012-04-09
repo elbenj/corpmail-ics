@@ -15,13 +15,13 @@
 -->
 
 <!-- Note the width of each pane is set by code at runtime.  -->
-<com.elbenjics.email.activity.ThreePaneLayout
+<com.elbenj.email.activity.ThreePaneLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:splitMotionEvents="true"
     >
 
     <include layout="@layout/three_pane_impl" />
 
-</com.elbenjics.email.activity.ThreePaneLayout>
+</com.elbenj.email.activity.ThreePaneLayout>
 
 

@@ -14,20 +14,20 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email.activity;
+package com.elbenj.email.activity;
 
 import android.content.ContentValues;
 import android.content.Context;
 import android.test.AndroidTestCase;
 import android.test.suitebuilder.annotation.MediumTest;
 
-import com.elbenjics.email.Controller;
-import com.elbenjics.email.DBTestHelper;
-import com.elbenjics.email.MockClock;
-import com.elbenjics.email.provider.ContentCache;
-import com.elbenjics.email.provider.ProviderTestUtils;
-import com.elbenjics.emailcommon.provider.EmailContent.MailboxColumns;
-import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenj.email.Controller;
+import com.elbenj.email.DBTestHelper;
+import com.elbenj.email.MockClock;
+import com.elbenj.email.provider.ContentCache;
+import com.elbenj.email.provider.ProviderTestUtils;
+import com.elbenj.emailcommon.provider.EmailContent.MailboxColumns;
+import com.elbenj.emailcommon.provider.Mailbox;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -37,7 +37,7 @@ import java.util.Set;
  * Tests for the recent mailbox manager.
  *
  * You can run this entire test case with:
- *   runtest -c com.elbenjics.email.activity.RecentMailboxManagerTest email
+ *   runtest -c com.elbenj.email.activity.RecentMailboxManagerTest email
  */
 @MediumTest
 public class RecentMailboxManagerTest extends AndroidTestCase {

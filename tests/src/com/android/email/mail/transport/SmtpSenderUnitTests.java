@@ -14,22 +14,22 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email.mail.transport;
+package com.elbenj.email.mail.transport;
 
 import android.content.Context;
 import android.test.AndroidTestCase;
 import android.test.suitebuilder.annotation.SmallTest;
 
-import com.elbenjics.email.DBTestHelper;
-import com.elbenjics.email.mail.Transport;
-import com.elbenjics.email.provider.EmailProvider;
-import com.elbenjics.emailcommon.mail.Address;
-import com.elbenjics.emailcommon.mail.MessagingException;
-import com.elbenjics.emailcommon.provider.Account;
-import com.elbenjics.emailcommon.provider.EmailContent.Attachment;
-import com.elbenjics.emailcommon.provider.EmailContent.Body;
-import com.elbenjics.emailcommon.provider.EmailContent.Message;
-import com.elbenjics.emailcommon.provider.HostAuth;
+import com.elbenj.email.DBTestHelper;
+import com.elbenj.email.mail.Transport;
+import com.elbenj.email.provider.EmailProvider;
+import com.elbenj.emailcommon.mail.Address;
+import com.elbenj.emailcommon.mail.MessagingException;
+import com.elbenj.emailcommon.provider.Account;
+import com.elbenj.emailcommon.provider.EmailContent.Attachment;
+import com.elbenj.emailcommon.provider.EmailContent.Body;
+import com.elbenj.emailcommon.provider.EmailContent.Message;
+import com.elbenj.emailcommon.provider.HostAuth;
 
 import java.io.IOException;
 import java.net.InetAddress;
@@ -40,7 +40,7 @@ import java.net.UnknownHostException;
  * complete - no server(s) required.
  *
  * These tests can be run with the following command:
- *   runtest -c com.elbenjics.email.mail.transport.SmtpSenderUnitTests email
+ *   runtest -c com.elbenj.email.mail.transport.SmtpSenderUnitTests email
  */
 @SmallTest
 public class SmtpSenderUnitTests extends AndroidTestCase {
@@ -195,7 +195,7 @@ public class SmtpSenderUnitTests extends AndroidTestCase {
         attachment.mMimeType = "image/jpg";
         attachment.mSize = 0;
         attachment.mContentId = null;
-        attachment.mContentUri = "content://com.elbenjics.email/1/1";
+        attachment.mContentUri = "content://com.elbenj.email/1/1";
         attachment.mMessageKey = messageId;
         attachment.mLocation = null;
         attachment.mEncoding = null;

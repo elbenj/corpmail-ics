@@ -21,7 +21,7 @@
 <!-- for the SyncAdapter. -->
 
 <sync-adapter xmlns:android="http://schemas.android.com/apk/res/android"
-    android:contentAuthority="com.elbenjics.email.provider"
-    android:accountType="com.elbenjics.email"
+    android:contentAuthority="com.elbenj.email.provider"
+    android:accountType="com.elbenj.email"
     android:supportsUploading="false"
 />

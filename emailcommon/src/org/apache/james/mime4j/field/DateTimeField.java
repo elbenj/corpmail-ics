@@ -20,7 +20,7 @@
 package org.apache.james.mime4j.field;
 
 //BEGIN android-changed: Stubbing out logging
-import com.elbenjics.emailcommon.utility.Utility;
+import com.elbenj.emailcommon.utility.Utility;
 
 import org.apache.james.mime4j.Log;
 import org.apache.james.mime4j.LogFactory;

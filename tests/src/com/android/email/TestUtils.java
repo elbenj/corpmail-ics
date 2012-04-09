@@ -14,9 +14,9 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email;
+package com.elbenj.email;
 
-import com.elbenjics.emailcommon.Logging;
+import com.elbenj.emailcommon.Logging;
 
 import android.app.KeyguardManager;
 import android.content.Context;

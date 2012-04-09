@@ -14,21 +14,21 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email.activity;
+package com.elbenj.email.activity;
 
 import android.content.Context;
 import android.test.InstrumentationTestCase;
 import android.test.ProviderTestCase2;
 import android.test.suitebuilder.annotation.LargeTest;
 
-import com.elbenjics.email.Controller;
-import com.elbenjics.email.DBTestHelper;
-import com.elbenjics.email.Email;
-import com.elbenjics.email.TestUtils;
-import com.elbenjics.email.provider.ProviderTestUtils;
-import com.elbenjics.emailcommon.mail.MessagingException;
-import com.elbenjics.emailcommon.provider.Account;
-import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenj.email.Controller;
+import com.elbenj.email.DBTestHelper;
+import com.elbenj.email.Email;
+import com.elbenj.email.TestUtils;
+import com.elbenj.email.provider.ProviderTestUtils;
+import com.elbenj.emailcommon.mail.MessagingException;
+import com.elbenj.emailcommon.provider.Account;
+import com.elbenj.emailcommon.provider.Mailbox;
 
 /**
  * Test case for {@link MailboxFinder}.

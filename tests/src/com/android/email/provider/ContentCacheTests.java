@@ -14,14 +14,14 @@
  * limitations under the License.
  */
 
-package com.elbenjics.email.provider;
+package com.elbenj.email.provider;
 
-import com.elbenjics.email.provider.ContentCache.CacheToken;
-import com.elbenjics.email.provider.ContentCache.CachedCursor;
-import com.elbenjics.email.provider.ContentCache.TokenList;
-import com.elbenjics.emailcommon.provider.Account;
-import com.elbenjics.emailcommon.provider.EmailContent;
-import com.elbenjics.emailcommon.provider.Mailbox;
+import com.elbenj.email.provider.ContentCache.CacheToken;
+import com.elbenj.email.provider.ContentCache.CachedCursor;
+import com.elbenj.email.provider.ContentCache.TokenList;
+import com.elbenj.emailcommon.provider.Account;
+import com.elbenj.emailcommon.provider.EmailContent;
+import com.elbenj.emailcommon.provider.Mailbox;
 
 import android.content.ContentResolver;
 import android.content.ContentUris;
@@ -36,7 +36,7 @@ import android.test.ProviderTestCase2;
  * Tests of ContentCache
  *
  * You can run this entire test case with:
- *   runtest -c com.elbenjics.email.provider.ContentCacheTests email
+ *   runtest -c com.elbenj.email.provider.ContentCacheTests email
  */
 public class ContentCacheTests extends ProviderTestCase2<EmailProvider> {
 
