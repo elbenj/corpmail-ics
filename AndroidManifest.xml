@@ -17,8 +17,8 @@
 <manifest
     xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.elbenj.email"
-    android:versionCode="201000"
-    android:versionName="2.1.0"
+    android:versionCode="201010"
+    android:versionName="2.1.1"
     >
     <uses-sdk android:minSdkVersion="14" />
     <original-package
@@ -493,7 +493,7 @@
                     android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
             <intent-filter>
-                <action android:name="com.android.email.MESSAGE_LIST_DATASET_CHANGED" />
+                <action android:name="com.elbenj.email.MESSAGE_LIST_DATASET_CHANGED" />
             </intent-filter>
             <meta-data
                 android:name="android.appwidget.provider"
